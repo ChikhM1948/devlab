@@ -13,9 +13,9 @@ export default function BundlePage() {
     {
       id: 'starter',
       name: 'Starter Bundle',
-      price: '149,000',
+      price: '60,000',
       currency: 'DZD',
-      period: 'mois',
+      period: '',
       description: 'Parfait pour les petites entreprises qui démarrent',
       color: 'from-orange-400 to-yellow-500', // Changed
       features: [
@@ -34,9 +34,9 @@ export default function BundlePage() {
     {
       id: 'premium',
       name: 'Premium Bundle',
-      price: '299,000',
+      price: '120,000',
       currency: 'DZD',
-      period: 'mois',
+      period: '',
       description: 'La solution complète pour votre transformation digitale',
       color: 'from-orange-500 to-red-600', // Changed
       features: [
@@ -251,15 +251,37 @@ export default function BundlePage() {
                     ))}
                   </ul>
 
-                  <button
-                    className={`w-full py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 ${
-                      plan.popular
-                        ? 'bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-lg' // Changed
-                        : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
-                    }`}
-                  >
-                    {plan.price === 'Sur mesure' ? 'Demander un devis' : 'Choisir ce bundle'}
-                  </button>
+                  {/* === MODIFICATION START === */}
+                  {/* Conditionally render button based on plan price */}
+                  {plan.price === 'Sur mesure' ? (
+                    // Enterprise plan: Links to /devis page
+                    <Link
+                      href="/devis"
+                      className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 ${
+                        plan.popular
+                          ? 'bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-lg'
+                          : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      Demander un devis
+                    </Link>
+                  ) : (
+                    // Starter and Premium plans: Link to WhatsApp
+                    <a
+                      href="https://wa.me/213698784457"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 ${
+                        plan.popular
+                          ? 'bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-lg'
+                          : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      Choisir ce bundle
+                    </a>
+                  )}
+                  {/* === MODIFICATION END === */}
+
                 </div>
               </div>
             ))}

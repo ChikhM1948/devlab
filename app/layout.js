@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "DevLab - Services Informatiques",
   description: "Votre partenaire technologique de A à Z en Algérie",
+  
+  // --- FAVICON AJOUTÉ ---
+  // Placez vos fichiers (favicon.ico, apple-touch-icon.png)
+  // dans le dossier /public à la racine de votre projet.
+  icons: {
+    icon: '/favicon.ico', // Pour les navigateurs
+    apple: '/apple-touch-icon.png', // Pour les appareils Apple
+  }
+  // --- FIN FAVICON ---
 };
 
 export default function RootLayout({ children }) {
