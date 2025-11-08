@@ -4,9 +4,8 @@
 import { useState } from 'react';
 import { Check, X, Gift, Zap, Shield, Clock, Code, Smartphone, TrendingUp, Users, BookOpen, Sparkles, ArrowLeft } from 'lucide-react';
 import { useTheme } from '@/app/components/ThemeProvider';
-import { Link } from 'next-intl'; // Use next-intl Link
 import { useTranslations } from 'next-intl';
-import { Link } from '../../i18n/routing';
+import { Link } from '../../../i18n/routing'; // ✅ Single import
 
 
 export default function BundlePage() {
@@ -222,7 +221,6 @@ export default function BundlePage() {
                     ))}
                   </ul>
                   
-                  {/* Using next-intl Link for /devis */}
                   {plan.price === t('customPrice') ? (
                     <Link
                       href="/devis"
@@ -235,7 +233,6 @@ export default function BundlePage() {
                       {t('quoteButton')}
                     </Link>
                   ) : (
-                    // External link remains an <a> tag
                     <a
                       href="https://wa.me/213698784457"
                       target="_blank"
@@ -343,11 +340,6 @@ export default function BundlePage() {
             {t('ctaSubtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* Note: This is an anchor link to an ID on the homepage, 
-                so it needs to be formatted with the locale prefix. 
-                Since this is a client component, we can just use '/' 
-                and next-intl Link will handle the locale.
-            */}
             <Link href="/#contact" className="px-8 py-4 bg-white text-orange-600 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
               {t('ctaButton1')}
             </Link>

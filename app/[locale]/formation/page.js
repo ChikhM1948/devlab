@@ -3,12 +3,11 @@
 import { useState } from 'react';
 import { GraduationCap, Clock, CheckCircle, Tag, Send, AlertCircle, ArrowLeft } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
-import { Link } from 'next-intl'; // Use next-intl Link
-import { Link } from '../../../i18n/routing'; // ✅ FIXED
+import { Link } from '../../../i18n/routing'; // ✅ Single import
 
 export default function FormationSection() {
   const t = useTranslations('FormationPage');
-  const locale = useLocale(); // Get current locale
+  const locale = useLocale();
   const [formData, setFormData] = useState({
     nom: '',
     prenom: '',
@@ -29,7 +28,7 @@ export default function FormationSection() {
       prix: t.number('formation1_price'),
       duree: t('formation1_duration'),
       description: t('formation1_desc'),
-      competences: t.raw('formation1_skills') // .raw() gets the array
+      competences: t.raw('formation1_skills')
     },
     {
       id: 'bureautique',
@@ -37,7 +36,7 @@ export default function FormationSection() {
       prix: t.number('formation2_price'),
       duree: t('formation2_duration'),
       description: t('formation2_desc'),
-      competences: t.raw('formation2_skills') // .raw() gets the array
+      competences: t.raw('formation2_skills')
     }
   ];
 
@@ -51,7 +50,6 @@ export default function FormationSection() {
           : [...prev.formations, formationId]
       };
     });
-    // Reset promo code on selection change
     setPromoDetails({ applied: false, rate: 0 });
     setSubmitStatus({ type: '', message: '' });
   };
@@ -63,7 +61,7 @@ export default function FormationSection() {
     if (code === 'DEVLAB') {
       if (numSelected === 2) {
         setPromoDetails({ applied: true, rate: 0.25 });
-        setSubmitStatus({ type: 'success', message: t('errorPromoDevlab').replace('25%', '25%') }); // Ensure % is handled
+        setSubmitStatus({ type: 'success', message: t('errorPromoDevlab').replace('25%', '25%') });
       } else {
         setPromoDetails({ applied: false, rate: 0 });
         setSubmitStatus({ type: 'error', message: t('errorPromoDevlab') });
@@ -112,7 +110,6 @@ export default function FormationSection() {
 
     const selectedFormations = formData.formations.map(id => {
       const f = formations.find(f => f.id === id);
-      // We pass the translated values to the API
       return { 
         titre: f.titre, 
         duree: f.duree, 
@@ -136,7 +133,7 @@ export default function FormationSection() {
           total: calculateTotal(),
           discount: promoDetails.applied,
           discountRate: promoDetails.rate,
-          locale: locale // Send the current locale to the API
+          locale: locale
         })
       });
 
