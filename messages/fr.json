@@ -517,5 +517,17 @@
       "receivedOn": "Demande reçue le : {date}"
     },
     "apiError": "Erreur lors de l'envoi de la demande"
+  },
+   "NewsletterSection": {
+    "tag": "Newsletter",
+    "title": "Restez Informé",
+    "subtitle": "Inscrivez-vous à notre newsletter pour recevoir nos actualités, offres exclusives et conseils tech directement dans votre boîte mail",
+    "placeholder": "Votre adresse email",
+    "subscribe": "S'inscrire",
+    "subscribing": "Envoi...",
+    "privacy": "Nous respectons votre vie privée. Pas de spam, désinscription à tout moment.",
+    "errorInvalid": "Veuillez entrer une adresse email valide",
+    "statusSuccess": "✅ Inscription réussie ! Vérifiez votre boîte mail pour la confirmation.",
+    "statusError": "❌ Erreur lors de l'inscription. Veuillez réessayer."
   }
 }

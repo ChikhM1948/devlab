@@ -9,10 +9,10 @@ import ServicesSection from '@/app/components/ServicesSection';
 import BundleSection from '@/app/components/BundleSection';
 import AboutSection from '@/app/components/AboutSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import NewsletterSection from '@/app/components/NewsletterSection';
 import ContactSection from '@/app/components/ContactSection';
 import Footer from '@/app/components/Footer';
 
-// No need for PageContent, just export default the function
 export default function Page() {
   const { darkMode, toggleDarkMode } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,8 +20,7 @@ export default function Page() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      // Calculate offset for sticky header
-      const headerOffset = 80; // Adjust this value based on your navbar's height
+      const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -52,6 +51,9 @@ export default function Page() {
       <AboutSection />
       
       <TestimonialsSection />
+      
+      {/* Newsletter Section - Added here before Contact */}
+      <NewsletterSection />
       
       <ContactSection />
       

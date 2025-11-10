@@ -518,5 +518,17 @@
       "receivedOn": "Request received on: {date}"
     },
     "apiError": "Error sending request"
+  },
+  
+   "NewsletterSection": {
+    "title": "Stay Updated",
+    "subtitle": "Subscribe to our newsletter to receive our latest news, exclusive offers, and tech tips directly in your inbox",
+    "placeholder": "Your email address",
+    "subscribe": "Subscribe",
+    "subscribing": "Sending...",
+    "privacy": "We respect your privacy. No spam, unsubscribe anytime.",
+    "errorInvalid": "Please enter a valid email address",
+    "statusSuccess": "✅ Successfully subscribed! Check your email for confirmation.",
+    "statusError": "❌ Error during subscription. Please try again."
   }
 }
