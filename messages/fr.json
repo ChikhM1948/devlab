@@ -1,12 +1,11 @@
 {
   "Navbar": {
-    "home": "Accueil",
-    "services": "Services",
-    "about": "À Propos",
-    "getQuote": "Demander un Devis",
-    "training": "Formations",
-    "newsletter": "Actualités"
-  },
+  "home": "Accueil",
+  "services": "Services",
+  "about": "À Propos",
+  "training": "Formations",
+  "languages": "Langues"
+},
  
 "HeroSection": {
   "specialOffer": "🎉 Offre Spéciale : -20% sur tous les cours !",

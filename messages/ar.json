@@ -1,12 +1,11 @@
 {
-  "Navbar": {
-    "home": "الرئيسية",
-    "services": "الخدمات",
-    "about": "من نحن",
-    "getQuote": "اطلب عرض سعر",
-    "training": "التكوينات",
-    "newsletter": "الأخبار"
-  },
+"Navbar": {
+  "home": "الرئيسية",
+  "services": "الخدمات",
+  "about": "من نحن",
+  "training": "الدورات",
+  "languages": "اللغات"
+},
 
   
   "HeroSection": {
@@ -928,7 +927,7 @@
     "footer_rights": "جميع الحقوق محفوظة",
     "footer_reason": "أنت تتلقى هذا البريد الإلكتروني لأنك قمت بالتسجيل في دوراتنا"
   }, 
-  
+
   "QuoteEmail": {
     "client": {
       "subject": "تأكيد طلب عرض السعر الخاص بك - LingoLab",

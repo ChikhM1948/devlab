@@ -1,12 +1,11 @@
 {
-  "Navbar": {
-    "home": "Home",
-    "services": "Services",
-    "about": "About",
-    "getQuote": "Get a Quote",
-    "training": "Training",
-    "newsletter": "News"
-  },
+ "Navbar": {
+  "home": "Home",
+  "services": "Services",
+  "about": "About",
+  "training": "Training",
+  "languages": "Languages"
+},
  
  
   "HeroSection": {
@@ -928,7 +927,7 @@
     "footer_rights": "All rights reserved",
     "footer_reason": "You are receiving this email because you registered for our courses"
   },
-  
+
   "QuoteEmail": {
     "client": {
       "subject": "Confirmation of your quote request - LingoLab",

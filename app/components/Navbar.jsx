@@ -1,7 +1,7 @@
 // app/components/Navbar.jsx - LingoLab Version
 'use client';
 
-import { Moon, Sun, Menu, X, GraduationCap, Mail } from 'lucide-react';
+import { Moon, Sun, Menu, X, GraduationCap, Languages } from 'lucide-react'; // Changed: Replaced Mail with Languages
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '../../i18n/routing';
@@ -23,7 +23,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
           <Link href="/" className="flex-shrink-0 flex items-center gap-2 group">
             <div className="w-10 h-10 flex items-center justify-center rounded-full overflow-hidden bg-gradient-to-r from-blue-500 to-indigo-500 p-1 shadow-md transition-all duration-300 transform group-hover:scale-110 group-hover:shadow-lg">
               <Image 
-                src="/logo.png"
+                src="/logo.jpg"
                 alt="LingoLab Logo"
                 width={36}
                 height={36}
@@ -64,20 +64,16 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
               <span className="font-semibold">{t('training')}</span>
             </Link>
 
+            {/* Changed: Newsletter link replaced with Languages link */}
             <Link
-              href="/newsletter"
-              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg"
+              href="/languages"
+              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-lg hover:from-green-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg"
             >
-              <Mail className="w-4 h-4" />
-              <span className="font-semibold">{t('newsletter')}</span>
+              <Languages className="w-4 h-4" />
+              <span className="font-semibold">{t('languages')}</span>
             </Link>
             
-            <Link 
-              href="/devis" 
-              className="font-semibold px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-sm border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 transition-all"
-            >
-              {t('getQuote')}
-            </Link>
+            {/* Removed: "Get Quote" link was here */}
 
             <LocaleSwitcher />
 
@@ -142,22 +138,17 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
               <span className="font-semibold">{t('training')}</span>
             </Link>
 
+            {/* Changed: Newsletter link replaced with Languages link */}
             <Link
-              href="/newsletter"
+              href="/languages"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-lg hover:from-green-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              <Mail className="w-4 h-4" />
-              <span className="font-semibold">{t('newsletter')}</span>
+              <Languages className="w-4 h-4" />
+              <span className="font-semibold">{t('languages')}</span>
             </Link>
             
-            <Link
-              href="/devis"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-lg shadow-lg border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 transition-all"
-            >
-              {t('getQuote')}
-            </Link>
+            {/* Removed: "Get Quote" link was here */}
           </div>
         </div>
       )}
