@@ -5,51 +5,74 @@
     "about": "À Propos",
     "getQuote": "Demander un Devis",
     "training": "Formations",
-    "newsletter": "Actualités" 
+    "newsletter": "Actualités"
+  },
+ 
+"HeroSection": {
+  "specialOffer": "🎉 Offre Spéciale : -20% sur tous les cours !",
+  "titlePart1": "Maîtrisez les Langues avec",
+  "titlePart2": "LingoLab Academy",
+  "subtitle": "Transformez votre parcours d'apprentissage avec des instructeurs experts, des cours interactifs et des méthodes éprouvées. Rejoignez des milliers d'étudiants qui ont atteint la maîtrise grâce à nos programmes complets.",
+  "stat1_label": "Langues",
+  "stat2_label": "Étudiants",
+  "stat3_label": "Réussite",
+  "cta_languages": "Langues",
+  "cta_support": "Soutien Scolaire",
+  "cta_training": "Formations",
+  "available_title": "Langues Disponibles",
+  "available_subtitle": "Choisissez parmi notre gamme variée de programmes linguistiques",
+  "languages": {
+    "english": "Anglais",
+    "french": "Français",
+    "spanish": "Espagnol",
+    "german": "Allemand",
+    "italian": "Italien",
+    "chinese": "Chinois",
+    "japanese": "Japonais",
+    "korean": "Coréen",
+    "russian": "Russe",
+    "portuguese": "Portugais",
+    "arabic": "Arabe",
+    "turkish": "Turc"
+  }
+},
 
-  },
-  "HeroSection": {
-    "title": "Votre Partenaire Technologique de A à Z",
-    "subtitle": "Développement web & mobile, marketing digital, et formations professionnelles en Algérie",
-    "trainingButton": "Nos Formations",
-    "quoteButton": "Demander un Devis"
-  },
   "ServicesSection": {
-    "title": "Nos Services",
-    "subtitle": "Des solutions complètes pour tous vos besoins digitaux",
-    "cat1": "Développement Digital",
-    "s1_title": "Sites Web Sur Mesure",
-    "s1_desc": "Sites vitrines, e-commerce, et applications web personnalisées avec les dernières technologies",
-    "s2_title": "Applications Mobiles",
-    "s2_desc": "Applications iOS et Android natives ou cross-platform pour toucher votre audience mobile",
-    "s3_title": "Maintenance & Support",
-    "s3_desc": "Support technique continu et maintenance pour garantir la performance de vos plateformes",
-    "cat2": "Marketing & Design",
-    "s4_title": "Stratégie Digitale",
-    "s4_desc": "SEO, publicité en ligne, et stratégies de croissance pour maximiser votre visibilité",
-    "s5_title": "Gestion des Réseaux Sociaux",
-    "s5_desc": "Création de contenu, community management, et campagnes social media engageantes",
-    "s6_title": "Design & Branding",
-    "s6_desc": "Identité visuelle, UI/UX design, et création graphique pour marquer les esprits",
-    "cat3": "Formation & Accompagnement",
+    "title": "Nos Services Pédagogiques",
+    "subtitle": "Des programmes conçus pour votre réussite, de l'apprentissage des langues au soutien scolaire complet.",
+    "cat1": "Apprentissage des Langues",
+    "s1_title": "Cours de Langues",
+    "s1_desc": "Programmes complets (Anglais, Français, Espagnol, etc.) adaptés à votre niveau, du débutant à l'avancé.",
+    "s2_title": "Préparation aux Tests",
+    "s2_desc": "Coaching ciblé pour réussir vos certifications officielles : TOEFL, IELTS, DELF/DALF, et plus encore.",
+    "s3_title": "Ateliers de Conversation",
+    "s3_desc": "Renforcez votre aisance à l'oral avec nos groupes de discussion immersifs et dynamiques.",
+    "cat2": "Soutien Scolaire (Tous Niveaux)",
+    "s4_title": "Niveau Primaire",
+    "s4_desc": "Bases solides en lecture, écriture et calcul pour une scolarité épanouie. Toutes matières.",
+    "s5_title": "Niveau Collège (Moyen)",
+    "s5_desc": "Consolidation des acquis et méthodologie de travail efficace pour toutes les matières (Maths, Sciences, Langues...).",
+    "s6_title": "Niveau Lycée",
+    "s6_desc": "Préparation intensive aux examens (Bac) dans les matières clés : Maths, Physique, Philosophie, Histoire-Géo, etc.",
+    "cat3": "Formations & Développement",
     "s7_title": "Formations Professionnelles",
-    "s7_desc": "Programmes de formation en développement web, bureautique, et compétences digitales",
-    "s8_title": "Consulting Digital",
-    "s8_desc": "Conseils stratégiques pour transformer votre entreprise et adopter le digital",
-    "s9_title": "Production Vidéo",
-    "s9_desc": "Création de contenu vidéo professionnel pour vos campagnes marketing et communications"
+    "s7_desc": "Maîtriez l'anglais des affaires, la communication professionnelle et d'autres compétences clés pour votre carrière.",
+    "s8_title": "Coaching & Méthodologie",
+    "s8_desc": "Apprenez à apprendre. Développez des méthodes d'organisation et de mémorisation efficaces.",
+    "s9_title": "Stages Intensifs",
+    "s9_desc": "Programmes 'bootcamp' pendant les vacances scolaires pour une progression rapide et ciblée."
   },
   "BundleSection": {
-    "tag": "Offre Spéciale",
-    "title": "Packages Tout-en-Un",
-    "subtitle": "Économisez jusqu'à 30% avec nos offres groupées combinant développement, design et marketing",
-    "stat1_title": "3 Formules",
-    "stat1_desc": "Du starter à l'entreprise",
-    "stat2_title": "-30%",
-    "stat2_desc": "Sur les packages complets",
-    "stat3_title": "Support 24/7",
-    "stat3_desc": "Assistance prioritaire incluse",
-    "button": "Découvrir les Packages"
+    "tag": "Pour les Entreprises",
+    "title": "Formations B2B en Présentiel",
+    "subtitle": "Programmes de langues, IT et HSE en présentiel dans notre académie, en partenariat avec DevLab.",
+    "stat1_title": "Formules",
+    "stat1_desc": "Équipe, Business & Entreprise",
+    "stat2_title": "+10 Domaines",
+    "stat2_desc": "Langues, HSE, Tech, Bureautique...",
+    "stat3_title": "Présentiel",
+    "stat3_desc": "Salles de formation équipées",
+    "button": "Découvrir les Formules"
   },
   "AboutSection": {
     "title": "Nos Réalisations",
@@ -72,7 +95,7 @@
     "title": "Ce Que Disent Nos Clients",
     "t1_name": "Ahmed Benali",
     "t1_company": "E-Shop DZ",
-    "t1_text": "DevLab a transformé notre présence en ligne. Notre site e-commerce est rapide, moderne et les ventes ont augmenté de 150% !",
+    "t1_text": "LingoLab a transformé notre présence en ligne. Notre site e-commerce est rapide, moderne et les ventes ont augmenté de 150% !",
     "t2_name": "Fatima Zahra",
     "t2_company": "Formation Plus",
     "t2_text": "Excellente formation en développement web. L'équipe est professionnelle et le suivi post-formation est impeccable.",
@@ -80,12 +103,32 @@
     "t3_company": "StartUp Algérie",
     "t3_text": "Un partenaire de confiance pour notre transformation digitale. Leur expertise et réactivité font la différence."
   },
-  "ContactSection": {
-    "title": "Prêt à Démarrer Votre Projet ?",
-    "subtitle": "Contactez-nous dès aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé",
-    "email": "Envoyer un Email",
-    "whatsapp": "WhatsApp"
-  },
+
+"ContactSection": {
+  "title": "Contactez-Nous",
+  "subtitle": "Prêt à Commencer Votre Parcours d'Apprentissage ?",
+  "description": "Notre équipe est là pour vous aider à choisir le programme parfait pour vos objectifs",
+  
+  "service1_title": "Apprentissage des Langues",
+  "service1_desc": "12+ langues disponibles avec des instructeurs natifs",
+  
+  "service2_title": "Soutien Scolaire",
+  "service2_desc": "Aide personnalisée pour tous les niveaux scolaires",
+  
+  "service3_title": "Formations Professionnelles",
+  "service3_desc": "Programmes certifiés pour votre développement",
+  
+  "contact_methods": "Contactez-Nous Par",
+  "email": "Email",
+  "whatsapp": "https://wa.me/message/H4PNBEKRAV3SK1",
+  "phone": "0698784457",
+  "location": "Relizane, Algérie",
+  
+  "cta_text": "Rejoignez des milliers d'étudiants qui ont transformé leur avenir avec nous",
+  "cta_quote": "Demander un Devis",
+  "cta_courses": "Voir les Cours"
+},
+
   "Footer": {
     "description": "Votre partenaire technologique de confiance en Algérie pour le développement web, mobile, et la transformation digitale.",
     "navTitle": "Navigation Rapide",
@@ -96,130 +139,141 @@
     "startContact": "Nous Contacter",
     "startTraining": "Formations",
     "startBundles": "Packages",
-    "copyright": "© {year} DevLab. Tous droits réservés."
+    "copyright": "© {year} LingoLab. Tous droits réservés."
   },
   "BundlePage": {
     "backToHome": "Retour à l'accueil",
-    "promoBanner": "Offre Limitée",
-    "title": "Packages Tout-en-Un pour Votre Succès Digital",
-    "subtitle": "Économisez jusqu'à 30% avec nos offres combinant développement, design et marketing",
-    "pageTitle": "Choisissez Votre Package",
-    "pageSubtitle": "Des solutions complètes adaptées à votre budget",
+    "promoBannerB2B": "Offre Entreprise",
+    "b2bTitle": "Formations en présentiel pour votre entreprise",
+    "b2bSubtitle": "Formez vos équipes dans notre académie et développez vos compétences.",
+    "pageTitleB2B": "Nos Formules Entreprise (Présentiel)",
+    "pageSubtitleB2B": "Des solutions complètes en présentiel pour la réussite de vos équipes",
     "popular": "Le Plus Populaire",
     "currency": "DZD",
     "customPrice": "Sur Mesure",
     "save": "Économisez",
-    "chooseButton": "Choisir ce Package",
+    "chooseButton": "Choisir cette Formule",
     "quoteButton": "Demander un Devis",
-    "starter": {
-      "name": "Starter",
-      "price": "150000",
-      "description": "Parfait pour démarrer votre présence en ligne",
+    "team": {
+      "name": "Formule Équipe",
+      "price": "12 900",
+      "period": "/ utilisateur / mois",
+      "description": "Lancez votre équipe sur la voie du succès en présentiel.",
       "features": [
-        "Site vitrine 5 pages",
-        "Design responsive moderne",
-        "Optimisation SEO de base",
-        "Formulaire de contact",
-        "Hébergement 1 an inclus",
-        "Support email 3 mois",
-        "Formation utilisation 2h",
-        "Réseaux sociaux premium",
-        "Analytics avancés"
+        "Accès à 1 domaine de formation",
+        "Sessions en présentiel à l'académie",
+        "Groupes de 8-10 personnes",
+        "Tableau de bord de suivi (simple)",
+        "Support par email",
+        "Certificats de présence"
       ]
     },
-    "premium": {
-      "name": "Premium",
-      "price": "350000",
-      "description": "Solution complète pour votre croissance",
-      "savings": "30%",
+    "business": {
+      "name": "Formule Business",
+      "price": "19 500",
+      "period": "/ utilisateur / mois",
+      "description": "La solution complète pour une croissance continue.",
+      "savings": "20%",
       "features": [
-        "Site web personnalisé 10+ pages",
-        "Design UI/UX professionnel",
-        "SEO avancé + stratégie contenu",
-        "Integration e-commerce",
-        "Application mobile basique",
-        "Support prioritaire 6 mois",
-        "Formation complète 8h",
-        "Gestion réseaux sociaux 3 mois",
-        "Analytics + reporting mensuel"
+        "Accès à 2 domaines de formation",
+        "Accès prioritaire à nos salles",
+        "Groupes premium (max 6 pers.)",
+        "Tableau de bord RH avancé",
+        "Gestionnaire de compte dédié",
+        "Rapports de performance détaillés"
       ]
     },
     "enterprise": {
-      "name": "Enterprise",
-      "description": "Solutions sur mesure pour grandes entreprises",
+      "name": "Formule Entreprise",
+      "description": "Un partenariat sur mesure pour vos objectifs globaux.",
       "features": [
-        "Plateforme web complexe illimitée",
-        "Applications mobiles iOS + Android",
-        "Architecture scalable cloud",
-        "Intégrations API sur mesure",
-        "Design system complet",
-        "Support dédié 24/7",
-        "Formation équipe complète",
-        "Stratégie marketing complète",
-        "Consulting transformation digitale"
+        "Accès illimité à toutes les formations",
+        "Formations sur site (vos locaux)",
+        "Programmes 100% personnalisés",
+        "Coaching et conseil pédagogique",
+        "Support prioritaire 24/7",
+        "Intégration et reporting sur mesure"
       ]
     },
-    "includedTitle": "Ce Qui Est Inclus",
-    "includedSubtitle": "Tout ce dont vous avez besoin pour réussir",
-    "catDev": "Développement",
-    "catDevItems": [
-      "Code propre et maintenable",
-      "Tests et qualité",
-      "Documentation complète",
-      "Déploiement sécurisé"
-    ],
-    "catDesign": "Design",
-    "catDesignItems": [
-      "Maquettes professionnelles",
-      "Prototypes interactifs",
-      "Guide de style",
-      "Assets graphiques"
-    ],
-    "catMarketing": "Marketing",
-    "catMarketingItems": [
-      "Stratégie SEO",
-      "Contenu optimisé",
-      "Campagnes ads",
-      "Analytics détaillés"
-    ],
-    "catTraining": "Formation",
-    "catTrainingItems": [
-      "Sessions personnalisées",
-      "Documentation vidéo",
-      "Support post-formation",
-      "Certificats"
-    ],
-    "bonusTitle": "Livraison Rapide",
-    "bonusDesc": "Démarrage sous 48h",
-    "bonus2Title": "Garantie Satisfait",
-    "bonus2Desc": "30 jours remboursé",
-    "bonus3Title": "Mises à Jour",
-    "bonus3Desc": "6 mois gratuits",
-    "bonus4Title": "Support Premium",
-    "bonus4Desc": "Assistance prioritaire",
-    "faqTitle": "Questions Fréquentes",
-    "faqs": [
+    "includedTitleB2B": "Notre Catalogue de Formations B2B",
+    "includedSubtitleB2B": "Un portefeuille complet pour couvrir tous vos besoins en compétences",
+    "catLang": {
+      "title": "Langues des Affaires",
+      "items": [
+        "Anglais des affaires",
+        "Français (FLE)",
+        "Espagnol commercial",
+        "Allemand technique"
+      ]
+    },
+    "catPro": {
+      "title": "Métiers, HSE & Secourisme",
+      "items": [
+        "HSE (Hygiène, Sécurité, Environnement)",
+        "Secourisme en milieu de travail",
+        "Prise de parole en public",
+        "Négociation interculturelle"
+      ]
+    },
+    "catTech": {
+      "title": "Formations Tech (avec DevLab)",
+      "items": [
+        "Programmation (Web, Mobile)",
+        "Maintenance & Réseaux",
+        "Graphic Design",
+        "Montage Vidéo"
+      ]
+    },
+    "catBureautique": {
+      "title": "Bureautique & Informatique",
+      "items": [
+        "Microsoft Excel (Avancé)",
+        "Microsoft Word (Expert)",
+        "Gestion de données & Power BI",
+        "Outils IT pour PME"
+      ]
+    },
+    "bonusB2B": [
       {
-        "q": "Puis-je changer de package plus tard ?",
-        "a": "Oui, vous pouvez upgrader votre package à tout moment. Nous calculerons la différence au prorata."
+        "title": "Onboarding Organisé",
+        "desc": "Planification des sessions et tests de niveau inclus."
       },
       {
-        "q": "Quels sont les délais de livraison ?",
-        "a": "Starter: 2-3 semaines, Premium: 4-6 semaines, Enterprise: selon projet (généralement 8-12 semaines)."
+        "title": "Mesure du ROI",
+        "desc": "Des rapports clairs pour mesurer l'impact de la formation."
       },
       {
-        "q": "Le support technique est-il inclus ?",
-        "a": "Oui, tous les packages incluent du support. La durée et le niveau varient selon la formule choisie."
+        "title": "Environnement Premium",
+        "desc": "Salles de cours modernes et équipées pour l'apprentissage."
       },
       {
-        "q": "Puis-je personnaliser mon package ?",
-        "a": "Absolument ! Contactez-nous pour créer un package sur mesure adapté à vos besoins spécifiques."
+        "title": "Certifications",
+        "desc": "Certificats de fin de formation reconnus pour chaque employé."
       }
     ],
-    "ctaTitle": "Prêt à Commencer ?",
-    "ctaSubtitle": "Discutons de votre projet et trouvons la solution parfaite ensemble",
-    "ctaButton1": "Nous Contacter",
-    "ctaButton2": "Voir Tous les Services"
+    "faqTitleB2B": "Questions Fréquentes (Entreprises)",
+    "faqsB2B": [
+      {
+        "q": "Comment mesurez-vous les progrès de nos employés ?",
+        "a": "Notre plateforme offre un tableau de bord RH qui suit l'assiduité. De plus, nos formateurs effectuent des évaluations régulières (tests, mises en situation) en présentiel."
+      },
+      {
+        "q": "Les formations se déroulent-elles dans nos bureaux ?",
+        "a": "Nos formules Team et Business se déroulent en présentiel dans notre académie pour garantir un environnement d'apprentissage optimal. La formule Entreprise permet des sessions dédiées dans vos locaux."
+      },
+      {
+        "q": "Quelle est la taille des groupes ?",
+        "a": "Nous privilégions la qualité. Nos groupes vont de 6 (Business) à 10 (Team) participants maximum pour garantir une interaction et une participation optimales."
+      },
+      {
+        "q": "Pouvons-nous personnaliser le contenu (HSE, Tech) ?",
+        "a": "Absolument. La formule Entreprise est 100% sur mesure. Nous pouvons adapter les modules HSE ou Tech à vos procédures internes ou à vos équipements spécifiques."
+      }
+    ],
+    "ctaTitleB2B": "Prêt à former vos équipes ?",
+    "ctaSubtitleB2B": "Discutons de vos objectifs et planifions vos sessions de formation en présentiel.",
+    "ctaButton1B2B": "Demander un Devis Entreprise",
+    "ctaButton2B2B": "Voir nos autres formations"
   },
   "DevisPage": {
     "backToHome": "Retour à l'accueil",
@@ -418,29 +472,10 @@
       }
     }
   },
-   "FormationPage": {
-    "title": "Nos Formations Professionnelles",
-    "subtitle": "Développez vos compétences avec nos formations pratiques et certifiantes",
-    "formation1_title": "Développement Web Moderne",
-    "formation1_price": "15000",
-    "formation1_duration": "2 mois",
-    "formation1_desc": "Maîtrisez HTML, CSS, JavaScript et les frameworks modernes",
-    "formation1_skills": [
-      "HTML5 & CSS3",
-      "JavaScript ES6+"
-     
-    ],
-    "formation2_title": "Formation Bureautique Complète",
-    "formation2_price": "7500",
-    "formation2_duration": "1 mois",
-    "formation2_desc": "Excel, Word, PowerPoint niveau expert",
-    "formation2_skills": [
-      "Microsoft Excel avancé",
-      "Microsoft Word professionnel",
-      "PowerPoint & présentations",
-      "Gestion d'emails Outlook",
-      "Collaboration en ligne"
-    ],
+
+  "FormationPage": {
+    "title": "Catalogue de Formations LingoLab",
+    "subtitle": "Développez vos compétences avec nos formations en présentiel, tous domaines confondus.",
     "skillsTitle": "Compétences acquises :",
     "formTitle": "Inscription",
     "formNom": "Nom",
@@ -448,27 +483,383 @@
     "formEmail": "Email",
     "formTelephone": "Téléphone",
     "formFormations": "Formations sélectionnées",
-    "formNoFormation": "Aucune formation sélectionnée",
+    "formNoFormation": "Veuillez sélectionner au moins une formation",
     "formPromo": "Code Promo (optionnel)",
-    "formPromoPlaceholder": "Ex: DEVLAB",
+    "formPromoPlaceholder": "Ex: LingoLab",
     "formApply": "Appliquer",
-    "formPromoHint": "Codes disponibles: DEV (10% sur 1 formation) | DEVLAB (25% sur 2 formations)",
+    "formPromoHint": "Codes : DEV (-10% sur 1 formation) | LingoLab (-25% sur 2 formations)",
     "total": "Total à payer :",
     "discountApplied": "Réduction de {rate}% appliquée !",
     "submitButton": "Envoyer la demande",
     "submitting": "Envoi en cours...",
     "backToHome": "Retour à l'accueil",
-    "errorSelectOne": "Veuillez sélectionner au moins une formation",
-    "errorPromoDevlab": "Code DEVLAB : Valable uniquement pour 2 formations (25% de réduction)",
+    "errorSelectOne": "Veuillez sélectionner au moins une formation pour vous inscrire",
+    "errorPromoLingoLab": "Code LingoLab : Valable uniquement pour 2 formations (25% de réduction)",
     "errorPromoDev": "Code DEV : Valable uniquement pour 1 formation (10% de réduction)",
     "errorPromoNone": "Veuillez d'abord sélectionner une formation",
     "errorPromoInvalid": "Code promo invalide",
     "statusSuccess": "Inscription envoyée avec succès ! Nous vous contactons bientôt.",
-    "statusError": "Erreur lors de l'envoi. Veuillez réessayer."
+    "statusError": "Erreur lors de l'envoi. Veuillez réessayer.",
+    
+    "formations": [
+      {
+        "id": "aide-soignant",
+        "domaineId": "paramedical",
+        "domaineTitre": "Pôle Santé & Paramédical",
+        "titre": "Aide-soignant",
+        "prix": 45000,
+        "duree": "6 mois",
+        "description": "Devenez un professionnel de l'accompagnement et des soins aux personnes dépendantes.",
+        "competences": ["Soins d'hygiène et de confort", "Aide à la mobilité", "Protocoles de santé"]
+      },
+      {
+        "id": "vendeur-pharmacie",
+        "domaineId": "paramedical",
+        "domaineTitre": "Pôle Santé & Paramédical",
+        "titre": "Vendeur en pharmacie",
+        "prix": 35000,
+        "duree": "4 mois",
+        "description": "Maîtrisez la dispensation de médicaments et le conseil client en officine.",
+        "competences": ["Pharmacologie de base", "Gestion des stocks", "Conseil client", "Réglementation"]
+      },
+      {
+        "id": "aide-laborantin",
+        "domaineId": "paramedical",
+        "domaineTitre": "Pôle Santé & Paramédical",
+        "titre": "Aide-laborantin",
+        "prix": 40000,
+        "duree": "5 mois",
+        "description": "Assistez les techniciens en laboratoire d'analyses médicales.",
+        "competences": ["Préparation des échantillons", "Utilisation du matériel", "Hygiène et sécurité"]
+      },
+      {
+        "id": "langue-anglais",
+        "domaineId": "langues",
+        "domaineTitre": "Pôle Langues & International",
+        "titre": "Anglais (Tous niveaux)",
+        "prix": 15000,
+        "duree": "3 mois (par niveau)",
+        "description": "De débutant à avancé, maîtrisez l'anglais général et professionnel.",
+        "competences": ["Conversation", "Grammaire", "Compréhension orale", "Anglais des affaires"]
+      },
+      {
+        "id": "langue-francais",
+        "domaineId": "langues",
+        "domaineTitre": "Pôle Langues & International",
+        "titre": "Français (FLE)",
+        "prix": 15000,
+        "duree": "3 mois (par niveau)",
+        "description": "Améliorez votre maîtrise du français pour le quotidien ou le travail.",
+        "competences": ["Orthographe et grammaire", "Rédaction professionnelle", "Aisance orale"]
+      },
+      {
+        "id": "langue-espagnol",
+        "domaineId": "langues",
+        "domaineTitre": "Pôle Langues & International",
+        "titre": "Espagnol",
+        "prix": 18000,
+        "duree": "4 mois",
+        "description": "Apprenez la troisième langue la plus parlée au monde.",
+        "competences": ["Conversation", "Grammaire", "Culture hispanique"]
+      },
+      {
+        "id": "langue-autres",
+        "domaineId": "langues",
+        "domaineTitre": "Pôle Langues & International",
+        "titre": "Allemand, Turc, Coréen, Italien",
+        "prix": 20000,
+        "duree": "4 mois",
+        "description": "Ouvrez-vous à de nouvelles cultures avec nos formations spécialisées.",
+        "competences": ["Bases grammaticales", "Vocabulaire courant", "Conversation (Niveau A1/A2)"]
+      },
+      {
+        "id": "dev-web",
+        "domaineId": "informatique",
+        "domaineTitre": "Pôle Tech & Numérique (avec DevLab)",
+        "titre": "Développement Web",
+        "prix": 50000,
+        "duree": "5 mois",
+        "description": "Formation complète pour devenir développeur web full-stack, en partenariat avec DevLab.",
+        "competences": ["HTML5 & CSS3", "JavaScript (React)", "Node.js", "Bases de données"]
+      },
+      {
+        "id": "cybersecurite",
+        "domaineId": "informatique",
+        "domaineTitre": "Pôle Tech & Numérique (avec DevLab)",
+        "titre": "Cybersécurité",
+        "prix": 60000,
+        "duree": "4 mois",
+        "description": "Protégez les systèmes et les données contre les menaces. En partenariat avec DevLab.",
+        "competences": ["Analyse des risques", "Sécurité des réseaux", "Tests d'intrusion", "Conformité"]
+      },
+      {
+        "id": "design-montage",
+        "domaineId": "informatique",
+        "domaineTitre": "Pôle Tech & Numérique (avec DevLab)",
+        "titre": "Design & Montage Vidéo",
+        "prix": 40000,
+        "duree": "3 mois",
+        "description": "Maîtrisez les outils de création graphique et de montage vidéo. En partenariat avec DevLab.",
+        "competences": ["Adobe Photoshop", "Adobe Illustrator", "Adobe Premiere Pro", "After Effects"]
+      },
+      {
+        "id": "scanner-auto",
+        "domaineId": "professionnel",
+        "domaineTitre": "Pôle Métiers & Compétences",
+        "titre": "Scanner Auto",
+        "prix": 35000,
+        "duree": "2 mois",
+        "description": "Apprenez à diagnostiquer les pannes électroniques des véhicules modernes.",
+        "competences": ["Diagnostic électronique", "Lecture des codes défauts", "Utilisation valise"]
+      },
+      {
+        "id": "conduite-engins",
+        "domaineId": "professionnel",
+        "domaineTitre": "Pôle Métiers & Compétences",
+        "titre": "Conduction d'engins",
+        "prix": 55000,
+        "duree": "3 mois",
+        "description": "Formez-vous à la conduite sécurisée d'engins de chantier (grue, pelleteuse...).",
+        "competences": ["Conduite et manœuvre", "Règles de sécurité", "Maintenance de base"]
+      },
+      {
+        "id": "hse",
+        "domaineId": "professionnel",
+        "domaineTitre": "Pôle Métiers & Compétences",
+        "titre": "HSE",
+        "prix": 40000,
+        "duree": "3 mois",
+        "description": "Maîtrisez les normes d'Hygiène, Sécurité et Environnement en entreprise.",
+        "competences": ["Analyse des risques", "Normes ISO", "Prévention des accidents", "Audit"]
+      },
+      {
+        "id": "camera-fibre",
+        "domaineId": "professionnel",
+        "domaineTitre": "Pôle Métiers & Compétences",
+        "titre": "Caméra & Fibre Optique",
+        "prix": 45000,
+        "duree": "3 mois",
+        "description": "Spécialisez-vous dans l'installation de systèmes de surveillance et de réseaux fibre.",
+        "competences": ["Installation caméras", "Configuration NVR", "Soudure fibre optique", "Raccordement"]
+      },
+      {
+        "id": "coiffure",
+        "domaineId": "professionnel",
+        "domaineTitre": "Pôle Métiers & Compétences",
+        "titre": "Coiffure",
+        "prix": 30000,
+        "duree": "6 mois",
+        "description": "Formation pratique aux métiers de la coiffure (coupe, couleur, soin).",
+        "competences": ["Techniques de coupe", "Colorimétrie", "Mise en forme", "Accueil client"]
+      },
+      {
+        "id": "couture",
+        "domaineId": "professionnel",
+        "domaineTitre": "Pôle Métiers & Compétences",
+        "titre": "Couture",
+        "prix": 30000,
+        "duree": "6 mois",
+        "description": "Apprenez les bases et les techniques avancées de la couture et du modélisme.",
+        "competences": ["Utilisation machine", "Patronage", "Assemblage", "Finitions"]
+      },
+      {
+        "id": "patisserie",
+        "domaineId": "professionnel",
+        "domaineTitre": "Pôle Métiers & Compétences",
+        "titre": "Pâtisserie",
+        "prix": 40000,
+        "duree": "4 mois",
+        "description": "Maîtrisez les techniques de base de la pâtisserie fine et traditionnelle.",
+        "competences": ["Gestion des pâtes", "Crèmes et glaçages", "Chocolaterie", "Hygiène"]
+      },
+      {
+        "id": "formation-enseignants",
+        "domaineId": "pedagogique",
+        "domaineTitre": "Pôle Éducation & Pédagogie",
+        "titre": "Formation des Enseignants",
+        "prix": 35000,
+        "duree": "3 mois",
+        "description": "Acquérez les méthodes pédagogiques modernes pour enseigner efficacement.",
+        "competences": ["Ingénierie pédagogique", "Gestion de classe", "Techniques d'évaluation", "Psychologie de l'enfant"]
+      }
+    ]
   },
+
+  "EmailFormations": {
+    "admin_subject": "🎓 Nouvelle inscription aux formations LingoLab",
+    "admin_h1": "Nouvelle Inscription",
+    "admin_subtitle": "Un candidat vient de s'inscrire aux formations LingoLab",
+    "section_info": "Informations du Candidat",
+    "info_name": "Nom complet:",
+    "info_email": "Email:",
+    "info_phone": "Téléphone:",
+    "section_formations": "Formations Sélectionnées",
+    "formation_domain": "Domaine:",
+    "formation_duration": "Durée:",
+    "section_promo": "Code Promo",
+    "promo_used": "Code utilisé:",
+    "promo_discount": "Réduction:",
+    "total_title": "Montant Total",
+    "total_discount_applied": "Réduction de {rate}% appliquée",
+    "user_subject": "✅ Confirmation d'inscription - LingoLab",
+    "user_h1": "Inscription Confirmée!",
+    "user_thanks": "Merci pour votre confiance, {prenom}!",
+    "user_intro": "Nous avons bien reçu votre demande d'inscription aux formations LingoLab. Notre équipe va traiter votre inscription et vous contactera très prochainement.",
+    "user_summary": "Récapitulatif de votre inscription",
+    "user_total": "Montant Total à Payer",
+    "user_next_steps_title": "Prochaines Étapes",
+    "user_next_step_1": "Notre équipe va vérifier votre inscription",
+    "user_next_step_2": "Vous recevrez un appel ou un email dans les 24-48 heures",
+    "user_next_step_3": "Nous vous communiquerons les détails de paiement et de démarrage",
+    "user_help_title": "Besoin d'aide?",
+    "user_help_contact": "Si vous avez des questions, n'hésitez pas à nous contacter:",
+    "footer_rights": "Tous droits réservés",
+    "footer_reason": "Vous recevez cet email car vous vous êtes inscrit à nos formations"
+  },
+ 
+  
+  "LanguagesPage": {
+    "title": "Formations de Langues LingoLab",
+    "subtitle": "Apprenez une nouvelle langue et ouvrez-vous au monde avec nos formations en présentiel",
+    "skillsTitle": "Compétences acquises :",
+    "selectLevel": "Sélectionnez votre niveau :",
+    "formTitle": "Inscription aux Formations de Langues",
+    "formNom": "Nom",
+    "formPrenom": "Prénom",
+    "formEmail": "Email",
+    "formTelephone": "Téléphone",
+    "formLangues": "Langues sélectionnées",
+    "formNoLangue": "Veuillez sélectionner au moins une langue",
+    "formPromo": "Code Promo (optionnel)",
+    "formPromoPlaceholder": "Ex: LINGOLANG",
+    "formApply": "Appliquer",
+    "formPromoHint": "Codes : LANG10 (-10% sur 1 langue) | LINGOLANG (-20% sur 2+ langues)",
+    "total": "Total à payer :",
+    "discountApplied": "Réduction de {rate}% appliquée !",
+    "submitButton": "Envoyer la demande",
+    "submitting": "Envoi en cours...",
+    "backToHome": "Retour à l'accueil",
+    "errorSelectOne": "Veuillez sélectionner au moins une langue pour vous inscrire",
+    "errorPromoLingoLang": "Code LINGOLANG : Valable pour 2 langues ou plus (20% de réduction)",
+    "errorPromoLang10": "Code LANG10 : Valable uniquement pour 1 langue (10% de réduction)",
+    "errorPromoNone": "Veuillez d'abord sélectionner une langue",
+    "errorPromoInvalid": "Code promo invalide",
+    "statusSuccess": "Inscription envoyée avec succès ! Nous vous contactons bientôt.",
+    "statusError": "Erreur lors de l'envoi. Veuillez réessayer.",
+    
+    "langue1_title": "Anglais (Tous niveaux)",
+    "langue1_price": 15000,
+    "langue1_duration": "3 mois par niveau",
+    "langue1_desc": "De débutant à avancé, maîtrisez l'anglais général et professionnel avec des formateurs expérimentés.",
+    "langue1_skills": [
+      "Conversation courante et professionnelle",
+      "Grammaire et structure",
+      "Compréhension orale et écrite",
+      "Anglais des affaires"
+    ],
+    
+    "langue2_title": "Français (FLE)",
+    "langue2_price": 15000,
+    "langue2_duration": "3 mois par niveau",
+    "langue2_desc": "Améliorez votre maîtrise du français pour le quotidien, les études ou le travail.",
+    "langue2_skills": [
+      "Expression orale et écrite",
+      "Orthographe et grammaire",
+      "Rédaction professionnelle",
+      "Culture française"
+    ],
+    
+    "langue3_title": "Espagnol",
+    "langue3_price": 18000,
+    "langue3_duration": "4 mois",
+    "langue3_desc": "Apprenez la troisième langue la plus parlée au monde avec des méthodes immersives.",
+    "langue3_skills": [
+      "Conversation hispanique",
+      "Grammaire espagnole",
+      "Culture latino-américaine",
+      "Vocabulaire professionnel"
+    ],
+    
+    "langue4_title": "Allemand",
+    "langue4_price": 20000,
+    "langue4_duration": "4 mois",
+    "langue4_desc": "Maîtrisez la langue de Goethe, essentielle pour les opportunités en Europe centrale.",
+    "langue4_skills": [
+      "Bases grammaticales allemandes",
+      "Vocabulaire courant",
+      "Conversation niveau A1/A2",
+      "Culture germanique"
+    ],
+    
+    "langue5_title": "Turc",
+    "langue5_price": 20000,
+    "langue5_duration": "4 mois",
+    "langue5_desc": "Découvrez la langue turque, pont entre l'Europe et l'Asie.",
+    "langue5_skills": [
+      "Alphabet et prononciation turque",
+      "Structures de base",
+      "Vocabulaire du quotidien",
+      "Culture turque"
+    ],
+    
+    "langue6_title": "Coréen",
+    "langue6_price": 20000,
+    "langue6_duration": "4 mois",
+    "langue6_desc": "Plongez dans la langue coréenne, de plus en plus demandée dans le monde professionnel.",
+    "langue6_skills": [
+      "Alphabet Hangeul",
+      "Grammaire de base",
+      "Conversation courante",
+      "Culture coréenne moderne"
+    ],
+    
+    "langue7_title": "Italien",
+    "langue7_price": 20000,
+    "langue7_duration": "4 mois",
+    "langue7_desc": "Apprenez la belle langue italienne, langue de la culture et de l'art.",
+    "langue7_skills": [
+      "Prononciation italienne",
+      "Grammaire de base",
+      "Vocabulaire quotidien",
+      "Culture et gastronomie"
+    ]
+  },
+
+  "EmailLanguages": {
+    "admin_subject": "🎓 Nouvelle inscription - Formations Langues LingoLab",
+    "admin_h1": "Nouvelle Inscription (Langues)",
+    "admin_subtitle": "Un candidat vient de s'inscrire aux formations de langues LingoLab",
+    "section_info": "Informations du Candidat",
+    "info_name": "Nom complet:",
+    "info_email": "Email:",
+    "info_phone": "Téléphone:",
+    "section_langs": "Langues Sélectionnées",
+    "lang_level": "Niveau:",
+    "lang_duration": "Durée:",
+    "section_promo": "Code Promo",
+    "promo_used": "Code utilisé:",
+    "promo_discount": "Réduction:",
+    "total_title": "Montant Total",
+    "total_discount_applied": "Réduction de {rate}% appliquée",
+    "user_subject": "✅ Confirmation d'inscription - Langues LingoLab",
+    "user_h1": "Inscription Confirmée!",
+    "user_thanks": "Merci pour votre confiance, {prenom}!",
+    "user_intro": "Nous avons bien reçu votre demande d'inscription aux formations de langues LingoLab. Notre équipe va traiter votre inscription et vous contactera très prochainement.",
+    "user_summary": "Récapitulatif de votre inscription",
+    "user_total": "Montant Total à Payer",
+    "user_next_steps_title": "Prochaines Étapes",
+    "user_next_step_1": "Notre équipe va vérifier votre inscription",
+    "user_next_step_2": "Vous recevrez un appel ou un email dans les 24-48 heures",
+    "user_next_step_3": "Nous vous communiquerons les détails de paiement et de démarrage",
+    "user_help_title": "Besoin d'aide?",
+    "user_help_contact": "Si vous avez des questions, n'hésitez pas à nous contacter:",
+    "footer_rights": "Tous droits réservés",
+    "footer_reason": "Vous recevez cet email car vous vous êtes inscrit à nos formations"
+  },
+
   "QuoteEmail": {
     "client": {
-      "subject": "Confirmation de votre demande de devis - DevLab",
+      "subject": "Confirmation de votre demande de devis - LingoLab",
       "header": "Merci pour votre demande !",
       "greeting": "Bonjour",
       "thankYou": "Nous avons bien reçu votre demande de devis et nous vous remercions de l'intérêt que vous portez à nos services.",
@@ -490,7 +881,7 @@
       "step4": "Lancement du projet après votre validation",
       "visitSite": "Visiter Notre Site",
       "footerTitle": "Besoin d'aide ?",
-      "footerNote": "Vous recevez cet email car vous avez demandé un devis sur devlab.dz",
+      "footerNote": "Vous recevez cet email car vous avez demandé un devis sur LingoLab.dz",
       "successMessage": "Votre demande a été envoyée avec succès !"
     },
     "admin": {
@@ -520,7 +911,7 @@
     },
     "apiError": "Erreur lors de l'envoi de la demande"
   },
-   "NewsletterSection": {
+  "NewsletterSection": {
     "tag": "Newsletter",
     "title": "Restez Informé",
     "subtitle": "Inscrivez-vous à notre newsletter pour recevoir nos actualités, offres exclusives et conseils tech directement dans votre boîte mail",
@@ -532,50 +923,49 @@
     "statusSuccess": "✅ Inscription réussie ! Vérifiez votre boîte mail pour la confirmation.",
     "statusError": "❌ Erreur lors de l'inscription. Veuillez réessayer."
   },
-
   "NewsletterPage": {
-  "backToHome": "Retour à l'accueil",
-  "badge": "Newsletter DevLab",
-  "title": "Restez Connecté à l'Innovation",
-  "subtitle": "Rejoignez notre communauté et recevez chaque mois des insights exclusifs, des conseils d'experts, et les dernières tendances du monde digital directement dans votre boîte mail.",
-  "placeholder": "votre.email@exemple.com",
-  "subscribe": "S'inscrire Gratuitement",
-  "subscribing": "Envoi...",
-  "privacy": "🔒 Vos données sont sécurisées. Pas de spam, désinscription à tout moment.",
-  "errorInvalid": "Veuillez entrer une adresse email valide",
-  "statusSuccess": "✅ Inscription réussie ! Vérifiez votre email pour la confirmation.",
-  "statusError": "❌ Erreur lors de l'inscription. Veuillez réessayer.",
-  "stat1Label": "Abonnés Actifs",
-  "stat2Label": "Newsletters Envoyées",
-  "stat3Label": "Taux de Satisfaction",
-  "benefitsTitle": "Pourquoi S'abonner ?",
-  "benefitsSubtitle": "Découvrez tous les avantages de notre newsletter",
-  "benefit1Title": "Offres Exclusives",
-  "benefit1Desc": "Accédez en avant-première à nos promotions et offres spéciales réservées aux abonnés",
-  "benefit2Title": "Conseils Tech",
-  "benefit2Desc": "Recevez des tutoriels, astuces et bonnes pratiques pour booster vos projets digitaux",
-  "benefit3Title": "Actualités du Secteur",
-  "benefit3Desc": "Restez à jour sur les dernières tendances en développement web et marketing digital",
-  "benefit4Title": "Nouveautés en Avant-Première",
-  "benefit4Desc": "Soyez les premiers informés de nos nouveaux services et fonctionnalités",
-  "benefit5Title": "Études de Cas",
-  "benefit5Desc": "Découvrez comment nous avons aidé nos clients à réussir leur transformation digitale",
-  "benefit6Title": "Événements & Webinaires",
-  "benefit6Desc": "Invitations exclusives à nos formations, ateliers et événements en ligne",
-  "ctaTitle": "Prêt à Rejoindre Notre Communauté ?",
-  "ctaSubtitle": "Inscrivez-vous maintenant et recevez notre guide exclusif gratuit",
-  "ctaButton": "S'inscrire Maintenant",
-  "ctaButton2": "Voir Nos Services",
-  "testimonialsTitle": "Ce Que Disent Nos Abonnés",
-  "testimonialsSubtitle": "Rejoignez des milliers de professionnels satisfaits",
-  "testimonial1Text": "La newsletter DevLab est une mine d'or d'informations. J'ai découvert des techniques qui ont transformé ma façon de travailler !",
-  "testimonial1Name": "Sarah Mansouri",
-  "testimonial1Role": "Développeuse Web Freelance",
-  "testimonial2Text": "Contenu pertinent et actionnable. Chaque email apporte une réelle valeur ajoutée à mon entreprise.",
-  "testimonial2Name": "Karim Boudiaf",
-  "testimonial2Role": "CEO, StartUp Algérie",
-  "testimonial3Text": "Les conseils et tendances partagés m'aident à rester compétitif sur le marché. Excellente ressource !",
-  "testimonial3Name": "Amina Zerrouki",
-  "testimonial3Role": "Marketing Manager"
-}
+    "backToHome": "Retour à l'accueil",
+    "badge": "Newsletter LingoLab",
+    "title": "Restez Connecté à l'Innovation",
+    "subtitle": "Rejoignez notre communauté et recevez chaque mois des insights exclusifs, des conseils d'experts, et les dernières tendances du monde digital directement dans votre boîte mail.",
+    "placeholder": "votre.email@exemple.com",
+    "subscribe": "S'inscrire Gratuitement",
+    "subscribing": "Envoi...",
+    "privacy": "🔒 Vos données sont sécurisées. Pas de spam, désinscription à tout moment.",
+    "errorInvalid": "Veuillez entrer une adresse email valide",
+    "statusSuccess": "✅ Inscription réussie ! Vérifiez votre email pour la confirmation.",
+    "statusError": "❌ Erreur lors de l'inscription. Veuillez réessayer.",
+    "stat1Label": "Abonnés Actifs",
+    "stat2Label": "Newsletters Envoyées",
+    "stat3Label": "Taux de Satisfaction",
+    "benefitsTitle": "Pourquoi S'abonner ?",
+    "benefitsSubtitle": "Découvrez tous les avantages de notre newsletter",
+    "benefit1Title": "Offres Exclusives",
+    "benefit1Desc": "Accédez en avant-première à nos promotions et offres spéciales réservées aux abonnés",
+    "benefit2Title": "Conseils Tech",
+    "benefit2Desc": "Recevez des tutoriels, astuces et bonnes pratiques pour booster vos projets digitaux",
+    "benefit3Title": "Actualités du Secteur",
+    "benefit3Desc": "Restez à jour sur les dernières tendances en développement web et marketing digital",
+    "benefit4Title": "Nouveautés en Avant-Première",
+    "benefit4Desc": "Soyez les premiers informés de nos nouveaux services et fonctionnalités",
+    "benefit5Title": "Études de Cas",
+    "benefit5Desc": "Découvrez comment nous avons aidé nos clients à réussir leur transformation digitale",
+    "benefit6Title": "Événements & Webinaires",
+    "benefit6Desc": "Invitations exclusives à nos formations, ateliers et événements en ligne",
+    "ctaTitle": "Prêt à Rejoindre Notre Communauté ?",
+    "ctaSubtitle": "Inscrivez-vous maintenant et recevez notre guide exclusif gratuit",
+    "ctaButton": "S'inscrire Maintenant",
+    "ctaButton2": "Voir Nos Services",
+    "testimonialsTitle": "Ce Que Disent Nos Abonnés",
+    "testimonialsSubtitle": "Rejoignez des milliers de professionnels satisfaits",
+    "testimonial1Text": "La newsletter LingoLab est une mine d'or d'informations. J'ai découvert des techniques qui ont transformé ma façon de travailler !",
+    "testimonial1Name": "Sarah Mansouri",
+    "testimonial1Role": "Développeuse Web Freelance",
+    "testimonial2Text": "Contenu pertinent et actionnable. Chaque email apporte une réelle valeur ajoutée à mon entreprise.",
+    "testimonial2Name": "Karim Boudiaf",
+    "testimonial2Role": "CEO, StartUp Algérie",
+    "testimonial3Text": "Les conseils et tendances partagés m'aident à rester compétitif sur le marché. Excellente ressource !",
+    "testimonial3Name": "Amina Zerrouki",
+    "testimonial3Role": "Marketing Manager"
+  }
 }

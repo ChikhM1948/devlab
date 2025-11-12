@@ -6,6 +6,13 @@
   --font-sans: var(--font-inter);
   --font-arabic: var(--font-noto-kufi-arabic);
   --font-mono: var(--font-geist-mono);
+  
+  /* LingoLab Blue Theme Colors */
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-secondary: #6366f1;
+  --color-secondary-dark: #4f46e5;
+  --color-accent: #06b6d4;
 }
 
 @variant dark (&:is(.dark *));
@@ -13,17 +20,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #3b82f6;
+  --secondary: #6366f1;
 }
 
 html.dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --primary: #60a5fa;
+  --secondary: #818cf8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #60a5fa;
+    --secondary: #818cf8;
   }
 }
 
@@ -41,10 +54,10 @@ body:not(.font-arabic) {
 /* Apply Noto Kufi Arabic for Arabic script */
 body.font-arabic {
   font-family: var(--font-noto-kufi-arabic), Arial, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* Enable ligatures for better Arabic rendering */
+  font-feature-settings: "liga" 1, "calt" 1;
 }
 
-/* Smooth font rendering for both */
+/* Smooth font rendering */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -64,4 +77,35 @@ body {
 [dir="rtl"] h5,
 [dir="rtl"] h6 {
   letter-spacing: 0.02em;
+}
+
+/* Custom scrollbar with blue theme */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #60a5fa;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #93c5fd;
 }

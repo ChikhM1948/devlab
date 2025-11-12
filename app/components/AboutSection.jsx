@@ -72,8 +72,8 @@ export default function AboutSection() {
               className="flex flex-col bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden transition-all transform hover:shadow-2xl hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
             >
               <div className="p-8 flex-grow">
-                <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mb-6">
-                  <project.icon className="w-8 h-8 text-orange-600 dark:text-orange-400" />
+                <div className="w-16 h-16 bg-blue-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mb-6">
+                  <project.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
                 </div>
                 <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                   {project.name}
@@ -91,7 +91,7 @@ export default function AboutSection() {
                   className={`flex items-center justify-center gap-2 w-full px-6 py-3 font-semibold rounded-lg transition-all ${
                     project.link === "#"
                       ? 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-orange-500 to-red-500 text-white hover:from-orange-600 hover:to-red-600 transform hover:scale-105'
+                      : 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600 transform hover:scale-105'
                   }`}
                 >
                   {project.link === "#" ? t('comingSoon') : t('visitSite')}

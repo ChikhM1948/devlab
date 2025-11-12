@@ -5,62 +5,88 @@
     "about": "About",
     "getQuote": "Get a Quote",
     "training": "Training",
-    "newsletter": "Newsletter" 
-   },
-  "HeroSection": {
-    "title": "Your Technology Partner from A to Z",
-    "subtitle": "Web & mobile development, digital marketing, and professional training in Algeria",
-    "trainingButton": "Our Training Programs",
-    "quoteButton": "Get a Quote"
+    "newsletter": "News"
   },
+ 
+ 
+  "HeroSection": {
+    "specialOffer": "🎉 Special Offer: -20% on all courses!",
+    "titlePart1": "Master Languages with",
+    "titlePart2": "LingoLab Academy",
+    "subtitle": "Transform your learning journey with expert instructors, interactive courses, and proven methods. Join thousands of students who have achieved mastery through our comprehensive programs.",
+    "stat1_label": "Languages",
+    "stat2_label": "Students",
+    "stat3_label": "Success",
+    "cta_languages": "Languages",
+    "cta_support": "Tutoring",
+    "cta_training": "Training",
+    "available_title": "Available Languages",
+    "available_subtitle": "Choose from our diverse range of language programs",
+    "languages": {
+      "english": "English",
+      "french": "French",
+      "spanish": "Spanish",
+      "german": "German",
+      "italian": "Italian",
+      "chinese": "Chinese",
+      "japanese": "Japanese",
+      "korean": "Korean",
+      "russian": "Russian",
+      "portuguese": "Portuguese",
+      "arabic": "Arabic",
+      "turkish": "Turkish"
+    }
+  },
+
+
   "ServicesSection": {
-    "title": "Our Services",
-    "subtitle": "Complete solutions for all your digital needs",
-    "cat1": "Digital Development",
-    "s1_title": "Custom Websites",
-    "s1_desc": "Showcase sites, e-commerce, and custom web applications with the latest technologies",
-    "s2_title": "Mobile Applications",
-    "s2_desc": "Native or cross-platform iOS and Android apps to reach your mobile audience",
-    "s3_title": "Maintenance & Support",
-    "s3_desc": "Ongoing technical support and maintenance to ensure your platforms perform optimally",
-    "cat2": "Marketing & Design",
-    "s4_title": "Digital Strategy",
-    "s4_desc": "SEO, online advertising, and growth strategies to maximize your visibility",
-    "s5_title": "Social Media Management",
-    "s5_desc": "Content creation, community management, and engaging social media campaigns",
-    "s6_title": "Design & Branding",
-    "s6_desc": "Visual identity, UI/UX design, and graphic creation to make a lasting impression",
-    "cat3": "Training & Support",
+    "title": "Our Educational Services",
+    "subtitle": "Programs designed for your success, from language learning to complete academic support.",
+    "cat1": "Language Learning",
+    "s1_title": "Language Courses",
+    "s1_desc": "Comprehensive programs (English, French, Spanish, etc.) adapted to your level, from beginner to advanced.",
+    "s2_title": "Test Preparation",
+    "s2_desc": "Targeted coaching to succeed in your official certifications: TOEFL, IELTS, DELF/DALF, and more.",
+    "s3_title": "Conversation Workshops",
+    "s3_desc": "Strengthen your speaking fluency with our immersive and dynamic discussion groups.",
+    "cat2": "Academic Support (All Levels)",
+    "s4_title": "Primary Level",
+    "s4_desc": "Solid foundations in reading, writing, and arithmetic for a fulfilling school life. All subjects.",
+    "s5_title": "Middle School Level",
+    "s5_desc": "Consolidation of knowledge and effective work methodology for all subjects (Math, Science, Languages...).",
+    "s6_title": "High School Level",
+    "s6_desc": "Intensive preparation for exams (Bac) in key subjects: Math, Physics, Philosophy, History-Geo, etc.",
+    "cat3": "Training & Development",
     "s7_title": "Professional Training",
-    "s7_desc": "Training programs in web development, office software, and digital skills",
-    "s8_title": "Digital Consulting",
-    "s8_desc": "Strategic advice to transform your business and embrace digital",
-    "s9_title": "Video Production",
-    "s9_desc": "Professional video content creation for your marketing campaigns and communications"
+    "s7_desc": "Master business English, professional communication, and other key skills for your career.",
+    "s8_title": "Coaching & Methodology",
+    "s8_desc": "Learn how to learn. Develop effective organizational and memorization methods.",
+    "s9_title": "Intensive Courses",
+    "s9_desc": "'Bootcamp' programs during school holidays for rapid and targeted progress."
   },
   "BundleSection": {
-    "tag": "Special Offer",
-    "title": "All-in-One Packages",
-    "subtitle": "Save up to 30% with our bundled offers combining development, design, and marketing",
-    "stat1_title": "3 Plans",
-    "stat1_desc": "From starter to enterprise",
-    "stat2_title": "-30%",
-    "stat2_desc": "On complete packages",
-    "stat3_title": "24/7 Support",
-    "stat3_desc": "Priority assistance included",
-    "button": "Discover Packages"
+    "tag": "For Businesses",
+    "title": "B2B On-site Training",
+    "subtitle": "Language, IT, and HSE programs at our academy, in partnership with DevLab.",
+    "stat1_title": "Plans",
+    "stat1_desc": "Team, Business & Enterprise",
+    "stat2_title": "+10 Fields",
+    "stat2_desc": "Languages, HSE, Tech, Office...",
+    "stat3_title": "On-site",
+    "stat3_desc": "Equipped training rooms",
+    "button": "Discover the Plans"
   },
   "AboutSection": {
-    "title": "Our Projects",
-    "subtitle": "Discover some of the projects we've developed with passion and expertise for our clients.",
-    "projectsTitle": "Featured Projects",
+    "title": "Our Achievements",
+    "subtitle": "Discover some of the projects we have developed with passion and expertise for our clients.",
+    "projectsTitle": "Flagship Projects",
     "project1_name": "Academy Wahrani",
     "project1_desc": "Complete educational platform with course, student, and certification management",
     "project2_name": "PolyNote",
     "project2_desc": "Collaborative note-taking application for students and professionals",
     "project3_name": "Attendance Tracker",
     "project3_desc": "Intelligent attendance tracking system for educational institutions",
-    "project4_name": "LingoLab Forum",
+    "project4_name": "Forum LingoLab",
     "project4_desc": "Community language learning platform with forums and resources",
     "project5_name": "Colloquium Relizane",
     "project5_desc": "Event website for university conferences with registration management",
@@ -71,23 +97,38 @@
     "title": "What Our Clients Say",
     "t1_name": "Ahmed Benali",
     "t1_company": "E-Shop DZ",
-    "t1_text": "DevLab transformed our online presence. Our e-commerce site is fast, modern, and sales have increased by 150%!",
+    "t1_text": "LingoLab transformed our online presence. Our e-commerce site is fast, modern, and sales have increased by 150%!",
     "t2_name": "Fatima Zahra",
     "t2_company": "Formation Plus",
-    "t2_text": "Excellent web development training. The team is professional and post-training support is impeccable.",
+    "t2_text": "Excellent web development training. The team is professional and the post-training follow-up is impeccable.",
     "t3_name": "Karim Mansouri",
-    "t3_company": "StartUp Algeria",
-    "t3_text": "A trusted partner for our digital transformation. Their expertise and responsiveness make all the difference."
+    "t3_company": "StartUp Algérie",
+    "t3_text": "A trusted partner for our digital transformation. Their expertise and responsiveness make the difference."
   },
+ 
   "ContactSection": {
-    "title": "Ready to Start Your Project?",
-    "subtitle": "Contact us today to discuss your needs and get a personalized quote",
-    "email": "Send Email",
-    "whatsapp": "WhatsApp"
+    "title": "Contact Us",
+    "subtitle": "Ready to Start Your Learning Journey?",
+    "description": "Our team is here to help you choose the perfect program for your goals",
+    "service1_title": "Language Learning",
+    "service1_desc": "12+ languages available with native instructors",
+    "service2_title": "Tutoring",
+    "service2_desc": "Personalized help for all school levels",
+    "service3_title": "Professional Training",
+    "service3_desc": "Certified programs for your development",
+    "contact_methods": "Contact Us Via",
+    "email": "Email",
+    "whatsapp": "https://wa.me/message/H4PNBEKRAV3SK1",
+    "phone": "0698784457",
+    "location": "Relizane, Algeria",
+    "cta_text": "Join thousands of students who have transformed their future with us",
+    "cta_quote": "Request a Quote",
+    "cta_courses": "See Courses"
   },
+
   "Footer": {
-    "description": "Your trusted technology partner in Algeria for web, mobile development, and digital transformation.",
-    "navTitle": "Quick Links",
+    "description": "Your trusted technology partner in Algeria for web, mobile, and digital transformation.",
+    "navTitle": "Quick Navigation",
     "navHome": "Home",
     "navServices": "Services",
     "navAbout": "About",
@@ -95,133 +136,278 @@
     "startContact": "Contact Us",
     "startTraining": "Training",
     "startBundles": "Packages",
-    "copyright": "© {year} DevLab. All rights reserved."
+    "copyright": "© {year} LingoLab. All rights reserved."
   },
   "BundlePage": {
-    "backToHome": "Back to home",
-    "promoBanner": "Limited Offer",
-    "title": "All-in-One Packages for Your Digital Success",
-    "subtitle": "Save up to 30% with our offers combining development, design, and marketing",
-    "pageTitle": "Choose Your Package",
-    "pageSubtitle": "Complete solutions adapted to your budget",
+    "backToHome": "Back to Home",
+    "promoBannerB2B": "Business Offer",
+    "b2bTitle": "On-site training for your company",
+    "b2bSubtitle": "Train your teams in our academy and develop your skills.",
+    "pageTitleB2B": "Our Business Plans (On-site)",
+    "pageSubtitleB2B": "Complete on-site solutions for your team's success",
     "popular": "Most Popular",
     "currency": "DZD",
     "customPrice": "Custom",
     "save": "Save",
-    "chooseButton": "Choose This Package",
-    "quoteButton": "Request Quote",
-    "starter": {
-      "name": "Starter",
-      "price": "150000",
-      "description": "Perfect to start your online presence",
+    "chooseButton": "Choose this Plan",
+    "quoteButton": "Get a Quote",
+    "team": {
+      "name": "Team Plan",
+      "price": "12,900",
+      "period": "/ user / month",
+      "description": "Get your team on the path to success with on-site training.",
       "features": [
-        "5-page showcase site",
-        "Modern responsive design",
-        "Basic SEO optimization",
-        "Contact form",
-        "1-year hosting included",
-        "3-month email support",
-        "2h usage training",
-        "Premium social media",
-        "Advanced analytics"
+        "Access to 1 training domain",
+        "On-site sessions at the academy",
+        "Groups of 8-10 people",
+        "Tracking dashboard (simple)",
+        "Email support",
+        "Certificates of attendance"
       ]
     },
-    "premium": {
-      "name": "Premium",
-      "price": "350000",
-      "description": "Complete solution for your growth",
-      "savings": "30%",
+
+    "business": {
+      "name": "Business Plan",
+      "price": "19,500",
+      "period": "/ user / month",
+      "description": "The complete solution for continuous growth.",
+      "savings": "20%",
       "features": [
-        "Custom website 10+ pages",
-        "Professional UI/UX design",
-        "Advanced SEO + content strategy",
-        "E-commerce integration",
-        "Basic mobile app",
-        "6-month priority support",
-        "Complete 8h training",
-        "3-month social media management",
-        "Analytics + monthly reporting"
+        "Access to 2 training domains",
+        "Priority access to our rooms",
+        "Premium groups (max 6 people)",
+        "Advanced HR dashboard",
+        "Dedicated account manager",
+        "Detailed performance reports"
       ]
     },
     "enterprise": {
-      "name": "Enterprise",
-      "description": "Custom solutions for large companies",
+      "name": "Enterprise Plan",
+      "description": "A customized partnership for your global objectives.",
       "features": [
-        "Unlimited complex web platform",
-        "iOS + Android mobile apps",
-        "Scalable cloud architecture",
-        "Custom API integrations",
-        "Complete design system",
-        "24/7 dedicated support",
-        "Complete team training",
-        "Full marketing strategy",
-        "Digital transformation consulting"
+        "Unlimited access to all training",
+        "On-site training (your premises)",
+        "100% customized programs",
+        "Coaching and educational consulting",
+        "Priority 24/7 support",
+        "Custom integration and reporting"
       ]
     },
-    "includedTitle": "What's Included",
-    "includedSubtitle": "Everything you need to succeed",
-    "catDev": "Development",
-    "catDevItems": [
-      "Clean, maintainable code",
-      "Testing and quality",
-      "Complete documentation",
-      "Secure deployment"
-    ],
-    "catDesign": "Design",
-    "catDesignItems": [
-      "Professional mockups",
-      "Interactive prototypes",
-      "Style guide",
-      "Graphic assets"
-    ],
-    "catMarketing": "Marketing",
-    "catMarketingItems": [
-      "SEO strategy",
-      "Optimized content",
-      "Ad campaigns",
-      "Detailed analytics"
-    ],
-    "catTraining": "Training",
-    "catTrainingItems": [
-      "Personalized sessions",
-      "Video documentation",
-      "Post-training support",
-      "Certificates"
-    ],
-    "bonusTitle": "Fast Delivery",
-    "bonusDesc": "Start within 48h",
-    "bonus2Title": "Satisfaction Guarantee",
-    "bonus2Desc": "30-day refund",
-    "bonus3Title": "Updates",
-    "bonus3Desc": "6 months free",
-    "bonus4Title": "Premium Support",
-    "bonus4Desc": "Priority assistance",
-    "faqTitle": "Frequently Asked Questions",
-    "faqs": [
+    "includedTitleB2B": "Our B2B Training Catalog",
+    "includedSubtitleB2B": "A comprehensive portfolio to cover all your skill needs",
+    "catLang": {
+      "title": "Business Languages",
+      "items": [
+        "Business English",
+        "French (FLE)",
+        "Business Spanish",
+        "Technical German"
+      ]
+    },
+    "catPro": {
+      "title": "Trades, HSE & First Aid",
+      "items": [
+        "HSE (Health, Safety, Environment)",
+        "Workplace First Aid",
+        "Public Speaking",
+        "Intercultural Negotiation"
+      ]
+    },
+    "catTech": {
+      "title": "Tech Training (with DevLab)",
+      "items": [
+        "Programming (Web, Mobile)",
+        "Maintenance & Networks",
+        "Graphic Design",
+        "Video Editing"
+      ]
+    },
+    "catBureautique": {
+      "title": "Office & IT",
+      "items": [
+        "Microsoft Excel (Advanced)",
+        "Microsoft Word (Expert)",
+        "Data Management & Power BI",
+        "IT Tools for SMEs"
+      ]
+    },
+    "bonusB2B": [
       {
-        "q": "Can I change packages later?",
-        "a": "Yes, you can upgrade your package at any time. We'll calculate the pro-rated difference."
+        "title": "Organized Onboarding",
+        "desc": "Session planning and placement tests included."
       },
       {
-        "q": "What are the delivery times?",
-        "a": "Starter: 2-3 weeks, Premium: 4-6 weeks, Enterprise: depends on project (typically 8-12 weeks)."
+        "title": "ROI Measurement",
+        "desc": "Clear reports to measure the impact of the training."
       },
       {
-        "q": "Is technical support included?",
-        "a": "Yes, all packages include support. Duration and level vary by plan."
+        "title": "Premium Environment",
+        "desc": "Modern and equipped classrooms for learning."
       },
       {
-        "q": "Can I customize my package?",
-        "a": "Absolutely! Contact us to create a custom package tailored to your specific needs."
+        "title": "Certifications",
+        "desc": "Recognized end-of-training certificates for each employee."
       }
     ],
-    "ctaTitle": "Ready to Get Started?",
-    "ctaSubtitle": "Let's discuss your project and find the perfect solution together",
-    "ctaButton1": "Contact Us",
-    "ctaButton2": "View All Services"
+    "faqTitleB2B": "Frequently Asked Questions (Businesses)",
+    "faqsB2B": [
+      {
+        "q": "How do you measure our employees' progress?",
+        "a": "Our platform offers an HR dashboard that tracks attendance. In addition, our trainers conduct regular on-site assessments (tests, role-playing)."
+      },
+      {
+        "q": "Does the training take place at our offices?",
+        "a": "Our Team and Business plans take place on-site at our academy to ensure an optimal learning environment. The Enterprise plan allows for dedicated sessions at your premises."
+      },
+      {
+        "q": "What is the group size?",
+        "a": "We prioritize quality. Our groups range from 6 (Business) to 10 (Team) participants maximum to ensure optimal interaction and participation."
+      },
+      {
+        "q": "Can we customize the content (HSE, Tech)?",
+        "a": "Absolutely. The Enterprise plan is 100% custom-made. We can adapt HSE or Tech modules to your internal procedures or specific equipment."
+      }
+    ],
+    "ctaTitleB2B": "Ready to train your teams?",
+    "ctaSubtitleB2B": "Let's discuss your goals and plan your on-site training sessions.",
+    "ctaButton1B2B": "Request an Enterprise Quote",
+    "ctaButton2B2B": "See our other training"
   },
-  "DevisPage": {
+
+  "LanguagesPage": {
+    "title": "LingoLab Language Training",
+    "subtitle": "Learn a new language and open up to the world with our in-person training",
+    "skillsTitle": "Skills acquired:",
+    "selectLevel": "Select your level:",
+    "formTitle": "Language Training Registration",
+    "formNom": "Last Name",
+    "formPrenom": "First Name",
+    "formEmail": "Email",
+    "formTelephone": "Phone",
+    "formLangues": "Selected languages",
+    "formNoLangue": "Please select at least one language",
+    "formPromo": "Promo Code (optional)",
+    "formPromoPlaceholder": "Ex: LINGOLANG",
+    "formApply": "Apply",
+    "formPromoHint": "Codes: LANG10 (-10% for 1 language) | LINGOLANG (-20% for 2+ languages)",
+    "total": "Total to pay:",
+    "discountApplied": "{rate}% discount applied!",
+    "submitButton": "Send request",
+    "submitting": "Sending...",
     "backToHome": "Back to home",
+    "errorSelectOne": "Please select at least one language to register",
+    "errorPromoLingoLang": "LINGOLANG Code: Valid for 2 or more languages (20% discount)",
+    "errorPromoLang10": "LANG10 Code: Valid for 1 language only (10% discount)",
+    "errorPromoNone": "Please select a language first",
+    "errorPromoInvalid": "Invalid promo code",
+    "statusSuccess": "Registration sent successfully! We will contact you soon.",
+    "statusError": "Error sending. Please try again.",
+    "langue1_title": "English (All levels)",
+    "langue1_price": 15000,
+    "langue1_duration": "3 months per level",
+    "langue1_desc": "From beginner to advanced, master general and professional English with experienced trainers.",
+    "langue1_skills": [
+      "Current and professional conversation",
+      "Grammar and structure",
+      "Oral and written comprehension",
+      "Business English"
+    ],
+    "langue2_title": "French (FLE)",
+    "langue2_price": 15000,
+    "langue2_duration": "3 months per level",
+    "langue2_desc": "Improve your mastery of French for daily life, studies, or work.",
+    "langue2_skills": [
+      "Oral and written expression",
+      "Spelling and grammar",
+      "Professional writing",
+      "French culture"
+    ],
+    "langue3_title": "Spanish",
+    "langue3_price": 18000,
+    "langue3_duration": "4 months",
+    "langue3_desc": "Learn the third most spoken language in the world with immersive methods.",
+    "langue3_skills": [
+      "Hispanic conversation",
+      "Spanish grammar",
+      "Latin American culture",
+      "Professional vocabulary"
+    ],
+    "langue4_title": "German",
+    "langue4_price": 20000,
+    "langue4_duration": "4 months",
+    "langue4_desc": "Master the language of Goethe, essential for opportunities in Central Europe.",
+    "langue4_skills": [
+      "German grammar basics",
+      "Common vocabulary",
+      "A1/A2 level conversation",
+      "Germanic culture"
+    ],
+    "langue5_title": "Turkish",
+    "langue5_price": 20000,
+    "langue5_duration": "4 months",
+    "langue5_desc": "Discover the Turkish language, a bridge between Europe and Asia.",
+    "langue5_skills": [
+      "Turkish alphabet and pronunciation",
+      "Basic structures",
+      "Everyday vocabulary",
+      "Turkish culture"
+    ],
+    "langue6_title": "Korean",
+    "langue6_price": 20000,
+    "langue6_duration": "4 months",
+    "langue6_desc": "Dive into the Korean language, increasingly in demand in the professional world.",
+    "langue6_skills": [
+      "Hangeul Alphabet",
+      "Basic grammar",
+      "Everyday conversation",
+      "Modern Korean culture"
+    ],
+    "langue7_title": "Italian",
+    "langue7_price": 20000,
+    "langue7_duration": "4 months",
+    "langue7_desc": "Learn the beautiful Italian language, the language of culture and art.",
+    "langue7_skills": [
+      "Italian pronunciation",
+      "Basic grammar",
+      "Everyday vocabulary",
+      "Culture and gastronomy"
+    ]
+  },
+
+  "EmailLanguages": {
+    "admin_subject": "🎓 New Registration - LingoLab Language Courses",
+    "admin_h1": "New Registration (Languages)",
+    "admin_subtitle": "A candidate has just registered for LingoLab language courses",
+    "section_info": "Candidate Information",
+    "info_name": "Full name:",
+    "info_email": "Email:",
+    "info_phone": "Phone:",
+    "section_langs": "Selected Languages",
+    "lang_level": "Level:",
+    "lang_duration": "Duration:",
+    "section_promo": "Promo Code",
+    "promo_used": "Code used:",
+    "promo_discount": "Discount:",
+    "total_title": "Total Amount",
+    "total_discount_applied": "{rate}% discount applied",
+    "user_subject": "✅ Registration Confirmation - LingoLab Languages",
+    "user_h1": "Registration Confirmed!",
+    "user_thanks": "Thank you for your trust, {prenom}!",
+    "user_intro": "We have successfully received your registration request for LingoLab language courses. Our team will process your registration and contact you very soon.",
+    "user_summary": "Your Registration Summary",
+    "user_total": "Total Amount to Pay",
+    "user_next_steps_title": "Next Steps",
+    "user_next_step_1": "Our team will verify your registration",
+    "user_next_step_2": "You will receive a call or email within 24-48 hours",
+    "user_next_step_3": "We will provide you with payment and start details",
+    "user_help_title": "Need help?",
+    "user_help_contact": "If you have any questions, feel free to contact us:",
+    "footer_rights": "All rights reserved",
+    "footer_reason": "You are receiving this email because you registered for our courses"
+  },
+
+  "DevisPage": {
+    "backToHome": "Back to Home",
     "mainTitle": "Quote Calculator",
     "subtitle": "Get an instant estimate for your project",
     "steps": {
@@ -234,14 +420,14 @@
     "step2Title": "Project Details",
     "step3Title": "Your Contact Information",
     "step4Title": "Request Sent Successfully!",
-    "step4Subtitle": "We received your request and will contact you within 24-48 hours",
+    "step4Subtitle": "We have received your request and will contact you within 24-48h",
     "continue": "Continue",
     "back": "Back",
     "submitButton": "Send Request",
     "budgetLabel": "Estimated Budget",
     "timelineLabel": "Desired Timeline",
     "messageLabel": "Additional Message",
-    "messagePlaceholder": "Describe your project briefly...",
+    "messagePlaceholder": "Describe your project in a few lines...",
     "nameLabel": "Full Name *",
     "namePlaceholder": "John Doe",
     "companyLabel": "Company",
@@ -250,10 +436,10 @@
     "emailPlaceholder": "john@example.com",
     "phoneLabel": "Phone *",
     "phonePlaceholder": "+213 XXX XXX XXX",
-    "summaryTitle": "Summary of Your Request",
+    "summaryTitle": "Your Request Summary",
     "summaryServices": "Selected Services",
     "summaryTotal": "Estimated Total",
-    "summaryDisclaimer": "This is an estimate. Final price will be confirmed after detailed analysis.",
+    "summaryDisclaimer": "This amount is an estimate. The final price will be confirmed after detailed analysis.",
     "summaryBudget": "Budget",
     "summaryTimeline": "Timeline",
     "newRequestButton": "New Request",
@@ -261,9 +447,9 @@
     "floatingTotal": "Total: {total} DZD",
     "floatingContinue": "Continue",
     "floatingFinalize": "Finalize",
-    "floatingSubmit": "Submit",
+    "floatingSubmit": "Send",
     "errorRequired": "Please fill in all required fields",
-    "errorApi": "Error sending. Please try again.",
+    "errorApi": "Error sending request. Please try again.",
     "errorNetwork": "Connection error. Check your internet.",
     "budgets": {
       "range1": "50,000 - 100,000 DZD",
@@ -283,13 +469,13 @@
       "web": {
         "category": "Web Development",
         "vitrine": {
-          "name": "Showcase Website",
+          "name": "Showcase Site",
           "description": "Professional 5-10 page website",
           "features": [
             "Responsive design",
             "SEO optimization",
             "Contact forms",
-            "1-year hosting"
+            "1 year hosting"
           ]
         },
         "ecommerce": {
@@ -317,7 +503,7 @@
         "category": "Mobile Applications",
         "iosAndroid": {
           "name": "iOS & Android App",
-          "description": "High-performance native app",
+          "description": "High-performance native application",
           "features": [
             "Native iOS/Android design",
             "Offline mode",
@@ -340,10 +526,10 @@
         "category": "Design & Branding",
         "branding": {
           "name": "Visual Identity",
-          "description": "Logo, complete brand guidelines",
+          "description": "Logo, complete style guide",
           "features": [
             "Professional logo",
-            "Brand guidelines",
+            "Style guide",
             "Variations",
             "Usage guide"
           ]
@@ -368,7 +554,7 @@
             "Complete SEO audit",
             "On-page optimization",
             "Content strategy",
-            "Ranking tracking"
+            "Position tracking"
           ]
         },
         "social": {
@@ -376,7 +562,7 @@
           "description": "Monthly community management",
           "features": [
             "Content creation",
-            "Daily publishing",
+            "Daily posting",
             "Community engagement",
             "Monthly reporting"
           ]
@@ -393,7 +579,7 @@
         }
       },
       "scaling": {
-        "category": "Growth & Support",
+        "category": "Scaling & Support",
         "maintenance": {
           "name": "Maintenance & Support",
           "description": "Monthly technical support",
@@ -418,66 +604,343 @@
     }
   },
   "FormationPage": {
-    "backToHome": "Back to home",
-    "title": "Professional Training",
-    "subtitle": "Develop your skills with our certified training in web development and office software",
-    "formation1_title": "Web Development Training",
-    "formation1_price": 15000,
-    "formation1_duration": "2 months (30 hours)",
-    "formation1_desc": "Learn to create modern websites with HTML, CSS, JavaScript, and React",
-    "formation1_skills": [
-      "Advanced HTML5 & CSS3",
-      "JavaScript ES6+",
-      "Git & deployment",
-      "Final portfolio project"
-    ],
-    "formation2_title": "Complete Office Training",
-    "formation2_price": 7500,
-    "formation2_duration": "1 months (20 hours)",
-    "formation2_desc": "Master Microsoft Office tools to boost your productivity",
-    "formation2_skills": [
-      "Advanced Word",
-      "Excel with formulas",
-      "Professional PowerPoint",
-      "Outlook & planning",
-      "Certification included"
-    ],
+    "title": "LingoLab Training Catalog",
+    "subtitle": "Develop your skills with our on-site training, covering all fields.",
     "skillsTitle": "Skills acquired:",
-    "formTitle": "Training Registration",
+    "formTitle": "Registration",
     "formNom": "Last Name",
     "formPrenom": "First Name",
     "formEmail": "Email",
     "formTelephone": "Phone",
-    "formFormations": "Selected Training",
-    "formNoFormation": "No training selected",
+    "formFormations": "Selected training",
+    "formNoFormation": "Please select at least one training",
     "formPromo": "Promo Code (optional)",
-    "formPromoPlaceholder": "DEV or DEVLAB",
-    "formPromoHint": "DEV: -10% on 1 training | DEVLAB: -25% on 2 trainings",
+    "formPromoPlaceholder": "Ex: LingoLab",
     "formApply": "Apply",
-    "submitButton": "Submit Registration",
-    "submitting": "Sending...",
-    "total": "Total to Pay",
+    "formPromoHint": "Codes: DEV (-10% on 1 course) | LingoLab (-25% on 2 courses)",
+    "total": "Total to pay:",
     "discountApplied": "{rate}% discount applied!",
-    "errorSelectOne": "Please select at least one training",
-    "errorPromoInvalid": "Invalid promo code",
+    "submitButton": "Send Application",
+    "submitting": "Sending...",
+    "backToHome": "Back to Home",
+    "errorSelectOne": "Please select at least one training to register",
+    "errorPromoLingoLab": "LingoLab Code: Only valid for 2 courses (25% discount)",
+    "errorPromoDev": "DEV Code: Only valid for 1 course (10% discount)",
     "errorPromoNone": "Please select a training first",
-    "errorPromoDev": "DEV: -10% for 1 training only",
-    "errorPromoDevlab": "DEVLAB: -25% for 2 trainings",
-    "statusSuccess": "Registration sent successfully! We'll contact you within 24-48h.",
-    "statusError": "Error sending. Please try again."
+    "errorPromoInvalid": "Invalid promo code",
+    "statusSuccess": "Registration sent successfully! We will contact you soon.",
+    "statusError": "Error sending application. Please try again.",
+    "formations": [
+      {
+        "id": "aide-soignant",
+        "domaineId": "paramedical",
+        "domaineTitre": "Health & Paramedical Hub",
+        "titre": "Healthcare Assistant",
+        "prix": 45000,
+        "duree": "6 months",
+        "description": "Become a professional in supporting and caring for dependent individuals.",
+        "competences": [
+          "Hygiene and comfort care",
+          "Mobility assistance",
+          "Health protocols"
+        ]
+      },
+      {
+        "id": "vendeur-pharmacie",
+        "domaineId": "paramedical",
+        "domaineTitre": "Health & Paramedical Hub",
+        "titre": "Pharmacy Salesperson",
+        "prix": 35000,
+        "duree": "4 months",
+        "description": "Master medication dispensing and customer counseling in a pharmacy.",
+        "competences": [
+          "Basic pharmacology",
+          "Stock management",
+          "Customer counseling",
+          "Regulation"
+        ]
+      },
+      {
+        "id": "aide-laborantin",
+        "domaineId": "paramedical",
+        "domaineTitre": "Health & Paramedical Hub",
+        "titre": "Lab Assistant",
+        "prix": 40000,
+        "duree": "5 months",
+        "description": "Assist technicians in medical analysis laboratories.",
+        "competences": [
+          "Sample preparation",
+          "Equipment use",
+          "Hygiene and safety"
+        ]
+      },
+      {
+        "id": "langue-anglais",
+        "domaineId": "langues",
+        "domaineTitre": "Languages & International Hub",
+        "titre": "English (All levels)",
+        "prix": 15000,
+        "duree": "3 months (per level)",
+        "description": "From beginner to advanced, master general and professional English.",
+        "competences": [
+          "Conversation",
+          "Grammar",
+          "Listening comprehension",
+          "Business English"
+        ]
+      },
+      {
+        "id": "langue-francais",
+        "domaineId": "langues",
+        "domaineTitre": "Languages & International Hub",
+        "titre": "French (FLE)",
+        "prix": 15000,
+        "duree": "3 months (per level)",
+        "description": "Improve your mastery of French for daily life or work.",
+        "competences": [
+          "Spelling and grammar",
+          "Professional writing",
+          "Oral fluency"
+        ]
+      },
+      {
+        "id": "langue-espagnol",
+        "domaineId": "langues",
+        "domaineTitre": "Languages & International Hub",
+        "titre": "Spanish",
+        "prix": 18000,
+        "duree": "4 months",
+        "description": "Learn the third most spoken language in the world.",
+        "competences": [
+          "Conversation",
+          "Grammar",
+          "Hispanic culture"
+        ]
+      },
+      {
+        "id": "langue-autres",
+        "domaineId": "langues",
+        "domaineTitre": "Languages & International Hub",
+        "titre": "German, Turkish, Korean, Italian",
+        "prix": 20000,
+        "duree": "4 months",
+        "description": "Open yourself to new cultures with our specialized training.",
+        "competences": [
+          "Grammar basics",
+          "Common vocabulary",
+          "Conversation (A1/A2 Level)"
+        ]
+      },
+      {
+        "id": "dev-web",
+        "domaineId": "informatique",
+        "domaineTitre": "Tech & Digital Hub (with DevLab)",
+        "titre": "Web Development",
+        "prix": 50000,
+        "duree": "5 months",
+        "description": "Complete training to become a full-stack web developer, in partnership with DevLab.",
+        "competences": [
+          "HTML5 & CSS3",
+          "JavaScript (React)",
+          "Node.js",
+          "Databases"
+        ]
+      },
+      {
+        "id": "cybersecurite",
+        "domaineId": "informatique",
+        "domaineTitre": "Tech & Digital Hub (with DevLab)",
+        "titre": "Cybersecurity",
+        "prix": 60000,
+        "duree": "4 months",
+        "description": "Protect systems and data against threats. In partnership with DevLab.",
+        "competences": [
+          "Risk analysis",
+          "Network security",
+          "Penetration testing",
+          "Compliance"
+        ]
+      },
+      {
+        "id": "design-montage",
+        "domaineId": "informatique",
+        "domaineTitre": "Tech & Digital Hub (with DevLab)",
+        "titre": "Design & Video Editing",
+        "prix": 40000,
+        "duree": "3 months",
+        "description": "Master graphic design and video editing tools. In partnership with DevLab.",
+        "competences": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe Premiere Pro",
+          "After Effects"
+        ]
+      },
+      {
+        "id": "scanner-auto",
+        "domaineId": "professionnel",
+        "domaineTitre": "Trades & Skills Hub",
+        "titre": "Auto Scanner",
+        "prix": 35000,
+        "duree": "2 months",
+        "description": "Learn to diagnose electronic faults in modern vehicles.",
+        "competences": [
+          "Electronic diagnostics",
+          "Reading fault codes",
+          "Using diagnostic tools"
+        ]
+      },
+      {
+        "id": "conduite-engins",
+        "domaineId": "professionnel",
+        "domaineTitre": "Trades & Skills Hub",
+        "titre": "Heavy Equipment Operator",
+        "prix": 55000,
+        "duree": "3 months",
+        "description": "Train to safely operate construction machinery (crane, excavator...).",
+        "competences": [
+          "Driving and maneuvering",
+          "Safety rules",
+          "Basic maintenance"
+        ]
+      },
+      {
+        "id": "hse",
+        "domaineId": "professionnel",
+        "domaineTitre": "Trades & Skills Hub",
+        "titre": "HSE",
+        "prix": 40000,
+        "duree": "3 months",
+        "description": "Master Health, Safety, and Environment standards in the workplace.",
+        "competences": [
+          "Risk analysis",
+          "ISO standards",
+          "Accident prevention",
+          "Audit"
+        ]
+      },
+      {
+        "id": "camera-fibre",
+        "domaineId": "professionnel",
+        "domaineTitre": "Trades & Skills Hub",
+        "titre": "Camera & Fiber Optics",
+        "prix": 45000,
+        "duree": "3 months",
+        "description": "Specialize in installing surveillance systems and fiber optic networks.",
+        "competences": [
+          "Camera installation",
+          "NVR configuration",
+          "Fiber optic splicing",
+          "Connection"
+        ]
+      },
+      {
+        "id": "coiffure",
+        "domaineId": "professionnel",
+        "domaineTitre": "Trades & Skills Hub",
+        "titre": "Hairdressing",
+        "prix": 30000,
+        "duree": "6 months",
+        "description": "Practical training in hairdressing (cutting, coloring, styling).",
+        "competences": [
+          "Cutting techniques",
+          "Colorimetry",
+          "Styling",
+          "Customer service"
+        ]
+      },
+      {
+        "id": "couture",
+        "domaineId": "professionnel",
+        "domaineTitre": "Trades & Skills Hub",
+        "titre": "Sewing",
+        "prix": 30000,
+        "duree": "6 months",
+        "description": "Learn the basics and advanced techniques of sewing and pattern making.",
+        "competences": [
+          "Machine use",
+          "Pattern making",
+          "Assembly",
+          "Finishing"
+        ]
+      },
+      {
+        "id": "patisserie",
+        "domaineId": "professionnel",
+        "domaineTitre": "Trades & Skills Hub",
+        "titre": "Pastry",
+        "prix": 40000,
+        "duree": "4 months",
+        "description": "Master the basic techniques of fine and traditional pastry.",
+        "competences": [
+          "Dough management",
+          "Creams and glazes",
+          "Chocolate work",
+          "Hygiene"
+        ]
+      },
+      {
+        "id": "formation-enseignants",
+        "domaineId": "pedagogique",
+        "domaineTitre": "Education & Pedagogy Hub",
+        "titre": "Teacher Training",
+        "prix": 35000,
+        "duree": "3 months",
+        "description": "Acquire modern pedagogical methods to teach effectively.",
+        "competences": [
+          "Instructional design",
+          "Classroom management",
+          "Assessment techniques",
+          "Child psychology"
+        ]
+      }
+    ]
   },
+
+  "EmailFormations": {
+    "admin_subject": "🎓 New Registration - LingoLab Courses",
+    "admin_h1": "New Registration",
+    "admin_subtitle": "A candidate has just registered for LingoLab courses",
+    "section_info": "Candidate Information",
+    "info_name": "Full name:",
+    "info_email": "Email:",
+    "info_phone": "Phone:",
+    "section_formations": "Selected Courses",
+    "formation_domain": "Domain:",
+    "formation_duration": "Duration:",
+    "section_promo": "Promo Code",
+    "promo_used": "Code used:",
+    "promo_discount": "Discount:",
+    "total_title": "Total Amount",
+    "total_discount_applied": "{rate}% discount applied",
+    "user_subject": "✅ Registration Confirmation - LingoLab",
+    "user_h1": "Registration Confirmed!",
+    "user_thanks": "Thank you for your trust, {prenom}!",
+    "user_intro": "We have successfully received your registration request for LingoLab courses. Our team will process your registration and contact you very soon.",
+    "user_summary": "Your Registration Summary",
+    "user_total": "Total Amount to Pay",
+    "user_next_steps_title": "Next Steps",
+    "user_next_step_1": "Our team will verify your registration",
+    "user_next_step_2": "You will receive a call or email within 24-48 hours",
+    "user_next_step_3": "We will provide you with payment and start details",
+    "user_help_title": "Need help?",
+    "user_help_contact": "If you have any questions, feel free to contact us:",
+    "footer_rights": "All rights reserved",
+    "footer_reason": "You are receiving this email because you registered for our courses"
+  },
+  
   "QuoteEmail": {
     "client": {
-      "subject": "Quote request confirmation - DevLab",
+      "subject": "Confirmation of your quote request - LingoLab",
       "header": "Thank you for your request!",
       "greeting": "Hello",
       "thankYou": "We have received your quote request and thank you for your interest in our services.",
-      "contactYou": "Our team will analyze your request and contact you within 24-48 hours to discuss your project in detail.",
+      "contactYou": "Our team will review your request and contact you within 24-48 hours to discuss your project in detail.",
       "summaryTitle": "Summary of your request",
       "servicesTitle": "Requested services:",
       "totalEstimate": "Total Estimate",
       "totalDisclaimer": "This estimate is indicative and will be refined after our discussion",
-      "projectInfoTitle": "Project information:",
+      "projectInfoTitle": "Your project information:",
       "company": "Company",
       "budget": "Budget",
       "timeline": "Timeline",
@@ -485,18 +948,18 @@
       "notSpecified": "Not specified",
       "nextStepsTitle": "Next steps:",
       "step1": "Our team reviews your request",
-      "step2": "We contact you for a detailed interview",
+      "step2": "We contact you for a detailed discussion",
       "step3": "We send you a personalized quote",
       "step4": "Project launch after your validation",
-      "visitSite": "Visit Our Website",
+      "visitSite": "Visit Our Site",
       "footerTitle": "Need help?",
-      "footerNote": "You are receiving this email because you requested a quote on devlab.dz",
+      "footerNote": "You are receiving this email because you requested a quote on LingoLab.dz",
       "successMessage": "Your request has been sent successfully!"
     },
     "admin": {
       "subject": "New quote request from {name}",
       "header": "New Quote Request",
-      "subtitle": "A new request has been received",
+      "subtitle": "A new request has just been received",
       "actionRequired": "⚠️ Action required: Contact client within 24h",
       "clientInfoTitle": "Client Information",
       "name": "Name",
@@ -510,41 +973,40 @@
       "timeline": "Timeline",
       "message": "Message",
       "notSpecified": "Not specified",
-      "actionsTitle": "Actions to Take",
+      "actionsTitle": "Actions to Perform",
       "action1": "Call/email client within 24h",
       "action2": "Analyze needs in detail",
-      "action3": "Prepare personalized quote",
-      "action4": "Schedule meeting if necessary",
+      "action3": "Prepare a personalized quote",
+      "action4": "Schedule a meeting if necessary",
       "action5": "Follow up in CRM",
       "receivedOn": "Request received on: {date}"
     },
     "apiError": "Error sending request"
   },
-  
-   "NewsletterSection": {
-    "title": "Stay Updated",
-    "subtitle": "Subscribe to our newsletter to receive our latest news, exclusive offers, and tech tips directly in your inbox",
+  "NewsletterSection": {
+    "tag": "Newsletter",
+    "title": "Stay Informed",
+    "subtitle": "Subscribe to our newsletter to receive our news, exclusive offers, and tech tips directly in your inbox",
     "placeholder": "Your email address",
     "subscribe": "Subscribe",
     "subscribing": "Sending...",
-    "privacy": "We respect your privacy. No spam, unsubscribe anytime.",
+    "privacy": "We respect your privacy. No spam, unsubscribe at any time.",
     "errorInvalid": "Please enter a valid email address",
-    "statusSuccess": "✅ Successfully subscribed! Check your email for confirmation.",
-    "statusError": "❌ Error during subscription. Please try again."
+    "statusSuccess": "✅ Subscription successful! Check your inbox for confirmation.",
+    "statusError": "❌ Error subscribing. Please try again."
   },
-
   "NewsletterPage": {
-    "backToHome": "Back to home",
-    "badge": "DevLab Newsletter",
+    "backToHome": "Back to Home",
+    "badge": "LingoLab Newsletter",
     "title": "Stay Connected to Innovation",
-    "subtitle": "Join our community and receive exclusive insights, expert advice, and the latest digital trends directly in your inbox each month.",
+    "subtitle": "Join our community and receive exclusive insights, expert tips, and the latest digital trends directly in your inbox every month.",
     "placeholder": "your.email@example.com",
     "subscribe": "Subscribe for Free",
-    "subscribing": "Submitting...",
+    "subscribing": "Sending...",
     "privacy": "🔒 Your data is secure. No spam, unsubscribe at any time.",
     "errorInvalid": "Please enter a valid email address",
     "statusSuccess": "✅ Subscription successful! Check your email for confirmation.",
-    "statusError": "❌ Error during subscription. Please try again.",
+    "statusError": "❌ Error subscribing. Please try again.",
     "stat1Label": "Active Subscribers",
     "stat2Label": "Newsletters Sent",
     "stat3Label": "Satisfaction Rate",
@@ -556,24 +1018,24 @@
     "benefit2Desc": "Receive tutorials, tips, and best practices to boost your digital projects",
     "benefit3Title": "Industry News",
     "benefit3Desc": "Stay up-to-date on the latest trends in web development and digital marketing",
-    "benefit4Title": "Early Previews",
+    "benefit4Title": "New Features Preview",
     "benefit4Desc": "Be the first to know about our new services and features",
     "benefit5Title": "Case Studies",
     "benefit5Desc": "Discover how we helped our clients succeed in their digital transformation",
     "benefit6Title": "Events & Webinars",
-    "benefit6Desc": "Exclusive invitations to our training sessions, workshops, and online events",
+    "benefit6Desc": "Exclusive invitations to our training, workshops, and online events",
     "ctaTitle": "Ready to Join Our Community?",
-    "ctaSubtitle": "Sign up now and receive our free exclusive guide",
-    "ctaButton": "Sign Up Now",
+    "ctaSubtitle": "Subscribe now and receive our exclusive free guide",
+    "ctaButton": "Subscribe Now",
     "ctaButton2": "See Our Services",
     "testimonialsTitle": "What Our Subscribers Say",
     "testimonialsSubtitle": "Join thousands of satisfied professionals",
-    "testimonial1Text": "The DevLab newsletter is a goldmine of information. I discovered techniques that transformed the way I work!",
+    "testimonial1Text": "The LingoLab newsletter is a goldmine of information. I discovered techniques that transformed the way I work!",
     "testimonial1Name": "Sarah Mansouri",
     "testimonial1Role": "Freelance Web Developer",
     "testimonial2Text": "Relevant and actionable content. Every email brings real added value to my business.",
     "testimonial2Name": "Karim Boudiaf",
-    "testimonial2Role": "CEO, StartUp Algeria",
+    "testimonial2Role": "CEO, StartUp Algérie",
     "testimonial3Text": "The shared tips and trends help me stay competitive in the market. Excellent resource!",
     "testimonial3Name": "Amina Zerrouki",
     "testimonial3Role": "Marketing Manager"

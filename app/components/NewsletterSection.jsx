@@ -53,18 +53,18 @@ export default function NewsletterSection() {
 
   return (
     <section 
-      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-100 to-red-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white overflow-hidden"
+      className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white overflow-hidden"
     >
       {/* Decorative blurs - same as BundleSection */}
       <div className="absolute inset-0 opacity-20" aria-hidden="true">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-orange-300 dark:bg-orange-900 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-red-300 dark:bg-red-900 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-300 dark:bg-orange-900 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-indigo-300 dark:bg-red-900 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-3 bg-white dark:bg-gray-800 px-6 py-3 rounded-full shadow-lg mb-8 border border-gray-200 dark:border-gray-700">
-            <Mail className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+            <Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" />
             <span className="font-bold text-lg text-gray-900 dark:text-white">{('tag')}</span>
           </div>
           
@@ -86,7 +86,7 @@ export default function NewsletterSection() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('placeholder')}
-                className="w-full pl-12 pr-4 py-4 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-2 border-gray-200 dark:border-gray-700 focus:outline-none focus:border-orange-500 dark:focus:border-orange-400 transition-all shadow-lg"
+                className="w-full pl-12 pr-4 py-4 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-2 border-gray-200 dark:border-gray-700 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-all shadow-lg"
                 disabled={isSubmitting}
               />
             </div>
@@ -94,7 +94,7 @@ export default function NewsletterSection() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="px-10 py-5 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-lg rounded-lg shadow-2xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 whitespace-nowrap"
+              className="px-10 py-5 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold text-lg rounded-lg shadow-2xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 whitespace-nowrap"
             >
               {isSubmitting ? (
                 <>
@@ -114,7 +114,7 @@ export default function NewsletterSection() {
             <div className={`mt-6 p-4 rounded-lg flex items-start gap-3 shadow-lg border-2 ${
               status.type === 'success' 
                 ? 'bg-green-100 dark:bg-green-900/30 border-green-500 dark:border-green-400 text-green-800 dark:text-green-300'
-                : 'bg-red-100 dark:bg-red-900/30 border-red-500 dark:border-red-400 text-red-800 dark:text-red-300'
+                : 'bg-indigo-100 dark:bg-red-900/30 border-indigo-500 dark:border-indigo-400 text-red-800 dark:text-indigo-300'
             }`}>
               {status.type === 'success' ? (
                 <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />

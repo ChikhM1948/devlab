@@ -39,7 +39,7 @@ export async function POST(request) {
 
     // Email au client (TRANSLATED)
     const clientMailOptions = {
-      from: `DevLab <${process.env.GMAIL_USER}>`,
+      from: `LingoLab <${process.env.GMAIL_USER}>`,
       to: email,
       subject: t.client.subject,
       html: `
@@ -105,13 +105,13 @@ export async function POST(request) {
               </ol>
               
               <div style="text-align: center; margin: 30px 0;">
-                <a href="https://devlab.dz" class="button">${t.client.visitSite}</a>
+                <a href="https://LingoLab.dz" class="button">${t.client.visitSite}</a>
               </div>
             </div>
             
             <div class="footer">
               <p><strong>${t.client.footerTitle}</strong></p>
-              <p>Email: contact@devlab.services | Tél: +213 698 784 457</p>
+              <p>Email: contact@LingoLab.services | Tél: +213 698 784 457</p>
               <p style="font-size: 12px; margin-top: 20px;">
                 ${t.client.footerNote}
               </p>
@@ -122,9 +122,9 @@ export async function POST(request) {
       `,
     };
 
-    // Email à l'équipe DevLab (TRANSLATED)
+    // Email à l'équipe LingoLab (TRANSLATED)
     const adminMailOptions = {
-      from: `DevLab <${process.env.GMAIL_USER}>`,
+      from: `LingoLab <${process.env.GMAIL_USER}>`,
       to: process.env.ADMIN_EMAIL || process.env.GMAIL_USER,
       subject: t.admin.subject.replace('{name}', name),
       html: `

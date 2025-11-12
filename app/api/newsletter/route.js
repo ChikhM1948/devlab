@@ -33,9 +33,9 @@ export async function POST(request) {
 
     // Email to admin (newsletter collection)
     const adminMailOptions = {
-      from: `DevLab Newsletter <${process.env.GMAIL_USER}>`,
+      from: `LingoLab Newsletter <${process.env.GMAIL_USER}>`,
       to: process.env.ADMIN_EMAIL || process.env.GMAIL_USER,
-      subject: '📧 Nouvelle inscription à la newsletter DevLab',
+      subject: '📧 Nouvelle inscription à la newsletter LingoLab',
       html: `
         <!DOCTYPE html>
         <html>
@@ -72,7 +72,7 @@ export async function POST(request) {
 
               <div class="info-row" style="border-bottom: none;">
                 <span class="label">Source :</span>
-                <span>Site web DevLab</span>
+                <span>Site web LingoLab</span>
               </div>
 
               <div style="background: #fff7ed; padding: 15px; border-radius: 8px; margin-top: 20px;">
@@ -84,7 +84,7 @@ export async function POST(request) {
             </div>
 
             <div class="footer">
-              <p>© ${new Date().getFullYear()} DevLab - Système de Newsletter</p>
+              <p>© ${new Date().getFullYear()} LingoLab - Système de Newsletter</p>
             </div>
           </div>
         </body>
@@ -94,9 +94,9 @@ export async function POST(request) {
 
     // Confirmation email to subscriber
     const userMailOptions = {
-      from: `DevLab <${process.env.GMAIL_USER}>`,
+      from: `LingoLab <${process.env.GMAIL_USER}>`,
       to: email,
-      subject: '✅ Bienvenue dans la newsletter DevLab',
+      subject: '✅ Bienvenue dans la newsletter LingoLab',
       html: `
         <!DOCTYPE html>
         <html>
@@ -115,7 +115,7 @@ export async function POST(request) {
           <div class="container">
             <div class="header">
               <h1>✅ Inscription Confirmée !</h1>
-              <p>Bienvenue dans la communauté DevLab</p>
+              <p>Bienvenue dans la communauté LingoLab</p>
             </div>
             
             <div class="content">
@@ -136,23 +136,23 @@ export async function POST(request) {
               <p>Vous pouvez dès maintenant découvrir nos services :</p>
               
               <div style="text-align: center; margin: 30px 0;">
-                <a href="https://devlab.dz" class="button">Visiter Notre Site</a>
+                <a href="https://LingoLab.dz" class="button">Visiter Notre Site</a>
               </div>
 
               <div class="section">
                 <h3 style="margin-top: 0; color: #f97316;">📞 Besoin d'aide ?</h3>
                 <p style="margin: 0;">
-                  <strong>Email :</strong> contact@devlab.info<br>
+                  <strong>Email :</strong> contact@LingoLab.info<br>
                   <strong>Téléphone :</strong> +213 698 784 457
                 </p>
               </div>
             </div>
 
             <div class="footer">
-              <p>© ${new Date().getFullYear()} DevLab - Tous droits réservés</p>
+              <p>© ${new Date().getFullYear()} LingoLab - Tous droits réservés</p>
               <p style="font-size: 12px; margin-top: 15px;">
                 Vous recevez cet email car vous vous êtes inscrit à notre newsletter.<br>
-                Pour vous désinscrire, contactez-nous à contact@devlab.info
+                Pour vous désinscrire, contactez-nous à contact@LingoLab.info
               </p>
             </div>
           </div>

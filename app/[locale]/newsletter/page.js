@@ -95,13 +95,13 @@ export default function NewsletterPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link 
             href="/" 
-            className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+            className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="font-semibold">{t('backToHome')}</span>
@@ -113,13 +113,13 @@ export default function NewsletterPage() {
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0 opacity-20" aria-hidden="true">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-orange-300 dark:bg-orange-900 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-red-300 dark:bg-red-900 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-0 w-96 h-96 bg-blue-300 dark:bg-orange-900 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-indigo-300 dark:bg-red-900 rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <div className="inline-flex items-center gap-3 bg-white dark:bg-gray-800 px-6 py-3 rounded-full shadow-lg mb-8 border border-gray-200 dark:border-gray-700 transition-colors duration-300">
-            <Mail className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+            <Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" />
             <span className="font-bold text-lg text-gray-900 dark:text-white">{t('badge')}</span>
           </div>
           
@@ -141,7 +141,7 @@ export default function NewsletterPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={t('placeholder')}
-                  className="w-full pl-12 pr-4 py-4 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-2 border-gray-200 dark:border-gray-700 focus:outline-none focus:border-orange-500 dark:focus:border-orange-400 transition-all shadow-lg text-lg"
+                  className="w-full pl-12 pr-4 py-4 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-2 border-gray-200 dark:border-gray-700 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-all shadow-lg text-lg"
                   disabled={isSubmitting}
                 />
               </div>
@@ -149,7 +149,7 @@ export default function NewsletterPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-10 py-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-lg rounded-lg shadow-2xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 whitespace-nowrap"
+                className="px-10 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold text-lg rounded-lg shadow-2xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 {isSubmitting ? (
                   <>
@@ -169,7 +169,7 @@ export default function NewsletterPage() {
               <div className={`mt-6 p-4 rounded-lg flex items-start gap-3 shadow-lg border-2 transition-colors duration-300 ${
                 status.type === 'success' 
                   ? 'bg-green-100 dark:bg-green-900/30 border-green-500 dark:border-green-400 text-green-800 dark:text-green-300'
-                  : 'bg-red-100 dark:bg-red-900/30 border-red-500 dark:border-red-400 text-red-800 dark:text-red-300'
+                  : 'bg-indigo-100 dark:bg-red-900/30 border-indigo-500 dark:border-indigo-400 text-red-800 dark:text-indigo-300'
               }`}>
                 {status.type === 'success' ? (
                   <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -193,7 +193,7 @@ export default function NewsletterPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center">
-                <div className="text-4xl sm:text-5xl font-bold text-orange-600 dark:text-orange-400 mb-2 transition-colors duration-300">
+                <div className="text-4xl sm:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 transition-colors duration-300">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 font-medium transition-colors duration-300">
@@ -223,8 +223,8 @@ export default function NewsletterPage() {
                 key={idx}
                 className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700 duration-300"
               >
-                <div className="w-14 h-14 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-6 transition-colors duration-300">
-                  <benefit.icon className="w-7 h-7 text-orange-600 dark:text-orange-400" />
+                <div className="w-14 h-14 bg-blue-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-6 transition-colors duration-300">
+                  <benefit.icon className="w-7 h-7 text-blue-600 dark:text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 transition-colors duration-300">
                   {benefit.title}
@@ -239,7 +239,7 @@ export default function NewsletterPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-500 to-red-600 text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             {t('ctaTitle')}
@@ -250,7 +250,7 @@ export default function NewsletterPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="px-8 py-4 bg-white text-orange-600 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+              className="px-8 py-4 bg-white text-blue-600 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             >
               {t('ctaButton')}
             </button>
@@ -284,7 +284,7 @@ export default function NewsletterPage() {
               >
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-orange-500 text-orange-500" />
+                    <Star key={i} className="w-5 h-5 fill-blue-500 text-blue-500" />
                   ))}
                 </div>
                 <p className="text-gray-700 dark:text-gray-300 mb-6 italic leading-relaxed transition-colors duration-300">

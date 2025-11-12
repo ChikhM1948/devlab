@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              DevLab
+              LingoLab
             </h3>
             <p className="text-gray-600 dark:text-gray-400 max-w-sm">
               {t('description')}
@@ -25,28 +25,28 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold text-orange-600 dark:text-orange-400 tracking-wider uppercase mb-4">
+            <h4 className="text-sm font-semibold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-4">
               {t('navTitle')}
             </h4>
             <ul className="space-y-3">
               {/* These are anchor links, so they don't need next-intl's Link */}
-              <li><a href="/#accueil" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">{t('navHome')}</a></li>
-              <li><a href="/#services" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">{t('navServices')}</a></li>
-              <li><a href="/#apropos" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">{t('navAbout')}</a></li>
+              <li><a href="/#accueil" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('navHome')}</a></li>
+              <li><a href="/#services" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('navServices')}</a></li>
+              <li><a href="/#apropos" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('navAbout')}</a></li>
             </ul>
           </div>
 
           {/* Contact/Action Links */}
           <div>
-            <h4 className="text-sm font-semibold text-orange-600 dark:text-orange-400 tracking-wider uppercase mb-4">
+            <h4 className="text-sm font-semibold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-4">
               {t('startTitle')}
             </h4>
             <ul className="space-y-3">
               {/* This is an anchor link */}
-              <li><a href="/#contact" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">{t('startContact')}</a></li>
+              <li><a href="/#contact" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('startContact')}</a></li>
               {/* These are page links, so they use next-intl's Link */}
-              <li><Link href="/formation" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">{t('startTraining')}</Link></li>
-              <li><Link href="/bundle" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">{t('startBundles')}</Link></li>
+              <li><Link href="/formation" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('startTraining')}</Link></li>
+              <li><Link href="/bundle" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('startBundles')}</Link></li>
             </ul>
           </div>
         </div>
@@ -59,16 +59,16 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex gap-6">
-            <a href="https://github.com/ChikhM1948" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+            <a href="https://github.com/ChikhM1948" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <Facebook className="w-6 h-6" />
             </a>
-            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <Send className="w-6 h-6" />
             </a>
           </div>

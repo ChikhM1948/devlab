@@ -48,14 +48,13 @@ export default function Page() {
       
       <BundleSection scrollToSection={scrollToSection} />
       
-      <AboutSection />
-      
-      <TestimonialsSection />
-      
+
       {/* Newsletter Section - Added here before Contact */}
-      <NewsletterSection />
+      
       
       <ContactSection />
+
+      <NewsletterSection />
       
       <Footer />
     </div>

@@ -20,7 +20,7 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata = {
-  title: "DevLab - Services Informatiques",
+  title: "LingoLab - Services Informatiques",
   description: "Votre partenaire technologique de A à Z en Algérie",
   icons: {
     icon: '/favicon.ico',

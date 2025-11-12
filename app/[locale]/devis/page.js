@@ -230,9 +230,9 @@ export default function QuotePage() {
   // ThemeProvider in app/layout.js handles this.
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       {/* Header */}
-      <div className="bg-gradient-to-r from-orange-500 to-red-600 dark:from-orange-600 dark:to-red-700 text-white py-16 px-4 relative">
+      <div className="bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-blue-600 dark:to-red-700 text-white py-16 px-4 relative">
         <button
           onClick={toggleDarkMode}
           className="absolute top-4 right-4 p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all"
@@ -275,20 +275,20 @@ export default function QuotePage() {
                 <div className="flex flex-col items-center flex-1">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all ${
                     step >= s.num 
-                      ? 'bg-orange-500 text-white' 
+                      ? 'bg-blue-500 text-white' 
                       : 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400'
                   }`}>
                     {step > s.num ? <Check className="w-5 h-5" /> : s.num}
                   </div>
                   <span className={`text-sm mt-2 font-medium ${
-                    step >= s.num ? 'text-orange-600 dark:text-orange-400' : 'text-gray-500 dark:text-gray-400'
+                    step >= s.num ? 'text-blue-600 dark:text-blue-400' : 'text-gray-500 dark:text-gray-400'
                   }`}>
                     {s.label}
                   </span>
                 </div>
                 {idx < 3 && (
                   <div className={`h-1 flex-1 mx-2 transition-colors ${
-                    step > s.num ? 'bg-orange-500' : 'bg-gray-200 dark:bg-gray-700'
+                    step > s.num ? 'bg-blue-500' : 'bg-gray-200 dark:bg-gray-700'
                   }`} />
                 )}
               </div>
@@ -308,7 +308,7 @@ export default function QuotePage() {
             {categories.map(category => (
               <div key={category} className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6 flex items-center gap-3 transition-colors">
-                  <Package className="w-6 h-6 text-orange-500 dark:text-orange-400" />
+                  <Package className="w-6 h-6 text-blue-500 dark:text-blue-400" />
                   {category}
                 </h3>
                 
@@ -323,18 +323,18 @@ export default function QuotePage() {
                         onClick={() => toggleService(service.id)}
                         className={`relative bg-white dark:bg-gray-800 rounded-xl p-6 cursor-pointer transition-all transform hover:scale-105 border border-transparent ${
                           isSelected 
-                            ? 'ring-4 ring-orange-500 shadow-xl' 
-                            : 'shadow-lg hover:shadow-xl hover:border-orange-200 dark:hover:border-orange-800'
+                            ? 'ring-4 ring-blue-500 shadow-xl' 
+                            : 'shadow-lg hover:shadow-xl hover:border-blue-200 dark:hover:border-orange-800'
                         }`}
                       >
                         {isSelected && (
-                          <div className="absolute top-4 right-4 bg-orange-500 text-white rounded-full p-1">
+                          <div className="absolute top-4 right-4 bg-blue-500 text-white rounded-full p-1">
                             <Check className="w-4 h-4" />
                           </div>
                         )}
                         
-                        <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-4 transition-colors">
-                          <Icon className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+                        <div className="w-12 h-12 bg-blue-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-4 transition-colors">
+                          <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                         </div>
                         
                         <h4 className="font-bold text-lg text-gray-900 dark:text-white mb-2 transition-colors">
@@ -356,7 +356,7 @@ export default function QuotePage() {
                           </ul>
                         </div>
                         
-                        <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 transition-colors">
+                        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 transition-colors">
                           {service.price.toLocaleString()} DZD
                         </div>
                       </div>
@@ -370,7 +370,7 @@ export default function QuotePage() {
               <button
                 onClick={() => setStep(2)}
                 disabled={formData.services.length === 0}
-                className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-lg font-bold flex items-center gap-2 hover:from-orange-600 hover:to-red-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-bold flex items-center gap-2 hover:from-blue-600 hover:to-red-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t('continue')}
                 <ArrowRight className="w-5 h-5" />
@@ -397,8 +397,8 @@ export default function QuotePage() {
                       onClick={() => setFormData(prev => ({ ...prev, budget: range.value }))}
                       className={`p-4 rounded-lg border-2 font-medium transition-all ${
                         formData.budget === range.value
-                          ? 'border-orange-500 bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300'
-                          : 'border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 dark:text-gray-300'
+                          ? 'border-blue-500 bg-blue-50 dark:bg-orange-900/30 text-orange-700 dark:text-blue-300'
+                          : 'border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 dark:text-gray-300'
                       }`}
                     >
                       {range.label}
@@ -418,8 +418,8 @@ export default function QuotePage() {
                       onClick={() => setFormData(prev => ({ ...prev, timeline: time.value }))}
                       className={`p-4 rounded-lg border-2 font-medium transition-all ${
                         formData.timeline === time.value
-                          ? 'border-orange-500 bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300'
-                          : 'border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 dark:text-gray-300'
+                          ? 'border-blue-500 bg-blue-50 dark:bg-orange-900/30 text-orange-700 dark:text-blue-300'
+                          : 'border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 dark:text-gray-300'
                       }`}
                     >
                       {time.label}
@@ -436,7 +436,7 @@ export default function QuotePage() {
                   value={formData.message}
                   onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
                   rows={4}
-                  className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                   placeholder={t('messagePlaceholder')}
                 />
               </div>
@@ -452,7 +452,7 @@ export default function QuotePage() {
               </button>
               <button
                 onClick={() => setStep(3)}
-                className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-lg font-bold flex items-center gap-2 hover:from-orange-600 hover:to-red-700 transition-all"
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-bold flex items-center gap-2 hover:from-blue-600 hover:to-red-700 transition-all"
               >
                 {t('continue')}
                 <ArrowRight className="w-5 h-5" />
@@ -477,7 +477,7 @@ export default function QuotePage() {
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                     placeholder={t('namePlaceholder')}
                   />
                 </div>
@@ -490,7 +490,7 @@ export default function QuotePage() {
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData(prev => ({ ...prev, company: e.target.value }))}
-                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                     placeholder={t('companyPlaceholder')}
                   />
                 </div>
@@ -505,7 +505,7 @@ export default function QuotePage() {
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                      className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
+                      className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                       placeholder={t('emailPlaceholder')}
                     />
                   </div>
@@ -521,7 +521,7 @@ export default function QuotePage() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                      className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
+                      className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                       placeholder={t('phonePlaceholder')}
                     />
                   </div>
@@ -538,7 +538,7 @@ export default function QuotePage() {
                 </button>
                 <button
                   onClick={handleSubmit}
-                  className="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-lg font-bold flex items-center gap-2 hover:from-orange-600 hover:to-red-700 transition-all"
+                  className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-bold flex items-center gap-2 hover:from-blue-600 hover:to-red-700 transition-all"
                 >
                   {t('submitButton')}
                   <ArrowRight className="w-5 h-5" />
@@ -566,7 +566,7 @@ export default function QuotePage() {
 
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3 transition-colors">
-                <Sparkles className="w-6 h-6 text-orange-500 dark:text-orange-400" />
+                <Sparkles className="w-6 h-6 text-blue-500 dark:text-blue-400" />
                 {t('summaryTitle')}
               </h3>
 
@@ -583,10 +583,10 @@ export default function QuotePage() {
                   ))}
                 </div>
 
-                <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-6 transition-colors">
+                <div className="bg-blue-50 dark:bg-orange-900/20 rounded-lg p-6 transition-colors">
                   <div className="flex flex-col sm:flex-row justify-between sm:items-center text-2xl font-bold">
                     <span className="text-gray-900 dark:text-white transition-colors">{t('summaryTotal')}</span>
-                    <span className="text-orange-600 dark:text-orange-400 transition-colors">
+                    <span className="text-blue-600 dark:text-blue-400 transition-colors">
                       {totalPrice.toLocaleString()} DZD
                     </span>
                   </div>
@@ -625,7 +625,7 @@ export default function QuotePage() {
                     message: ''
                   });
                 }}
-                className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-lg font-bold hover:from-orange-600 hover:to-red-700 transition-all"
+                className="w-full py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-bold hover:from-blue-600 hover:to-red-700 transition-all"
               >
                 {t('newRequestButton')}
               </button>
@@ -636,13 +636,13 @@ export default function QuotePage() {
 
       {/* Floating Price Summary */}
       {step < 4 && formData.services.length > 0 && (
-        <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-2xl border-t-4 border-orange-500 p-4 z-50 transition-colors">
+        <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-2xl border-t-4 border-blue-500 p-4 z-50 transition-colors">
           <div className="max-w-6xl mx-auto flex items-center justify-between">
             <div>
               <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors">
                 {t('floatingSummary', { count: formData.services.length })}
               </p>
-              <p className="text-2xl font-bold text-orange-600 dark:text-orange-400 transition-colors">
+              <p className="text-2xl font-bold text-blue-600 dark:text-blue-400 transition-colors">
                 {t('floatingTotal', { total: totalPrice.toLocaleString() })}
               </p>
             </div>
@@ -652,7 +652,7 @@ export default function QuotePage() {
                 else if (step === 2) setStep(3);
                 else if (step === 3) handleSubmit();
               }}
-              className="px-6 py-3 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-lg font-bold hover:from-orange-600 hover:to-red-700 transition-all"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-bold hover:from-blue-600 hover:to-red-700 transition-all"
             >
               {step === 1 ? t('floatingContinue') : step === 2 ? t('floatingFinalize') : t('floatingSubmit')}
             </button>

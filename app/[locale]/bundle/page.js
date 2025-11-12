@@ -2,60 +2,59 @@
 'use client';
 
 import { useState } from 'react';
-import { Check, X, Gift, Zap, Shield, Clock, Code, Smartphone, TrendingUp, Users, BookOpen, Sparkles, ArrowLeft } from 'lucide-react';
+// --- ICÔNES MISES À JOUR ---
+import { 
+  Check, X, Gift, Zap, Shield, Clock, Sparkles, ArrowLeft, Users, 
+  Languages, // Pour Langues
+  HardHat,   // NOUVEAU: Pour Métiers/HSE/Secourisme
+  Code,      // NOUVEAU: Pour Tech/DevLab
+  Laptop     // NOUVEAU: Pour Bureautique
+} from 'lucide-react';
 import { useTheme } from '@/app/components/ThemeProvider';
 import { useTranslations } from 'next-intl';
-import { Link } from '../../../i18n/routing'; // ✅ Single import
-
+import { Link } from '../../../i18n/routing';
 
 export default function BundlePage() {
   const { darkMode } = useTheme();
-  const [selectedPlan, setSelectedPlan] = useState('premium');
   const t = useTranslations('BundlePage');
 
   const plans = [
     {
-      id: 'starter',
-      name: t('starter.name'),
-      price: t('starter.price'),
+      id: 'team',
+      name: t('team.name'),
+      price: t('team.price'),
       currency: t('currency'),
-      period: '',
-      description: t('starter.description'),
-      color: 'from-orange-400 to-yellow-500',
+      period: t('team.period'),
+      description: t('team.description'),
+      color: 'from-blue-400 to-cyan-500',
       features: [
-        { included: true, text: t('starter.features.0') },
-        { included: true, text: t('starter.features.1') },
-        { included: true, text: t('starter.features.2') },
-        { included: true, text: t('starter.features.3') },
-        { included: true, text: t('starter.features.4') },
-        { included: true, text: t('starter.features.5') },
-        { included: false, text: t('starter.features.6') },
-        { included: false, text: t('starter.features.7') },
-        { included: false, text: t('starter.features.8') },
+        { included: true, text: t('team.features.0') },
+        { included: true, text: t('team.features.1') },
+        { included: true, text: t('team.features.2') },
+        { included: true, text: t('team.features.3') },
+        { included: false, text: t('team.features.4') },
+        { included: false, text: t('team.features.5') },
       ],
       popular: false
     },
     {
-      id: 'premium',
-      name: t('premium.name'),
-      price: t('premium.price'),
+      id: 'business',
+      name: t('business.name'),
+      price: t('business.price'),
       currency: t('currency'),
-      period: '',
-      description: t('premium.description'),
-      color: 'from-orange-500 to-red-600',
+      period: t('business.period'),
+      description: t('business.description'),
+      color: 'from-blue-500 to-indigo-600',
       features: [
-        { included: true, text: t('premium.features.0') },
-        { included: true, text: t('premium.features.1') },
-        { included: true, text: t('premium.features.2') },
-        { included: true, text: t('premium.features.3') },
-        { included: true, text: t('premium.features.4') },
-        { included: true, text: t('premium.features.5') },
-        { included: true, text: t('premium.features.6') },
-        { included: true, text: t('premium.features.7') },
-        { included: true, text: t('premium.features.8') },
+        { included: true, text: t('business.features.0') },
+        { included: true, text: t('business.features.1') },
+        { included: true, text: t('business.features.2') },
+        { included: true, text: t('business.features.3') },
+        { included: true, text: t('business.features.4') },
+        { included: true, text: t('business.features.5') },
       ],
       popular: true,
-      savings: t('premium.savings')
+      savings: t('business.savings')
     },
     {
       id: 'enterprise',
@@ -64,7 +63,7 @@ export default function BundlePage() {
       currency: '',
       period: '',
       description: t('enterprise.description'),
-      color: 'from-red-600 to-red-800',
+      color: 'from-indigo-600 to-purple-800',
       features: [
         { included: true, text: t('enterprise.features.0') },
         { included: true, text: t('enterprise.features.1') },
@@ -72,51 +71,50 @@ export default function BundlePage() {
         { included: true, text: t('enterprise.features.3') },
         { included: true, text: t('enterprise.features.4') },
         { included: true, text: t('enterprise.features.5') },
-        { included: true, text: t('enterprise.features.6') },
-        { included: true, text: t('enterprise.features.7') },
-        { included: true, text: t('enterprise.features.8') },
       ],
       popular: false
     }
   ];
 
   const bonusFeatures = [
-    { icon: Zap, title: t('bonusTitle'), description: t('bonusDesc') },
-    { icon: Shield, title: t('bonus2Title'), description: t('bonus2Desc') },
-    { icon: Clock, title: t('bonus3Title'), description: t('bonus3Desc') },
-    { icon: Sparkles, title: t('bonus4Title'), description: t('bonus4Desc') }
+    { icon: Zap, title: t('bonusB2B.0.title'), description: t('bonusB2B.0.desc') },
+    { icon: Shield, title: t('bonusB2B.1.title'), description: t('bonusB2B.1.desc') },
+    { icon: Clock, title: t('bonusB2B.2.title'), description: t('bonusB2B.2.desc') },
+    { icon: Sparkles, title: t('bonusB2B.3.title'), description: t('bonusB2B.3.desc') }
   ];
 
+  // --- SECTION "INCLUS" ENTIÈREMENT REVUE POUR LES NOUVELLES FORMATIONS ---
   const whatIncluded = [
     {
-      category: t('catDev'),
+      category: t('catLang.title'), // Catégorie 1: Langues
+      icon: Languages,
+      items: t.raw('catLang.items')
+    },
+    {
+      category: t('catPro.title'), // Catégorie 2: HSE, Secourisme, Soft skills
+      icon: HardHat,
+      items: t.raw('catPro.items') 
+    },
+    {
+      category: t('catTech.title'), // Catégorie 3: DevLab (Prog, Design, Maintenance)
       icon: Code,
-      items: t.raw('catDevItems')
+      items: t.raw('catTech.items')
     },
     {
-      category: t('catDesign'),
-      icon: Smartphone,
-      items: t.raw('catDesignItems')
-    },
-    {
-      category: t('catMarketing'),
-      icon: TrendingUp,
-      items: t.raw('catMarketingItems')
-    },
-    {
-      category: t('catTraining'),
-      icon: BookOpen,
-      items: t.raw('catTrainingItems')
+      category: t('catBureautique.title'), // Catégorie 4: Bureautique (Word, Excel)
+      icon: Laptop,
+      items: t.raw('catBureautique.items')
     }
   ];
 
-  const faqs = t.raw('faqs');
+  const faqs = t.raw('faqsB2B');
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-500 to-red-600 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-500 to-indigo-600 text-white overflow-hidden">
+        {/* ... (contenu du Hero identique) ... */}
+         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         </div>
@@ -130,15 +128,15 @@ export default function BundlePage() {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-6">
               <Gift className="w-6 h-6" />
-              <span className="font-bold text-lg">{t('promoBanner')}</span>
+              <span className="font-bold text-lg">{t('promoBannerB2B')}</span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              {t('title')}
+              {t('b2bTitle')}
             </h1>
             
             <p className="text-xl sm:text-2xl opacity-95 leading-relaxed">
-              {t('subtitle')}
+              {t('b2bSubtitle')}
             </p>
           </div>
         </div>
@@ -149,10 +147,10 @@ export default function BundlePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              {t('pageTitle')}
+              {t('pageTitleB2B')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              {t('pageSubtitle')}
+              {t('pageSubtitleB2B')}
             </p>
           </div>
 
@@ -161,11 +159,11 @@ export default function BundlePage() {
               <div
                 key={plan.id}
                 className={`relative bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden transition-all transform hover:scale-105 ${
-                  plan.popular ? 'ring-4 ring-orange-500' : ''
+                  plan.popular ? 'ring-4 ring-blue-500' : ''
                 }`}
               >
                 {plan.popular && (
-                  <div className="absolute top-0 right-0 bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-2 text-sm font-bold rounded-bl-2xl">
+                  <div className="absolute top-0 right-0 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 text-sm font-bold rounded-bl-2xl">
                     {t('popular')}
                   </div>
                 )}
@@ -190,7 +188,7 @@ export default function BundlePage() {
                             {plan.price}
                           </span>
                           <span className="text-lg text-gray-600 dark:text-gray-400">
-                            {plan.currency}/{plan.period}
+                            {plan.currency}{plan.period}
                           </span>
                         </div>
                         {plan.savings && (
@@ -221,12 +219,12 @@ export default function BundlePage() {
                     ))}
                   </ul>
                   
-                  {plan.price === t('customPrice') ? (
+                  {plan.id === 'enterprise' ? (
                     <Link
                       href="/devis"
                       className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 ${
                         plan.popular
-                          ? 'bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-lg'
+                          ? 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-red-700 text-white shadow-lg'
                           : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
                       }`}
                     >
@@ -239,7 +237,7 @@ export default function BundlePage() {
                       rel="noopener noreferrer"
                       className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 ${
                         plan.popular
-                          ? 'bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-lg'
+                          ? 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-red-700 text-white shadow-lg'
                           : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700'
                       }`}
                     >
@@ -254,23 +252,24 @@ export default function BundlePage() {
         </div>
       </section>
 
-      {/* What's Included */}
+      {/* What's Included - NOUVELLE STRUCTURE UTILISÉE ICI */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              {t('includedTitle')}
+              {t('includedTitleB2B')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              {t('includedSubtitle')}
+              {t('includedSubtitleB2B')}
             </p>
           </div>
 
+          {/* Grille mise à jour pour les 4 nouvelles catégories */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {whatIncluded.map((section, idx) => (
               <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-                <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-4">
-                  <section.icon className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+                <div className="w-12 h-12 bg-blue-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-4">
+                  <section.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                   {section.category}
@@ -292,8 +291,8 @@ export default function BundlePage() {
           {/* Bonus Features */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {bonusFeatures.map((bonus, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div key={idx} className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <bonus.icon className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="font-bold text-gray-900 dark:text-white mb-2">
@@ -312,7 +311,7 @@ export default function BundlePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            {t('faqTitle')}
+            {t('faqTitleB2B')}
           </h2>
           
           <div className="space-y-6">
@@ -331,20 +330,21 @@ export default function BundlePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-500 to-red-600 text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
+        {/* ... (contenu du CTA identique) ... */}
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            {t('ctaTitle')}
+            {t('ctaTitleB2B')}
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            {t('ctaSubtitle')}
+            {t('ctaSubtitleB2B')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/#contact" className="px-8 py-4 bg-white text-orange-600 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-              {t('ctaButton1')}
+            <Link href="/devis" className="px-8 py-4 bg-white text-blue-600 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+              {t('ctaButton1B2B')}
             </Link>
             <Link href="/#services" className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-bold hover:bg-white/10 transition-all">
-              {t('ctaButton2')}
+              {t('ctaButton2B2B')}
             </Link>
           </div>
         </div>

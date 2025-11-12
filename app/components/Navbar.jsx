@@ -1,10 +1,10 @@
-// app/components/Navbar.jsx (UPDATE IMPORTS)
+// app/components/Navbar.jsx - LingoLab Version
 'use client';
 
 import { Moon, Sun, Menu, X, GraduationCap, Mail } from 'lucide-react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { Link } from '../../i18n/routing'; // ✅ FIXED: Use relative path
+import { Link } from '../../i18n/routing';
 import LocaleSwitcher from './LocaleSwitcher';
 
 export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMobileMenuOpen, scrollToSection }) {
@@ -21,17 +21,17 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
         <div className="flex justify-between items-center h-16">
           
           <Link href="/" className="flex-shrink-0 flex items-center gap-2 group">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full overflow-hidden bg-gradient-to-r from-orange-500 to-red-500 p-1 shadow-md transition-all duration-300 transform group-hover:scale-110 group-hover:shadow-lg">
+            <div className="w-10 h-10 flex items-center justify-center rounded-full overflow-hidden bg-gradient-to-r from-blue-500 to-indigo-500 p-1 shadow-md transition-all duration-300 transform group-hover:scale-110 group-hover:shadow-lg">
               <Image 
                 src="/logo.png"
-                alt="DevLab Logo"
+                alt="LingoLab Logo"
                 width={36}
                 height={36}
                 className="rounded-full object-cover"
               />
             </div>
-            <span className="font-bold text-xl text-gray-900 dark:text-white transition-colors group-hover:text-orange-600 dark:group-hover:text-orange-400">
-              DevLab
+            <span className="font-bold text-xl text-gray-900 dark:text-white transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
+              LingoLab
             </span>
           </Link>
           
@@ -39,26 +39,26 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
           <div className="hidden md:flex items-center space-x-6">
             <button 
               onClick={() => scrollToSection('accueil')} 
-              className="font-bold text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200"
+              className="font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
               {t('home')}
             </button>
             <button 
               onClick={() => scrollToSection('services')} 
-              className="font-bold text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200"
+              className="font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
               {t('services')}
             </button>
             <button 
               onClick={() => scrollToSection('apropos')} 
-              className="font-bold text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200"
+              className="font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
               {t('about')}
             </button>
 
             <Link
               href="/formation"
-              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg"
+              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg"
             >
               <GraduationCap className="w-4 h-4" />
               <span className="font-semibold">{t('training')}</span>
@@ -66,7 +66,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
 
             <Link
               href="/newsletter"
-              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg"
+              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg"
             >
               <Mail className="w-4 h-4" />
               <span className="font-semibold">{t('newsletter')}</span>
@@ -74,7 +74,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
             
             <Link 
               href="/devis" 
-              className="font-semibold px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-sm border-2 border-gray-300 dark:border-gray-700 hover:border-orange-600 dark:hover:border-orange-400 transition-all"
+              className="font-semibold px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg shadow-sm border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 transition-all"
             >
               {t('getQuote')}
             </Link>
@@ -116,19 +116,19 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
           <div className="px-4 py-3 space-y-3">
             <button 
               onClick={() => handleMobileLinkClick('accueil')} 
-              className="block w-full text-left font-bold text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200"
+              className="block w-full text-left font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
               {t('home')}
             </button>
             <button 
               onClick={() => handleMobileLinkClick('services')} 
-              className="block w-full text-left font-bold text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200"
+              className="block w-full text-left font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
               {t('services')}
             </button>
             <button 
               onClick={() => handleMobileLinkClick('apropos')} 
-              className="block w-full text-left font-bold text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200"
+              className="block w-full text-left font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
               {t('about')}
             </button>
@@ -136,7 +136,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
             <Link
               href="/formation"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <GraduationCap className="w-4 h-4" />
               <span className="font-semibold">{t('training')}</span>
@@ -145,7 +145,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
             <Link
               href="/newsletter"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <Mail className="w-4 h-4" />
               <span className="font-semibold">{t('newsletter')}</span>
@@ -154,7 +154,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
             <Link
               href="/devis"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-lg shadow-lg border-2 border-gray-300 dark:border-gray-700 hover:border-orange-600 dark:hover:border-orange-400 transition-all"
+              className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-lg shadow-lg border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 transition-all"
             >
               {t('getQuote')}
             </Link>

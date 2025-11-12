@@ -1,19 +1,20 @@
-// app/[locale]/formation/page.js
+// app/[locale]/langues/page.js
 'use client';
 import { useState } from 'react';
-import { GraduationCap, Clock, CheckCircle, Tag, Send, AlertCircle, ArrowLeft } from 'lucide-react';
+import { Languages, Clock, CheckCircle, Tag, Send, AlertCircle, ArrowLeft } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '../../../i18n/routing';
 
-export default function FormationSection() {
-  const t = useTranslations('FormationPage');
+export default function LanguagesSection() {
+  const t = useTranslations('LanguagesPage');
   const locale = useLocale();
   const [formData, setFormData] = useState({
     nom: '',
     prenom: '',
     email: '',
     telephone: '',
-    formations: [],
+    langues: [],
+    niveaux: {}, // Store selected level for each language
     codePromo: ''
   });
 
@@ -21,43 +22,128 @@ export default function FormationSection() {
   const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Get formations from translations (excluding languages)
-  const formationsData = t.raw('formations') || [];
-  const formations = formationsData.filter(f => f.domaineId !== 'langues');
+  const langues = [
+    {
+      id: 'anglais',
+      titre: t('langue1_title'),
+      prix: t.raw('langue1_price') || 15000,
+      duree: t('langue1_duration'),
+      description: t('langue1_desc'),
+      competences: t.raw('langue1_skills'),
+      niveaux: ['Débutant', 'Intermédiaire', 'Avancé']
+    },
+    {
+      id: 'francais',
+      titre: t('langue2_title'),
+      prix: t.raw('langue2_price') || 15000,
+      duree: t('langue2_duration'),
+      description: t('langue2_desc'),
+      competences: t.raw('langue2_skills'),
+      niveaux: ['Débutant', 'Intermédiaire', 'Avancé']
+    },
+    {
+      id: 'espagnol',
+      titre: t('langue3_title'),
+      prix: t.raw('langue3_price') || 18000,
+      duree: t('langue3_duration'),
+      description: t('langue3_desc'),
+      competences: t.raw('langue3_skills'),
+      niveaux: ['Débutant', 'Intermédiaire']
+    },
+    {
+      id: 'allemand',
+      titre: t('langue4_title'),
+      prix: t.raw('langue4_price') || 20000,
+      duree: t('langue4_duration'),
+      description: t('langue4_desc'),
+      competences: t.raw('langue4_skills'),
+      niveaux: ['Débutant', 'Intermédiaire']
+    },
+    {
+      id: 'turc',
+      titre: t('langue5_title'),
+      prix: t.raw('langue5_price') || 20000,
+      duree: t('langue5_duration'),
+      description: t('langue5_desc'),
+      competences: t.raw('langue5_skills'),
+      niveaux: ['Débutant']
+    },
+    {
+      id: 'coreen',
+      titre: t('langue6_title'),
+      prix: t.raw('langue6_price') || 20000,
+      duree: t('langue6_duration'),
+      description: t('langue6_desc'),
+      competences: t.raw('langue6_skills'),
+      niveaux: ['Débutant']
+    },
+    {
+      id: 'italien',
+      titre: t('langue7_title'),
+      prix: t.raw('langue7_price') || 20000,
+      duree: t('langue7_duration'),
+      description: t('langue7_desc'),
+      competences: t.raw('langue7_skills'),
+      niveaux: ['Débutant']
+    }
+  ];
 
-  const handleFormationChange = (formationId) => {
+  const handleLangueChange = (langueId) => {
     setFormData(prev => {
-      const isSelected = prev.formations.includes(formationId);
+      const isSelected = prev.langues.includes(langueId);
+      const newLangues = isSelected 
+        ? prev.langues.filter(id => id !== langueId)
+        : [...prev.langues, langueId];
+      
+      const newNiveaux = { ...prev.niveaux };
+      if (!isSelected) {
+        // Set default level when selecting a language
+        const langue = langues.find(l => l.id === langueId);
+        newNiveaux[langueId] = langue.niveaux[0];
+      } else {
+        // Remove level when deselecting
+        delete newNiveaux[langueId];
+      }
+
       return {
         ...prev,
-        formations: isSelected 
-          ? prev.formations.filter(id => id !== formationId)
-          : [...prev.formations, formationId]
+        langues: newLangues,
+        niveaux: newNiveaux
       };
     });
     setPromoDetails({ applied: false, rate: 0 });
     setSubmitStatus({ type: '', message: '' });
   };
 
+  const handleNiveauChange = (langueId, niveau) => {
+    setFormData(prev => ({
+      ...prev,
+      niveaux: {
+        ...prev.niveaux,
+        [langueId]: niveau
+      }
+    }));
+  };
+
   const handlePromoCode = () => {
     const code = formData.codePromo.toUpperCase();
-    const numSelected = formData.formations.length;
+    const numSelected = formData.langues.length;
 
-    if (code === 'LINGOLAB') {
+    if (code === 'LINGOLANG') {
       if (numSelected >= 2) {
-        setPromoDetails({ applied: true, rate: 0.25 });
-        setSubmitStatus({ type: 'success', message: t('errorPromoLingoLab') });
+        setPromoDetails({ applied: true, rate: 0.20 });
+        setSubmitStatus({ type: 'success', message: t('errorPromoLingoLang') });
       } else {
         setPromoDetails({ applied: false, rate: 0 });
-        setSubmitStatus({ type: 'error', message: t('errorPromoLingoLab') });
+        setSubmitStatus({ type: 'error', message: t('errorPromoLingoLang') });
       }
-    } else if (code === 'DEV') {
+    } else if (code === 'LANG10') {
       if (numSelected === 1) {
         setPromoDetails({ applied: true, rate: 0.10 });
-        setSubmitStatus({ type: 'success', message: t('errorPromoDev') });
+        setSubmitStatus({ type: 'success', message: t('errorPromoLang10') });
       } else if (numSelected > 1) {
         setPromoDetails({ applied: false, rate: 0 });
-        setSubmitStatus({ type: 'error', message: t('errorPromoDev') });
+        setSubmitStatus({ type: 'error', message: t('errorPromoLang10') });
       } else {
         setPromoDetails({ applied: false, rate: 0 });
         setSubmitStatus({ type: 'error', message: t('errorPromoNone') });
@@ -70,9 +156,9 @@ export default function FormationSection() {
 
   const calculateTotal = () => {
     let total = 0;
-    formData.formations.forEach(formationId => {
-      const formation = formations.find(f => f.id === formationId);
-      if (formation) total += formation.prix;
+    formData.langues.forEach(langueId => {
+      const langue = langues.find(l => l.id === langueId);
+      if (langue) total += langue.prix;
     });
 
     if (promoDetails.applied) {
@@ -85,7 +171,7 @@ export default function FormationSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    if (formData.formations.length === 0) {
+    if (formData.langues.length === 0) {
       setSubmitStatus({ type: 'error', message: t('errorSelectOne') });
       return;
     }
@@ -93,18 +179,18 @@ export default function FormationSection() {
     setIsSubmitting(true);
     setSubmitStatus({ type: '', message: '' });
 
-    const selectedFormations = formData.formations.map(id => {
-      const f = formations.find(f => f.id === id);
+    const selectedLangues = formData.langues.map(id => {
+      const l = langues.find(l => l.id === id);
       return { 
-        titre: f.titre, 
-        duree: f.duree, 
-        prix: f.prix,
-        domaineTitre: f.domaineTitre
+        titre: l.titre, 
+        duree: l.duree, 
+        prix: l.prix,
+        niveau: formData.niveaux[id]
       };
     });
 
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('/api/send-email-languages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -114,7 +200,7 @@ export default function FormationSection() {
           prenom: formData.prenom,
           email: formData.email,
           telephone: formData.telephone,
-          formations: selectedFormations,
+          langues: selectedLangues,
           codePromo: formData.codePromo || null,
           total: calculateTotal(),
           discount: promoDetails.applied,
@@ -135,7 +221,8 @@ export default function FormationSection() {
           prenom: '',
           email: '',
           telephone: '',
-          formations: [],
+          langues: [],
+          niveaux: {},
           codePromo: ''
         });
         setPromoDetails({ applied: false, rate: 0 });
@@ -152,16 +239,6 @@ export default function FormationSection() {
     }
   };
 
-  // Group formations by domain
-  const formationsByDomain = formations.reduce((acc, formation) => {
-    const domain = formation.domaineTitre;
-    if (!acc[domain]) {
-      acc[domain] = [];
-    }
-    acc[domain].push(formation);
-    return acc;
-  }, {});
-
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <header className="p-4 bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
@@ -176,11 +253,11 @@ export default function FormationSection() {
         </div>
       </header>
       
-      <section id="formation" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+      <section id="langues" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-6">
-              <GraduationCap className="w-8 h-8 text-white" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mb-6">
+              <Languages className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t('title')}
@@ -190,70 +267,85 @@ export default function FormationSection() {
             </p>
           </div>
 
-          {Object.entries(formationsByDomain).map(([domainName, domainFormations]) => (
-            <div key={domainName} className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 pb-2 border-b-2 border-blue-500">
-                {domainName}
-              </h3>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                {domainFormations.map(formation => (
-                  <div 
-                    key={formation.id}
-                    className={`p-6 rounded-xl border-2 transition-all cursor-pointer ${
-                      formData.formations.includes(formation.id)
-                        ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20 shadow-lg scale-[1.02]'
-                        : 'border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 hover:border-blue-300'
-                    }`}
-                    onClick={() => handleFormationChange(formation.id)}
-                  >
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex-1 pr-4">
-                        <h4 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                          {formation.titre}
-                        </h4>
-                        <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-3">
-                          <Clock className="w-4 h-4" />
-                          <span>{formation.duree}</span>
-                        </div>
-                      </div>
-                      <div className="flex-shrink-0">
-                        <input
-                          type="checkbox"
-                          readOnly
-                          checked={formData.formations.includes(formation.id)}
-                          className="w-6 h-6 rounded border-gray-300 text-blue-500 focus:ring-blue-500 pointer-events-none"
-                        />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12">
+            {langues.map(langue => (
+              <div 
+                key={langue.id}
+                className={`p-6 rounded-xl border-2 transition-all ${
+                  formData.langues.includes(langue.id)
+                    ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20 shadow-lg'
+                    : 'border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 hover:border-blue-300 cursor-pointer'
+                }`}
+              >
+                <div 
+                  className="cursor-pointer"
+                  onClick={() => handleLangueChange(langue.id)}
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1 pr-4">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        {langue.titre}
+                      </h3>
+                      <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-3">
+                        <Clock className="w-4 h-4" />
+                        <span>{langue.duree}</span>
                       </div>
                     </div>
-                    
-                    <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm sm:text-base">
-                      {formation.description}
-                    </p>
-                    
-                    <div className="mb-4">
-                      <p className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">
-                        {t('skillsTitle')}
-                      </p>
-                      <ul className="space-y-2">
-                        {formation.competences.map((comp, idx) => (
-                          <li key={idx} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-                            <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                            <span>{comp}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 dark:text-blue-400 mt-4">
-                      {formation.prix.toLocaleString(locale)} DZD
+                    <div className="flex-shrink-0">
+                      <input
+                        type="checkbox"
+                        readOnly
+                        checked={formData.langues.includes(langue.id)}
+                        className="w-6 h-6 rounded border-gray-300 text-blue-500 focus:ring-blue-500 pointer-events-none"
+                      />
                     </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          ))}
+                  
+                  <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm sm:text-base">
+                    {langue.description}
+                  </p>
+                  
+                  <div className="mb-4">
+                    <p className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">
+                      {t('skillsTitle')}
+                    </p>
+                    <ul className="space-y-2">
+                      {langue.competences.map((comp, idx) => (
+                        <li key={idx} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+                          <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <span>{comp}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 dark:text-blue-400 mt-4">
+                    {langue.prix.toLocaleString(locale)} DZD
+                  </div>
+                </div>
 
-          <div className="max-w-3xl mx-auto bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 mt-12">
+                {formData.langues.includes(langue.id) && langue.niveaux.length > 1 && (
+                  <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                      {t('selectLevel')}
+                    </label>
+                    <select
+                      value={formData.niveaux[langue.id] || langue.niveaux[0]}
+                      onChange={(e) => handleNiveauChange(langue.id, e.target.value)}
+                      onClick={(e) => e.stopPropagation()}
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    >
+                      {langue.niveaux.map(niveau => (
+                        <option key={niveau} value={niveau}>{niveau}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="max-w-3xl mx-auto bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               {t('formTitle')}
             </h3>
@@ -330,24 +422,24 @@ export default function FormationSection() {
 
               <div>
                 <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                  {t('formFormations')}
+                  {t('formLangues')}
                 </label>
                 <div className="p-4 bg-white dark:bg-gray-700 rounded-lg border border-gray-300 dark:border-gray-600 min-h-[60px]">
-                  {formData.formations.length === 0 ? (
+                  {formData.langues.length === 0 ? (
                     <p className="text-gray-500 dark:text-gray-400 text-sm">
-                      {t('formNoFormation')}
+                      {t('formNoLangue')}
                     </p>
                   ) : (
                     <ul className="space-y-2">
-                      {formData.formations.map(id => {
-                        const formation = formations.find(f => f.id === id);
+                      {formData.langues.map(id => {
+                        const langue = langues.find(l => l.id === id);
                         return (
                           <li key={id} className="flex justify-between items-center text-sm">
                             <span className="text-gray-900 dark:text-white font-medium">
-                              {formation.titre}
+                              {langue.titre} ({formData.niveaux[id]})
                             </span>
                             <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                              {formation.prix.toLocaleString(locale)} DZD
+                              {langue.prix.toLocaleString(locale)} DZD
                             </span>
                           </li>
                         );
@@ -402,8 +494,8 @@ export default function FormationSection() {
 
               <button
                 type="submit"
-                disabled={isSubmitting || formData.formations.length === 0}
-                className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold rounded-lg shadow-lg transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 text-lg"
+                disabled={isSubmitting || formData.langues.length === 0}
+                className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold rounded-lg shadow-lg transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2 text-lg"
               >
                 {isSubmitting ? (
                   <>

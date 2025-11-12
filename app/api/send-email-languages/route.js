@@ -4,8 +4,19 @@ import nodemailer from 'nodemailer';
 export async function POST(request) {
   try {
     const body = await request.json();
-    // On récupère discountRate (correctif du bug de réduction)
-    const { nom, prenom, email, telephone, formations, codePromo, total, discount, discountRate } = body;
+    
+    // On récupère les données du formulaire 'langues'
+    const { 
+      nom, 
+      prenom, 
+      email, 
+      telephone, 
+      langues, // This is the array of selected languages
+      codePromo, 
+      total, 
+      discount, 
+      discountRate 
+    } = body;
 
     // Create transporter using Gmail
     const transporter = nodemailer.createTransport({
@@ -14,8 +25,6 @@ export async function POST(request) {
         user: process.env.GMAIL_USER, // Your Gmail address
         pass: process.env.GMAIL_APP_PASSWORD, // Gmail App Password
       },
-      // 👇 SOLUTION APPLIQUÉE (Pour l'erreur 'self-signed certificate')
-      // Ceci est pour le développement local UNIQUEMENT.
       tls: {
         rejectUnauthorized: false
       }
@@ -25,7 +34,7 @@ export async function POST(request) {
     const adminMailOptions = {
       from: process.env.GMAIL_USER,
       to: 'eco.espe@gmail.com',
-      subject: '🎓 Nouvelle inscription aux formations LingoLab',
+      subject: '🎓 Nouvelle inscription - Formations Langues LingoLab', // Updated subject
       html: `
         <!DOCTYPE html>
         <html>
@@ -33,25 +42,25 @@ export async function POST(request) {
           <style>
             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
             .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: linear-gradient(135deg, #f97316 0%, #ef4444 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+            .header { background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
             .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
-            .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #f97316; }
-            .section h3 { color: #f97316; margin-top: 0; }
+            .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #3b82f6; }
+            .section h3 { color: #3b82f6; margin-top: 0; }
             .info-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #e5e7eb; }
             .info-row:last-child { border-bottom: none; }
             .label { font-weight: bold; color: #6b7280; }
             .value { color: #111827; }
-            .formation-item { background: #fff7ed; padding: 15px; margin: 10px 0; border-radius: 6px; border-left: 3px solid #f97316; }
-            .total { background: linear-gradient(135deg, #fef3c7 0%, #fecaca 100%); padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px; }
-            .total-amount { font-size: 32px; font-weight: bold; color: #f97316; }
+            .formation-item { background: #eff6ff; padding: 15px; margin: 10px 0; border-radius: 6px; border-left: 3px solid #3b82f6; }
+            .total { background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px; }
+            .total-amount { font-size: 32px; font-weight: bold; color: #3b82f6; }
             .discount-badge { background: #10b981; color: white; padding: 5px 15px; border-radius: 20px; display: inline-block; font-size: 14px; margin-top: 10px; }
           </style>
         </head>
         <body>
           <div class="container">
             <div class="header">
-              <h1>🎓 Nouvelle Inscription</h1>
-              <p>Un candidat vient de s'inscrire aux formations LingoLab</p>
+              <h1>🎓 Nouvelle Inscription (Langues)</h1>
+              <p>Un candidat vient de s'inscrire aux formations de langues LingoLab</p>
             </div>
             
             <div class="content">
@@ -72,12 +81,12 @@ export async function POST(request) {
               </div>
 
               <div class="section">
-                <h3>🎯 Formations Sélectionnées</h3>
-                ${formations.map(f => `
+                <h3>🎯 Langues Sélectionnées</h3>
+                ${langues.map(l => `
                   <div class="formation-item">
-                    <strong>${f.titre}</strong><br>
-                    <span style="color: #6b7280;">Durée: ${f.duree}</span><br>
-                    <span style="color: #f97316; font-weight: bold;">${f.prix.toLocaleString()} DZD</span>
+                    <strong>${l.titre} (Niveau: ${l.niveau})</strong><br>
+                    <span style="color: #6b7280;">Durée: ${l.duree}</span><br>
+                    <span style="color: #3b82f6; font-weight: bold;">${l.prix.toLocaleString()} DZD</span>
                   </div>
                 `).join('')}
               </div>
@@ -114,7 +123,7 @@ export async function POST(request) {
     const userMailOptions = {
       from: process.env.GMAIL_USER,
       to: email,
-      subject: '✅ Confirmation d\'inscription - LingoLab',
+      subject: '✅ Confirmation d\'inscription - Langues LingoLab', // Updated subject
       html: `
         <!DOCTYPE html>
         <html>
@@ -122,13 +131,13 @@ export async function POST(request) {
           <style>
             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
             .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: linear-gradient(135deg, #f97316 0%, #ef4444 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+            .header { background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
             .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
             .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-            .section h3 { color: #f97316; margin-top: 0; }
-            .formation-item { background: #fff7ed; padding: 15px; margin: 10px 0; border-radius: 6px; }
-            .total { background: linear-gradient(135deg, #fef3c7 0%, #fecaca 100%); padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px; }
-            .total-amount { font-size: 32px; font-weight: bold; color: #f97316; }
+            .section h3 { color: #3b82f6; margin-top: 0; }
+            .formation-item { background: #eff6ff; padding: 15px; margin: 10px 0; border-radius: 6px; }
+            .total { background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px; }
+            .total-amount { font-size: 32px; font-weight: bold; color: #3b82f6; }
             .footer { text-align: center; padding: 20px; color: #6b7280; font-size: 14px; }
           </style>
         </head>
@@ -142,16 +151,16 @@ export async function POST(request) {
             <div class="content">
               <div class="section">
                 <h3>🎉 Votre inscription a bien été enregistrée</h3>
-                <p>Nous avons bien reçu votre demande d'inscription aux formations LingoLab. Notre équipe va traiter votre inscription et vous contactera très prochainement.</p>
+                <p>Nous avons bien reçu votre demande d'inscription aux formations de langues LingoLab. Notre équipe va traiter votre inscription et vous contactera très prochainement.</p>
               </div>
 
               <div class="section">
                 <h3>📚 Récapitulatif de votre inscription</h3>
-                ${formations.map(f => `
+                ${langues.map(l => `
                   <div class="formation-item">
-                    <strong>${f.titre}</strong><br>
-                    <span style="color: #6b7280;">📅 Durée: ${f.duree}</span><br>
-                    <span style="color: #f97316; font-weight: bold;">💰 ${f.prix.toLocaleString()} DZD</span>
+                    <strong>${l.titre} (Niveau: ${l.niveau})</strong><br>
+                    <span style="color: #6b7280;">📅 Durée: ${l.duree}</span><br>
+                    <span style="color: #3b82f6; font-weight: bold;">💰 ${l.prix.toLocaleString()} DZD</span>
                   </div>
                 `).join('')}
               </div>
