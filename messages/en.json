@@ -312,7 +312,7 @@
       "Business English"
     ],
     "langue2_title": "French (FLE)",
-    "langue2_price": 15000,
+    "langue2_price": 9000,
     "langue2_duration": "3 months per level",
     "langue2_desc": "Improve your mastery of French for daily life, studies, or work.",
     "langue2_skills": [
@@ -322,7 +322,7 @@
       "French culture"
     ],
     "langue3_title": "Spanish",
-    "langue3_price": 18000,
+    "langue3_price": 12000,
     "langue3_duration": "4 months",
     "langue3_desc": "Learn the third most spoken language in the world with immersive methods.",
     "langue3_skills": [
@@ -332,7 +332,7 @@
       "Professional vocabulary"
     ],
     "langue4_title": "German",
-    "langue4_price": 20000,
+    "langue4_price": 12000,
     "langue4_duration": "4 months",
     "langue4_desc": "Master the language of Goethe, essential for opportunities in Central Europe.",
     "langue4_skills": [
@@ -342,7 +342,7 @@
       "Germanic culture"
     ],
     "langue5_title": "Turkish",
-    "langue5_price": 20000,
+    "langue5_price": 12000,
     "langue5_duration": "4 months",
     "langue5_desc": "Discover the Turkish language, a bridge between Europe and Asia.",
     "langue5_skills": [
@@ -352,7 +352,7 @@
       "Turkish culture"
     ],
     "langue6_title": "Korean",
-    "langue6_price": 20000,
+    "langue6_price": 12000,
     "langue6_duration": "4 months",
     "langue6_desc": "Dive into the Korean language, increasingly in demand in the professional world.",
     "langue6_skills": [
@@ -362,7 +362,7 @@
       "Modern Korean culture"
     ],
     "langue7_title": "Italian",
-    "langue7_price": 20000,
+    "langue7_price": 12000,
     "langue7_duration": "4 months",
     "langue7_desc": "Learn the beautiful Italian language, the language of culture and art.",
     "langue7_skills": [
@@ -635,7 +635,7 @@
         "domaineId": "paramedical",
         "domaineTitre": "Health & Paramedical Hub",
         "titre": "Healthcare Assistant",
-        "prix": 45000,
+        "prix": 9000,
         "duree": "6 months",
         "description": "Become a professional in supporting and caring for dependent individuals.",
         "competences": [
@@ -649,7 +649,7 @@
         "domaineId": "paramedical",
         "domaineTitre": "Health & Paramedical Hub",
         "titre": "Pharmacy Salesperson",
-        "prix": 35000,
+        "prix": 9000,
         "duree": "4 months",
         "description": "Master medication dispensing and customer counseling in a pharmacy.",
         "competences": [
@@ -664,7 +664,7 @@
         "domaineId": "paramedical",
         "domaineTitre": "Health & Paramedical Hub",
         "titre": "Lab Assistant",
-        "prix": 40000,
+        "prix": 9000,
         "duree": "5 months",
         "description": "Assist technicians in medical analysis laboratories.",
         "competences": [
@@ -678,7 +678,7 @@
         "domaineId": "langues",
         "domaineTitre": "Languages & International Hub",
         "titre": "English (All levels)",
-        "prix": 15000,
+        "prix": 9000,
         "duree": "3 months (per level)",
         "description": "From beginner to advanced, master general and professional English.",
         "competences": [
@@ -735,7 +735,7 @@
         "domaineId": "informatique",
         "domaineTitre": "Tech & Digital Hub (with DevLab)",
         "titre": "Web Development",
-        "prix": 50000,
+        "prix": 18000,
         "duree": "5 months",
         "description": "Complete training to become a full-stack web developer, in partnership with DevLab.",
         "competences": [
@@ -750,7 +750,7 @@
         "domaineId": "informatique",
         "domaineTitre": "Tech & Digital Hub (with DevLab)",
         "titre": "Cybersecurity",
-        "prix": 60000,
+        "prix": 25000,
         "duree": "4 months",
         "description": "Protect systems and data against threats. In partnership with DevLab.",
         "competences": [
@@ -765,7 +765,7 @@
         "domaineId": "informatique",
         "domaineTitre": "Tech & Digital Hub (with DevLab)",
         "titre": "Design & Video Editing",
-        "prix": 40000,
+        "prix": 24000,
         "duree": "3 months",
         "description": "Master graphic design and video editing tools. In partnership with DevLab.",
         "competences": [
@@ -780,7 +780,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Trades & Skills Hub",
         "titre": "Auto Scanner",
-        "prix": 35000,
+        "prix": 25000,
         "duree": "2 months",
         "description": "Learn to diagnose electronic faults in modern vehicles.",
         "competences": [
@@ -808,7 +808,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Trades & Skills Hub",
         "titre": "HSE",
-        "prix": 40000,
+        "prix": 25000,
         "duree": "3 months",
         "description": "Master Health, Safety, and Environment standards in the workplace.",
         "competences": [
@@ -823,7 +823,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Trades & Skills Hub",
         "titre": "Camera & Fiber Optics",
-        "prix": 45000,
+        "prix": 25000,
         "duree": "3 months",
         "description": "Specialize in installing surveillance systems and fiber optic networks.",
         "competences": [
@@ -838,7 +838,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Trades & Skills Hub",
         "titre": "Hairdressing",
-        "prix": 30000,
+        "prix": 15000,
         "duree": "6 months",
         "description": "Practical training in hairdressing (cutting, coloring, styling).",
         "competences": [
@@ -853,7 +853,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Trades & Skills Hub",
         "titre": "Sewing",
-        "prix": 30000,
+        "prix": 15000,
         "duree": "6 months",
         "description": "Learn the basics and advanced techniques of sewing and pattern making.",
         "competences": [
@@ -868,7 +868,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Trades & Skills Hub",
         "titre": "Pastry",
-        "prix": 40000,
+        "prix": 15000,
         "duree": "4 months",
         "description": "Master the basic techniques of fine and traditional pastry.",
         "competences": [
@@ -883,7 +883,7 @@
         "domaineId": "pedagogique",
         "domaineTitre": "Education & Pedagogy Hub",
         "titre": "Teacher Training",
-        "prix": 35000,
+        "prix": 15000,
         "duree": "3 months",
         "description": "Acquire modern pedagogical methods to teach effectively.",
         "competences": [

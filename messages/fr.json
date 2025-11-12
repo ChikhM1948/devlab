@@ -506,7 +506,7 @@
         "domaineId": "paramedical",
         "domaineTitre": "Pôle Santé & Paramédical",
         "titre": "Aide-soignant",
-        "prix": 45000,
+        "prix": 9000,
         "duree": "6 mois",
         "description": "Devenez un professionnel de l'accompagnement et des soins aux personnes dépendantes.",
         "competences": ["Soins d'hygiène et de confort", "Aide à la mobilité", "Protocoles de santé"]
@@ -516,7 +516,7 @@
         "domaineId": "paramedical",
         "domaineTitre": "Pôle Santé & Paramédical",
         "titre": "Vendeur en pharmacie",
-        "prix": 35000,
+        "prix": 9000,
         "duree": "4 mois",
         "description": "Maîtrisez la dispensation de médicaments et le conseil client en officine.",
         "competences": ["Pharmacologie de base", "Gestion des stocks", "Conseil client", "Réglementation"]
@@ -526,7 +526,7 @@
         "domaineId": "paramedical",
         "domaineTitre": "Pôle Santé & Paramédical",
         "titre": "Aide-laborantin",
-        "prix": 40000,
+        "prix": 9000,
         "duree": "5 mois",
         "description": "Assistez les techniciens en laboratoire d'analyses médicales.",
         "competences": ["Préparation des échantillons", "Utilisation du matériel", "Hygiène et sécurité"]
@@ -536,7 +536,7 @@
         "domaineId": "langues",
         "domaineTitre": "Pôle Langues & International",
         "titre": "Anglais (Tous niveaux)",
-        "prix": 15000,
+        "prix": 9000,
         "duree": "3 mois (par niveau)",
         "description": "De débutant à avancé, maîtrisez l'anglais général et professionnel.",
         "competences": ["Conversation", "Grammaire", "Compréhension orale", "Anglais des affaires"]
@@ -546,7 +546,7 @@
         "domaineId": "langues",
         "domaineTitre": "Pôle Langues & International",
         "titre": "Français (FLE)",
-        "prix": 15000,
+        "prix": 9000,
         "duree": "3 mois (par niveau)",
         "description": "Améliorez votre maîtrise du français pour le quotidien ou le travail.",
         "competences": ["Orthographe et grammaire", "Rédaction professionnelle", "Aisance orale"]
@@ -556,7 +556,7 @@
         "domaineId": "langues",
         "domaineTitre": "Pôle Langues & International",
         "titre": "Espagnol",
-        "prix": 18000,
+        "prix": 12000,
         "duree": "4 mois",
         "description": "Apprenez la troisième langue la plus parlée au monde.",
         "competences": ["Conversation", "Grammaire", "Culture hispanique"]
@@ -566,7 +566,7 @@
         "domaineId": "langues",
         "domaineTitre": "Pôle Langues & International",
         "titre": "Allemand, Turc, Coréen, Italien",
-        "prix": 20000,
+        "prix": 12000,
         "duree": "4 mois",
         "description": "Ouvrez-vous à de nouvelles cultures avec nos formations spécialisées.",
         "competences": ["Bases grammaticales", "Vocabulaire courant", "Conversation (Niveau A1/A2)"]
@@ -576,7 +576,7 @@
         "domaineId": "informatique",
         "domaineTitre": "Pôle Tech & Numérique (avec DevLab)",
         "titre": "Développement Web",
-        "prix": 50000,
+        "prix": 18000,
         "duree": "5 mois",
         "description": "Formation complète pour devenir développeur web full-stack, en partenariat avec DevLab.",
         "competences": ["HTML5 & CSS3", "JavaScript (React)", "Node.js", "Bases de données"]
@@ -586,7 +586,7 @@
         "domaineId": "informatique",
         "domaineTitre": "Pôle Tech & Numérique (avec DevLab)",
         "titre": "Cybersécurité",
-        "prix": 60000,
+        "prix": 24000,
         "duree": "4 mois",
         "description": "Protégez les systèmes et les données contre les menaces. En partenariat avec DevLab.",
         "competences": ["Analyse des risques", "Sécurité des réseaux", "Tests d'intrusion", "Conformité"]
@@ -596,7 +596,7 @@
         "domaineId": "informatique",
         "domaineTitre": "Pôle Tech & Numérique (avec DevLab)",
         "titre": "Design & Montage Vidéo",
-        "prix": 40000,
+        "prix": 24000,
         "duree": "3 mois",
         "description": "Maîtrisez les outils de création graphique et de montage vidéo. En partenariat avec DevLab.",
         "competences": ["Adobe Photoshop", "Adobe Illustrator", "Adobe Premiere Pro", "After Effects"]
@@ -606,7 +606,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Pôle Métiers & Compétences",
         "titre": "Scanner Auto",
-        "prix": 35000,
+        "prix": 25000,
         "duree": "2 mois",
         "description": "Apprenez à diagnostiquer les pannes électroniques des véhicules modernes.",
         "competences": ["Diagnostic électronique", "Lecture des codes défauts", "Utilisation valise"]
@@ -626,7 +626,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Pôle Métiers & Compétences",
         "titre": "HSE",
-        "prix": 40000,
+        "prix": 25000,
         "duree": "3 mois",
         "description": "Maîtrisez les normes d'Hygiène, Sécurité et Environnement en entreprise.",
         "competences": ["Analyse des risques", "Normes ISO", "Prévention des accidents", "Audit"]
@@ -636,7 +636,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Pôle Métiers & Compétences",
         "titre": "Caméra & Fibre Optique",
-        "prix": 45000,
+        "prix": 25000,
         "duree": "3 mois",
         "description": "Spécialisez-vous dans l'installation de systèmes de surveillance et de réseaux fibre.",
         "competences": ["Installation caméras", "Configuration NVR", "Soudure fibre optique", "Raccordement"]
@@ -646,7 +646,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Pôle Métiers & Compétences",
         "titre": "Coiffure",
-        "prix": 30000,
+        "prix": 15000,
         "duree": "6 mois",
         "description": "Formation pratique aux métiers de la coiffure (coupe, couleur, soin).",
         "competences": ["Techniques de coupe", "Colorimétrie", "Mise en forme", "Accueil client"]
@@ -656,7 +656,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Pôle Métiers & Compétences",
         "titre": "Couture",
-        "prix": 30000,
+        "prix": 18000,
         "duree": "6 mois",
         "description": "Apprenez les bases et les techniques avancées de la couture et du modélisme.",
         "competences": ["Utilisation machine", "Patronage", "Assemblage", "Finitions"]
@@ -666,7 +666,7 @@
         "domaineId": "professionnel",
         "domaineTitre": "Pôle Métiers & Compétences",
         "titre": "Pâtisserie",
-        "prix": 40000,
+        "prix": 18000,
         "duree": "4 mois",
         "description": "Maîtrisez les techniques de base de la pâtisserie fine et traditionnelle.",
         "competences": ["Gestion des pâtes", "Crèmes et glaçages", "Chocolaterie", "Hygiène"]
@@ -676,7 +676,7 @@
         "domaineId": "pedagogique",
         "domaineTitre": "Pôle Éducation & Pédagogie",
         "titre": "Formation des Enseignants",
-        "prix": 35000,
+        "prix": 15000,
         "duree": "3 mois",
         "description": "Acquérez les méthodes pédagogiques modernes pour enseigner efficacement.",
         "competences": ["Ingénierie pédagogique", "Gestion de classe", "Techniques d'évaluation", "Psychologie de l'enfant"]
@@ -758,7 +758,7 @@
     ],
     
     "langue2_title": "Français (FLE)",
-    "langue2_price": 15000,
+    "langue2_price": 9000,
     "langue2_duration": "3 mois par niveau",
     "langue2_desc": "Améliorez votre maîtrise du français pour le quotidien, les études ou le travail.",
     "langue2_skills": [
@@ -769,7 +769,7 @@
     ],
     
     "langue3_title": "Espagnol",
-    "langue3_price": 18000,
+    "langue3_price": 12000,
     "langue3_duration": "4 mois",
     "langue3_desc": "Apprenez la troisième langue la plus parlée au monde avec des méthodes immersives.",
     "langue3_skills": [
@@ -780,7 +780,7 @@
     ],
     
     "langue4_title": "Allemand",
-    "langue4_price": 20000,
+    "langue4_price": 12000,
     "langue4_duration": "4 mois",
     "langue4_desc": "Maîtrisez la langue de Goethe, essentielle pour les opportunités en Europe centrale.",
     "langue4_skills": [
@@ -791,7 +791,7 @@
     ],
     
     "langue5_title": "Turc",
-    "langue5_price": 20000,
+    "langue5_price": 12000,
     "langue5_duration": "4 mois",
     "langue5_desc": "Découvrez la langue turque, pont entre l'Europe et l'Asie.",
     "langue5_skills": [
@@ -802,7 +802,7 @@
     ],
     
     "langue6_title": "Coréen",
-    "langue6_price": 20000,
+    "langue6_price": 12000,
     "langue6_duration": "4 mois",
     "langue6_desc": "Plongez dans la langue coréenne, de plus en plus demandée dans le monde professionnel.",
     "langue6_skills": [
@@ -813,7 +813,7 @@
     ],
     
     "langue7_title": "Italien",
-    "langue7_price": 20000,
+    "langue7_price": 12000,
     "langue7_duration": "4 mois",
     "langue7_desc": "Apprenez la belle langue italienne, langue de la culture et de l'art.",
     "langue7_skills": [
