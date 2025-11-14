@@ -75,23 +75,99 @@
     "stat3_desc": "Equipped training rooms",
     "button": "Discover the Plans"
   },
-  "AboutSection": {
-    "title": "Our Achievements",
-    "subtitle": "Discover some of the projects we have developed with passion and expertise for our clients.",
-    "projectsTitle": "Flagship Projects",
-    "project1_name": "Academy Wahrani",
-    "project1_desc": "Complete educational platform with course, student, and certification management",
-    "project2_name": "PolyNote",
-    "project2_desc": "Collaborative note-taking application for students and professionals",
-    "project3_name": "Attendance Tracker",
-    "project3_desc": "Intelligent attendance tracking system for educational institutions",
-    "project4_name": "Forum LingoLab",
-    "project4_desc": "Community language learning platform with forums and resources",
-    "project5_name": "Colloquium Relizane",
-    "project5_desc": "Event website for university conferences with registration management",
-    "visitSite": "Visit Site",
-    "comingSoon": "Coming Soon"
+  "AboutPage": {
+    "backToHome": "Back to Home",
+    "mainTitle": "About Our School",
+    "subtitle": "Discover the mission, values, and team at the heart of our educational project.",
+    "mission": {
+      "title": "Our Mission",
+      "paragraph1": "We are committed to providing excellent, accessible education, rooted in local realities while being open to the world. We are training the talents who will build the future.",
+      "paragraph2": "Our goal is to bridge the gap between ambition and success by offering innovative curricula, expert faculty, and a close-knit community."
+    },
+    "stats": {
+      "title": "Our Pillars",
+      "students": { "value": "Engaged", "label": "Student Community" },
+      "courses": { "value": "Innovative", "label": "Curriculum" },
+      "certificates": { "value": "Quality", "label": "Higher Education" },
+      "languages": { "value": "Trilingual", "label": "Arabic / French / English" }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "excellence": { "title": "Excellence", "description": "We aim for the highest quality in our teaching, our support, and our administration." },
+      "passion": { "title": "Passion for Learning", "description": "We are passionate about education and inspire a desire to learn and excel." },
+      "innovation": { "title": "Innovation", "description": "We adopt modern pedagogy and powerful tools for effective learning." },
+      "community": { "title": "Community", "description": "We foster an environment of mutual support, respect, and collaboration among students and faculty." }
+    },
+    "team": {
+      "title": "Our Team",
+      "founder": { "name": "The Management", "role": "Founders", "description": "A visionary team dedicated to building a center of educational excellence in Algeria." },
+      "academic": { "name": "The Faculty", "role": "Academic Directors", "description": "Ensuring academic excellence and close guidance for our students." },
+      "tech": { "name": "The Administrative Staff", "role": "Administration & Support", "description": "Ensuring a smooth learning experience and an optimal working environment." }
+    },
+    "achievements": {
+      "title": "Our Commitments",
+      "item1": { "title": "Pedagogical Excellence", "description": "To offer cutting-edge education aligned with the best academic standards." },
+      "item2": { "title": "Student Success", "description": "To place the development and success of each student at the heart of our priorities." },
+      "item3": { "title": "Active Pedagogy", "description": "To integrate the latest technologies and teaching methods for dynamic learning." },
+      "item4": { "title": "Professional Integration", "description": "To build strong bridges with the business world for the future of our graduates." }
+    },
+    "cta": {
+      "title": "Ready to Join Us?",
+      "description": "Join our community and be among the pioneers of this new educational adventure.",
+      "button": "Contact Us"
+    }
   },
+
+ "AboutSection": {
+      "badge": "About LingoLab",
+      "title": "Transforming Language Education",
+      "subtitle": "We are committed to providing world-class language education through innovative technology and dedicated teaching. Join thousands of students who have achieved their language goals with LingoLab.",
+      
+      "stats": {
+        "stat1": {
+          "value": "500+",
+          "label": "Active Students"
+        },
+        "stat2": {
+          "value": "50+",
+          "label": "Language Courses"
+        },
+        "stat3": {
+          "value": "95%",
+          "label": "Success Rate"
+        },
+        "stat4": {
+          "value": "12",
+          "label": "Languages"
+        }
+      },
+      
+      "feature1": {
+        "title": "Expert Instructors",
+        "description": "Learn from certified language professionals with years of teaching experience and cultural expertise."
+      },
+      "feature2": {
+        "title": "Interactive Community",
+        "description": "Connect with fellow learners in our vibrant forum and practice conversations in real-time."
+      },
+      "feature3": {
+        "title": "Global Recognition",
+        "description": "Earn internationally recognized certificates that boost your academic and professional credentials."
+      },
+      "feature4": {
+        "title": "Proven Methods",
+        "description": "Benefit from evidence-based teaching approaches that guarantee measurable progress and fluency."
+      },
+      
+      "mission": {
+        "title": "Our Mission: Breaking Language Barriers",
+        "description": "We believe that language learning should be accessible, engaging, and effective. Through our innovative platform, we empower learners to connect with the world, unlock new opportunities, and embrace diverse cultures."
+      },
+      
+      "learnMore": "Learn More About Us"
+    },
+  
+
   "TestimonialsSection": {
     "title": "What Our Clients Say",
     "t1_name": "Ahmed Benali",
@@ -302,7 +378,7 @@
     "statusSuccess": "Registration sent successfully! We will contact you soon.",
     "statusError": "Error sending. Please try again.",
     "langue1_title": "English (All levels)",
-    "langue1_price": 15000,
+    "langue1_price": 9000,
     "langue1_duration": "3 months per level",
     "langue1_desc": "From beginner to advanced, master general and professional English with experienced trainers.",
     "langue1_skills": [
@@ -373,6 +449,7 @@
     ]
   },
 
+  
   "EmailLanguages": {
     "admin_subject": "🎓 New Registration - LingoLab Language Courses",
     "admin_h1": "New Registration (Languages)",

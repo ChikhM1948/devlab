@@ -3,103 +3,132 @@
 import { 
   GraduationCap, 
   BookOpen, 
-  CheckCircle, 
-  ArrowRight, 
-  MessageSquare,
-  Presentation
+  Users, 
+  Globe,
+  ArrowRight,
+  Target,
+  Award,
+  Sparkles
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { Link } from '../../i18n/routing';
 
 export default function AboutSection() {
   const t = useTranslations('AboutSection');
 
-  const projects = [
+  const features = [
     {
       icon: GraduationCap,
-      name: t('project1_name'),
-      description: t('project1_desc'),
-      link: "https://www.academywahrani.com/",
+      title: t('feature1.title'),
+      description: t('feature1.description'),
     },
     {
-      icon: BookOpen,
-      name: t('project2_name'),
-      description: t('project2_desc'),
-      link: "https://polynote.online",
+      icon: Users,
+      title: t('feature2.title'),
+      description: t('feature2.description'),
     },
     {
-      icon: CheckCircle,
-      name: t('project3_name'),
-      description: t('project3_desc'),
-      link: "https://attendance-tracker-beta1-0-1.vercel.app/",
+      icon: Globe,
+      title: t('feature3.title'),
+      description: t('feature3.description'),
     },
     {
-      icon: MessageSquare,
-      name: t('project4_name'),
-      description: t('project4_desc'),
-      link: "https://forum-lingo-lab-qfwt.vercel.app/",
-    },
-    {
-      icon: Presentation,
-      name: t('project5_name'),
-      description: t('project5_desc'),
-      link: "https://www.colloquiumunivrelizane.info/",
+      icon: Award,
+      title: t('feature4.title'),
+      description: t('feature4.description'),
     }
   ];
 
+  const stats = [
+    { value: t('stats.stat1.value'), label: t('stats.stat1.label') },
+    { value: t('stats.stat2.value'), label: t('stats.stat2.label') },
+    { value: t('stats.stat3.value'), label: t('stats.stat3.label') },
+    { value: t('stats.stat4.value'), label: t('stats.stat4.label') }
+  ];
+
   return (
-    <section id="apropos" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
         
+        {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-8">
+          <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full font-semibold mb-4">
+            <Sparkles className="w-4 h-4" />
+            {t('badge')}
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
             {t('title')}
           </h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-            {t('projectsTitle')}
-          </h3>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, idx) => (
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          {stats.map((stat, idx) => (
             <div 
-              key={idx} 
-              className="flex flex-col bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden transition-all transform hover:shadow-2xl hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
+              key={idx}
+              className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 text-center transition-all hover:shadow-lg"
             >
-              <div className="p-8 flex-grow">
-                <div className="w-16 h-16 bg-blue-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mb-6">
-                  <project.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-                </div>
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                  {project.name}
-                </h4>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  {project.description}
-                </p>
+              <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                {stat.value}
               </div>
-
-              <div className="p-6 bg-gray-50 dark:bg-gray-800">
-                <a
-                  href={project.link}
-                  target={project.link === "#" ? "_self" : "_blank"}
-                  rel="noopener noreferrer"
-                  className={`flex items-center justify-center gap-2 w-full px-6 py-3 font-semibold rounded-lg transition-all ${
-                    project.link === "#"
-                      ? 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600 transform hover:scale-105'
-                  }`}
-                >
-                  {project.link === "#" ? t('comingSoon') : t('visitSite')}
-                  {project.link !== "#" && <ArrowRight className="w-5 h-5" />}
-                </a>
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                {stat.label}
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {features.map((feature, idx) => (
+            <div 
+              key={idx} 
+              className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 transition-all transform hover:shadow-xl hover:-translate-y-2"
+            >
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <feature.icon className="w-7 h-7 text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                {feature.title}
+              </h4>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Mission Statement */}
+        <div className="bg-gradient-to-r from-blue-500 to-indigo-600 dark:from-blue-600 dark:to-purple-700 rounded-2xl p-8 md:p-12 text-white mb-12">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                <Target className="w-10 h-10 text-white" />
+              </div>
+            </div>
+            <div className="flex-grow text-center md:text-left">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                {t('mission.title')}
+              </h3>
+              <p className="text-lg opacity-90 leading-relaxed">
+                {t('mission.description')}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center">
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg font-bold hover:from-blue-600 hover:to-indigo-600 transition-all transform hover:scale-105 shadow-lg"
+          >
+            {t('learnMore')}
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
       </div>
     </section>

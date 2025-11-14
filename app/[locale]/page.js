@@ -43,10 +43,15 @@ export default function Page() {
       />
       
       <HeroSection scrollToSection={scrollToSection} />
+
+      <AboutSection scrollToSection={scrollToSection} />
+
       
-      <ServicesSection />
+      <ServicesSection  scrollToSection={scrollToSection} />
       
       <BundleSection scrollToSection={scrollToSection} />
+
+      <AboutSection scrollToSection={scrollToSection} />
       
 
       {/* Newsletter Section - Added here before Contact */}

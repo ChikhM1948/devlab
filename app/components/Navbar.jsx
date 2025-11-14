@@ -23,7 +23,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
           <Link href="/" className="flex-shrink-0 flex items-center gap-2 group">
             <div className="w-10 h-10 flex items-center justify-center rounded-full overflow-hidden bg-gradient-to-r from-blue-500 to-indigo-500 p-1 shadow-md transition-all duration-300 transform group-hover:scale-110 group-hover:shadow-lg">
               <Image 
-                src="/logo.jpg"
+                src="/lingo.png"
                 alt="LingoLab Logo"
                 width={36}
                 height={36}
@@ -49,13 +49,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
             >
               {t('services')}
             </button>
-            <button 
-              onClick={() => scrollToSection('apropos')} 
-              className="font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-            >
-              {t('about')}
-            </button>
-
+          
             <Link
               href="/formation"
               className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg hover:from-blue-600 hover:to-indigo-600 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl shadow-lg"
@@ -122,12 +116,7 @@ export default function Navbar({ darkMode, toggleDarkMode, mobileMenuOpen, setMo
             >
               {t('services')}
             </button>
-            <button 
-              onClick={() => handleMobileLinkClick('apropos')} 
-              className="block w-full text-left font-bold text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-            >
-              {t('about')}
-            </button>
+         
 
             <Link
               href="/formation"

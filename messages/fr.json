@@ -73,23 +73,98 @@
     "stat3_desc": "Salles de formation équipées",
     "button": "Découvrir les Formules"
   },
-  "AboutSection": {
-    "title": "Nos Réalisations",
-    "subtitle": "Découvrez quelques-uns des projets que nous avons développés avec passion et expertise pour nos clients.",
-    "projectsTitle": "Projets Phares",
-    "project1_name": "Academy Wahrani",
-    "project1_desc": "Plateforme éducative complète avec gestion des cours, étudiants et certifications",
-    "project2_name": "PolyNote",
-    "project2_desc": "Application collaborative de prise de notes pour étudiants et professionnels",
-    "project3_name": "Attendance Tracker",
-    "project3_desc": "Système de suivi de présence intelligent pour établissements scolaires",
-    "project4_name": "Forum LingoLab",
-    "project4_desc": "Plateforme communautaire d'apprentissage des langues avec forums et ressources",
-    "project5_name": "Colloquium Relizane",
-    "project5_desc": "Site web événementiel pour conférences universitaires avec gestion des inscriptions",
-    "visitSite": "Visiter le Site",
-    "comingSoon": "Bientôt Disponible"
+ "AboutSection": {
+      "badge": "À propos de LingoLab",
+      "title": "Transformer l'Éducation Linguistique",
+      "subtitle": "Nous nous engageons à fournir une éducation linguistique de classe mondiale grâce à une technologie innovante et un enseignement dévoué. Rejoignez des milliers d'étudiants qui ont atteint leurs objectifs linguistiques avec LingoLab.",
+      
+      "stats": {
+        "stat1": {
+          "value": "500+",
+          "label": "Étudiants Actifs"
+        },
+        "stat2": {
+          "value": "50+",
+          "label": "Cours de Langues"
+        },
+        "stat3": {
+          "value": "95%",
+          "label": "Taux de Réussite"
+        },
+        "stat4": {
+          "value": "12",
+          "label": "Langues"
+        }
+      },
+      
+      "feature1": {
+        "title": "Instructeurs Experts",
+        "description": "Apprenez auprès de professionnels de langues certifiés avec des années d'expérience d'enseignement et d'expertise culturelle."
+      },
+      "feature2": {
+        "title": "Communauté Interactive",
+        "description": "Connectez-vous avec d'autres apprenants dans notre forum dynamique et pratiquez des conversations en temps réel."
+      },
+      "feature3": {
+        "title": "Reconnaissance Mondiale",
+        "description": "Obtenez des certificats reconnus internationalement qui renforcent vos références académiques et professionnelles."
+      },
+      "feature4": {
+        "title": "Méthodes Éprouvées",
+        "description": "Bénéficiez d'approches pédagogiques fondées sur des preuves qui garantissent des progrès mesurables et la fluidité."
+      },
+      
+      "mission": {
+        "title": "Notre Mission : Briser les Barrières Linguistiques",
+        "description": "Nous croyons que l'apprentissage des langues devrait être accessible, engageant et efficace. Grâce à notre plateforme innovante, nous permettons aux apprenants de se connecter au monde, de débloquer de nouvelles opportunités et d'embrasser des cultures diverses."
+      },
+      
+      "learnMore": "En Savoir Plus Sur Nous"
+    },
+   
+  "AboutPage": {
+    "backToHome": "Retour à l'accueil",
+    "mainTitle": "À Propos de Notre École",
+    "subtitle": "Découvrez la mission, les valeurs et l'équipe au cœur de notre projet éducatif.",
+    "mission": {
+      "title": "Notre Mission",
+      "paragraph1": "Nous nous engageons à fournir une éducation d'excellence, accessible et ancrée dans les réalités locales tout en étant ouverte sur le monde. Nous formons les talents qui construiront l'avenir.",
+      "paragraph2": "Notre objectif est de combler le fossé entre l'ambition et la réussite en proposant des cursus innovants, un corps professoral expert et une communauté soudée."
+    },
+    "stats": {
+      "title": "Nos Piliers",
+      "students": { "value": "Engagée", "label": "Communauté Étudiante" },
+      "courses": { "value": "Innovant", "label": "Programme Pédagogique" },
+      "certificates": { "value": "Qualité", "label": "Enseignement Supérieur" },
+      "languages": { "value": "Trilingue", "label": "Arabe / Français / Anglais" }
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "excellence": { "title": "Excellence", "description": "Nous visons la plus haute qualité dans notre enseignement, notre encadrement et notre administration." },
+      "passion": { "title": "Passion d'apprendre", "description": "Nous sommes passionnés par l'éducation et nous inspirons le désir d'apprendre et de se dépasser." },
+      "innovation": { "title": "Innovation", "description": "Nous adoptons une pédagogie moderne et des outils performants pour un apprentissage efficace." },
+      "community": { "title": "Communauté", "description": "Nous favorisons un environnement d'entraide, de respect et de collaboration entre étudiants et enseignants." }
+    },
+    "team": {
+      "title": "Notre Équipe",
+      "founder": { "name": "La Direction", "role": "Fondateurs", "description": "Une équipe visionnaire dédiée à bâtir un pôle d'excellence éducative en Algérie." },
+      "academic": { "name": "Le Corps Professoral", "role": "Directeurs Pédagogiques", "description": "Garantir l'excellence académique et un encadrement de proximité pour nos étudiants." },
+      "tech": { "name": "Le Support Administratif", "role": "Administration & Support", "description": "Assurer une expérience d'apprentissage fluide et un environnement de travail optimal." }
+    },
+    "achievements": {
+      "title": "Nos Engagements",
+      "item1": { "title": "Excellence Pédagogique", "description": "Offrir un enseignement de pointe aligné sur les meilleurs standards académiques." },
+      "item2": { "title": "Réussite Étudiante", "description": "Mettre l'épanouissement et le succès de chaque étudiant au cœur de nos priorités." },
+      "item3": { "title": "Pédagogie Active", "description": "Intégrer les dernières technologies et méthodes pédagogiques pour un apprentissage dynamique." },
+      "item4": { "title": "Insertion Professionnelle", "description": "Construire des ponts solides avec le monde de l'entreprise pour l'avenir de nos diplômés." }
+    },
+    "cta": {
+      "title": "Prêt à Nous Rejoindre ?",
+      "description": "Rejoignez notre communauté et soyez parmi les pionniers de cette nouvelle aventure éducative.",
+      "button": "Contactez-nous"
+    }
   },
+
   "TestimonialsSection": {
     "title": "Ce Que Disent Nos Clients",
     "t1_name": "Ahmed Benali",
@@ -747,7 +822,7 @@
     "statusError": "Erreur lors de l'envoi. Veuillez réessayer.",
     
     "langue1_title": "Anglais (Tous niveaux)",
-    "langue1_price": 15000,
+    "langue1_price": 9000,
     "langue1_duration": "3 mois par niveau",
     "langue1_desc": "De débutant à avancé, maîtrisez l'anglais général et professionnel avec des formateurs expérimentés.",
     "langue1_skills": [
