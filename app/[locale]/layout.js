@@ -20,8 +20,8 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata = {
-  title: "LingoLab - Services Informatiques",
-  description: "Votre partenaire technologique de A à Z en Algérie",
+  title: "LingoLab - ecole de langue & centre de formation en Algerie",
+  description: "Votre meilleure destination pour apprendre les langues et se former dans divers domaines",
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
