@@ -51,7 +51,6 @@ export default function Page() {
       
       <BundleSection scrollToSection={scrollToSection} />
 
-      <AboutSection scrollToSection={scrollToSection} />
       
 
       {/* Newsletter Section - Added here before Contact */}
