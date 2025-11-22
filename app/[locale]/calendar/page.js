@@ -414,11 +414,12 @@ export default function CalendarPage() {
                     </div>
                   </div>
 
-                  <button 
-                    className={`w-full py-3 px-4 bg-gradient-to-r ${getCategoryColor(formation.category)} text-white rounded-lg font-bold hover:opacity-90 transition-opacity shadow-lg`}
+                  <Link 
+                    href="/formation"
+                    className={`block w-full py-3 px-4 bg-gradient-to-r ${getCategoryColor(formation.category)} text-white rounded-lg font-bold hover:opacity-90 transition-opacity shadow-lg text-center`}
                   >
                     {t('reserve')}
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
