@@ -8,6 +8,7 @@ import HeroSection from '@/app/components/HeroSection';
 import ServicesSection from '@/app/components/ServicesSection';
 import BundleSection from '@/app/components/BundleSection';
 import AboutSection from '@/app/components/AboutSection';
+import FormationCalendarSection from '@/app/components/FormationCalendarSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import NewsletterSection from '@/app/components/NewsletterSection';
 import ContactSection from '@/app/components/ContactSection';
@@ -45,20 +46,20 @@ export default function Page() {
       <HeroSection scrollToSection={scrollToSection} />
 
       <AboutSection scrollToSection={scrollToSection} />
-
       
-      <ServicesSection  scrollToSection={scrollToSection} />
+      <ServicesSection scrollToSection={scrollToSection} />
+      
+      {/* Formation Calendar Section - NEW */}
+      <FormationCalendarSection />
       
       <BundleSection scrollToSection={scrollToSection} />
-
       
-
-      {/* Newsletter Section - Added here before Contact */}
+      <TestimonialsSection />
       
+      {/* Newsletter Section */}
+      <NewsletterSection />
       
       <ContactSection />
-
-      <NewsletterSection />
       
       <Footer />
     </div>

@@ -121,6 +121,115 @@
       
       "learnMore": "En Savoir Plus Sur Nous"
     },
+
+    
+  
+  "CalendarSection": {
+    "badge": "Calendrier du Mois",
+    "title": "Formations à Venir",
+    "subtitle": "Découvrez nos prochaines sessions de formation du 22/11 au 22/12/2025",
+    "formation1": "Formation Paramédical",
+    "formation2": "Programmation Web",
+    "formation3": "HSE - Hygiène, Sécurité, Environnement",
+    "formation4": "Vendeur en Pharmacie",
+    "location": "LingoLab Academy, Relizane",
+    "spotsLeft": "places restantes",
+    "reserve": "Réserver",
+    "viewFullCalendar": "Voir le Calendrier Complet"
+  },
+  
+  "CalendarPage": {
+    "backToHome": "Retour à l'accueil",
+    "title": "Calendrier des Formations",
+    "subtitle": "Consultez toutes nos formations programmées du 22 novembre au 22 décembre 2025",
+    "location": "LingoLab Academy, Relizane",
+    "searchPlaceholder": "Rechercher une formation...",
+    "week": "Semaine",
+    "noFormations": "Aucune formation trouvée",
+    "tryDifferentFilter": "Essayez un autre filtre ou une autre semaine",
+    "spots": "places",
+    "instructor": "Formateur",
+    "price": "Prix",
+    "reserve": "Réserver Ma Place",
+    
+    "filters": {
+      "all": "Toutes"
+    },
+    
+    "categories": {
+      "paramedical": "Paramédical",
+      "office": "Bureautique",
+      "tech": "Technologie",
+      "professional": "Professionnel",
+      "agriculture": "Agriculture",
+      "pedagogical": "Pédagogie"
+    },
+    
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    
+    "formations": {
+      "0": {
+        "title": "Formation Paramédical",
+        "description": "Formation aux soins de base et accompagnement des personnes dépendantes. Techniques de soins et protocoles de santé."
+      },
+      "1": {
+        "title": "Bureautique - Microsoft Office",
+        "description": "Maîtrisez Excel, Word et les outils bureautiques essentiels pour votre travail quotidien."
+      },
+      "2": {
+        "title": "Programmation Web Full-Stack",
+        "description": "Apprenez React, Node.js et les bases de données pour devenir développeur web professionnel."
+      },
+      "3": {
+        "title": "HSE - Hygiène, Sécurité, Environnement",
+        "description": "Formation complète aux normes HSE en entreprise. Analyse des risques et prévention des accidents."
+      },
+      "4": {
+        "title": "Conduite d'Engins de Chantier",
+        "description": "Formez-vous à la conduite sécurisée d'engins de chantier (grue, pelleteuse, chargeuse)."
+      },
+      "5": {
+        "title": "Scanner Auto - Diagnostic Électronique",
+        "description": "Apprenez à diagnostiquer les pannes électroniques des véhicules modernes avec valise de diagnostic."
+      },
+      "6": {
+        "title": "Vendeur en Pharmacie",
+        "description": "Formation complète pour travailler en officine. Pharmacologie, conseil client et gestion des stocks."
+      },
+      "7": {
+        "title": "Apiculture - Élevage d'Abeilles",
+        "description": "Initiez-vous à l'apiculture moderne. Installation de ruches, récolte du miel et soins aux abeilles."
+      },
+      "8": {
+        "title": "Élevage de Lapins",
+        "description": "Techniques d'élevage cunicole. Alimentation, reproduction et gestion d'un élevage rentable."
+      },
+      "9": {
+        "title": "Formation des Enseignants",
+        "description": "Méthodes pédagogiques modernes, gestion de classe et techniques d'évaluation pour enseignants."
+      }
+    },
+    
+    "stats": {
+      "totalFormations": "Formations au Total",
+      "availableSpots": "Places Disponibles",
+      "categories": "Catégories",
+      "weeks": "Semaines"
+    },
+    
+    "cta": {
+      "title": "Prêt à Vous Inscrire ?",
+      "subtitle": "Contactez-nous pour réserver votre place ou en savoir plus",
+      "allFormations": "Toutes les Formations",
+      "contact": "Nous Contacter"
+    }
+  },
+
+
    
   "AboutPage": {
     "backToHome": "Retour à l'accueil",

@@ -118,6 +118,112 @@
     }
   },
 
+   "CalendarSection": {
+    "badge": "Monthly Calendar",
+    "title": "Upcoming Training",
+    "subtitle": "Discover our upcoming training sessions from 11/22 to 12/22/2025",
+    "formation1": "Paramedical Training",
+    "formation2": "Web Programming",
+    "formation3": "HSE - Health, Safety, Environment",
+    "formation4": "Pharmacy Salesperson",
+    "location": "LingoLab Academy, Relizane",
+    "spotsLeft": "spots left",
+    "reserve": "Reserve",
+    "viewFullCalendar": "View Full Calendar"
+  },
+  
+  "CalendarPage": {
+    "backToHome": "Back to Home",
+    "title": "Training Calendar",
+    "subtitle": "View all our scheduled training from November 22 to December 22, 2025",
+    "location": "LingoLab Academy, Relizane",
+    "searchPlaceholder": "Search for training...",
+    "week": "Week",
+    "noFormations": "No training found",
+    "tryDifferentFilter": "Try a different filter or week",
+    "spots": "spots",
+    "instructor": "Instructor",
+    "price": "Price",
+    "reserve": "Reserve My Spot",
+    
+    "filters": {
+      "all": "All"
+    },
+    
+    "categories": {
+      "paramedical": "Paramedical",
+      "office": "Office",
+      "tech": "Technology",
+      "professional": "Professional",
+      "agriculture": "Agriculture",
+      "pedagogical": "Pedagogy"
+    },
+    
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    
+    "formations": {
+      "0": {
+        "title": "Paramedical Training",
+        "description": "Training in basic care and support for dependent persons. Care techniques and health protocols."
+      },
+      "1": {
+        "title": "Office Suite - Microsoft Office",
+        "description": "Master Excel, Word and essential office tools for your daily work."
+      },
+      "2": {
+        "title": "Full-Stack Web Programming",
+        "description": "Learn React, Node.js and databases to become a professional web developer."
+      },
+      "3": {
+        "title": "HSE - Health, Safety, Environment",
+        "description": "Complete training in corporate HSE standards. Risk analysis and accident prevention."
+      },
+      "4": {
+        "title": "Heavy Equipment Operation",
+        "description": "Train in safe operation of construction equipment (crane, excavator, loader)."
+      },
+      "5": {
+        "title": "Auto Scanner - Electronic Diagnostics",
+        "description": "Learn to diagnose electronic faults in modern vehicles with diagnostic tools."
+      },
+      "6": {
+        "title": "Pharmacy Salesperson",
+        "description": "Complete training to work in a pharmacy. Pharmacology, customer advice and inventory management."
+      },
+      "7": {
+        "title": "Beekeeping - Bee Farming",
+        "description": "Introduction to modern beekeeping. Hive installation, honey harvesting and bee care."
+      },
+      "8": {
+        "title": "Rabbit Farming",
+        "description": "Rabbit breeding techniques. Feeding, reproduction and management of a profitable farm."
+      },
+      "9": {
+        "title": "Teacher Training",
+        "description": "Modern teaching methods, classroom management and assessment techniques for teachers."
+      }
+    },
+    
+    "stats": {
+      "totalFormations": "Total Training",
+      "availableSpots": "Available Spots",
+      "categories": "Categories",
+      "weeks": "Weeks"
+    },
+    
+    "cta": {
+      "title": "Ready to Register?",
+      "subtitle": "Contact us to reserve your spot or learn more",
+      "allFormations": "All Training",
+      "contact": "Contact Us"
+    }
+  },
+  
+
  "AboutSection": {
       "badge": "About LingoLab",
       "title": "Transforming Language Education",
